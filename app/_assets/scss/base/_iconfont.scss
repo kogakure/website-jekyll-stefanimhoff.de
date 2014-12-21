@@ -8,22 +8,22 @@
 // Variables for usage in content
 // ------------------------------
 
-$iconfont-arrow-left: "\f117";
+$iconfont-arrow-left: "\f100";
 $iconfont-arrow-right: "\f101";
 $iconfont-calendar: "\f102";
 $iconfont-cc: "\f103";
 $iconfont-close: "\f104";
 $iconfont-download: "\f105";
-$iconfont-external: "\f118";
-$iconfont-feed: "\f108";
-$iconfont-folder: "\f10a";
-$iconfont-github: "\f10b";
-$iconfont-logo: "\f10e";
-$iconfont-menu: "\f10f";
-$iconfont-question: "\f111";
-$iconfont-quill: "\f112";
-$iconfont-tag: "\f113";
-$iconfont-xing: "\f116";
+$iconfont-external: "\f106";
+$iconfont-feed: "\f107";
+$iconfont-folder: "\f108";
+$iconfont-github: "\f109";
+$iconfont-logo: "\f10a";
+$iconfont-menu: "\f10b";
+$iconfont-question: "\f10c";
+$iconfont-quill: "\f10d";
+$iconfont-tag: "\f10e";
+$iconfont-xing: "\f10f";
 
 // Font Face
 // ---------
@@ -85,19 +85,19 @@ $iconfont-xing: "\f116";
 // Individual Class attributes
 // ---------------------------
 
-.icon-arrow-left:before { content: "\f117"; }
+.icon-arrow-left:before { content: "\f100"; }
 .icon-arrow-right:before { content: "\f101"; }
 .icon-calendar:before { content: "\f102"; }
 .icon-cc:before { content: "\f103"; }
 .icon-close:before { content: "\f104"; }
 .icon-download:before { content: "\f105"; }
-.icon-external:before { content: "\f118"; }
-.icon-feed:before { content: "\f108"; }
-.icon-folder:before { content: "\f10a"; }
-.icon-github:before { content: "\f10b"; }
-.icon-logo:before { content: "\f10e"; }
-.icon-menu:before { content: "\f10f"; }
-.icon-question:before { content: "\f111"; }
-.icon-quill:before { content: "\f112"; }
-.icon-tag:before { content: "\f113"; }
-.icon-xing:before { content: "\f116"; }
+.icon-external:before { content: "\f106"; }
+.icon-feed:before { content: "\f107"; }
+.icon-folder:before { content: "\f108"; }
+.icon-github:before { content: "\f109"; }
+.icon-logo:before { content: "\f10a"; }
+.icon-menu:before { content: "\f10b"; }
+.icon-question:before { content: "\f10c"; }
+.icon-quill:before { content: "\f10d"; }
+.icon-tag:before { content: "\f10e"; }
+.icon-xing:before { content: "\f10f"; }
