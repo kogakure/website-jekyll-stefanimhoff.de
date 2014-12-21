@@ -43,7 +43,7 @@ The developement server will run on [http://0.0.0.0:9999/](http://0.0.0.0:9999/)
 
 ## Stuff I use on my website
 
-This is just some of the tools, packages, languages and stuff I used to build my website:
+These are just some of the tools, packages, languages and stuff I used to build my website:
 
 - [Jekyll](http://jekyllrb.com/)
 - [Octopress](https://github.com/octopress/octopress) to create posts and pages.
