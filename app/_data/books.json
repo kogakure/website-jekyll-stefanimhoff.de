@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Favorite Books",
+    "items": [
+      {
+        "text": "Ilias. Odyssee",
+        "asin": "3458174303"
+      },
+      {
+        "text": "The Elements <em>of</em> Typographic Style",
+        "asin": "0881792128"
+      },
+      {
+        "text": "Understand? Good. Play!",
+        "asin": "0971084955"
+      },
+      {
+        "text": "Herz der Finsternis",
+        "asin": "3150087147"
+      },
+      {
+        "text": "Die Foundation-Trilogie",
+        "asin": "345352795X"
+      },
+      {
+        "text": "Fight Club",
+        "asin": "3442542103"
+      },
+      {
+        "text": "Rework",
+        "asin": "0307463745"
+      },
+      {
+        "text": "Don’t Make me Think",
+        "asin": "0321344758"
+      },
+      {
+        "text": "Designing the Obvious",
+        "asin": "0321749855"
+      },
+      {
+        "text": "Lighting und Rendering",
+        "asin": "0321928989"
+      },
+      {
+        "text": "Cinematography &amp; Directing",
+        "asin": "B0058NWFT8"
+      },
+      {
+        "text": "Making and Breaking the Grid",
+        "asin": "1592531253"
+      },
+      {
+        "text": "Die Kürze des Lebens",
+        "asin": "3423091118"
+      },
+      {
+        "text": "Die Räuber vom Liang Schan Moor",
+        "asin": "3458318917"
+      },
+      {
+        "text": "Selbstversorgung aus dem Garten",
+        "asin": "3783161452"
+      },
+      {
+        "text": "Das neue Buch vom Leben auf dem Lande",
+        "asin": "3831015775"
+      },
+      {
+        "text": "The Traditional Colors of Japan",
+        "asin": "4894445786"
+      }
+    ]
+  },
+  {
+    "name": "Favorite Comics",
+    "items": [
+      {
+        "text": "Prinz Eisenherz",
+        "asin": "3939625000"
+      },
+      {
+        "text": "Daytripper",
+        "asin": "3862016609"
+      },
+      {
+        "text": "Watchmen",
+        "asin": "1401222668"
+      },
+      {
+        "text": "300",
+        "asin": "1569714029"
+      },
+      {
+        "text": "Sin City",
+        "asin": "394264911X"
+      },
+      {
+        "text": "Kick-Ass",
+        "asin": "3862010406"
+      },
+      {
+        "text": "Usagi Yojimbo",
+        "asin": "0930193350"
+      },
+      {
+        "text": "Großes Wilhelm Busch Album",
+        "asin": "3867756279"
+      }
+    ]
+  }
+]

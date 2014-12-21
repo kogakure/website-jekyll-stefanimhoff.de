@@ -1,0 +1,494 @@
+// ============================================================================
+// Base
+// ============================================================================
+
+body {
+  @extend %base-font;
+  @extend %pattern-dark-stripes;
+  color: $dark-grey;
+  font-size: modular-scale(1);
+  font-smoothing: subpixel-antialiased;
+  font-style: normal;
+  font-weight: $normal;
+  hyphens: auto;
+  line-height: 1.5;
+}
+
+:lang(ja) {
+  @extend %japanese-font;
+}
+
+// Message for older browsers
+// ----------------------------------------------------------------------------
+
+.chromeframe {
+  color: $white;
+  padding: 5px;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: $default-margin-bottom;
+}
+
+// No break
+// ----------------------------------------------------------------------------
+.nobr {
+  white-space: nowrap;
+}
+
+// Links
+// ----------------------------------------------------------------------------
+a {
+  // normal, hover, active, visited, focus
+  @include link-colors($link-color, $link-hover-color, $link-active-color, $link-visited-color, $link-focus-color);
+  transition: $animation-link-hover;
+}
+
+// Headlines
+// ----------------------------------------------------------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend %sans-font;
+  @include enable-ligatures;
+  clear: both;
+  hyphens: manual;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 40px;
+
+  .article & {
+    text-align: center;
+  }
+
+  @include breakpoint(650px) {
+    font-size: 45px;
+  }
+
+  @include breakpoint(700px) {
+    font-size: 50px;
+  }
+
+  @include breakpoint(800px) {
+    font-size: 60px;
+  }
+
+  @include breakpoint(920px) {
+    font-size: $font-scale-h1;
+  }
+}
+
+h2 {
+  font-size: 30px;
+
+  @include breakpoint(650px) {
+    font-size: 35px;
+  }
+
+  @include breakpoint(700px) {
+    font-size: 40px;
+  }
+
+  @include breakpoint(800px) {
+    font-size: 50px;
+  }
+
+  @include breakpoint(920px) {
+    font-size: $font-scale-h2;
+  }
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: $font-scale-h4;
+}
+
+// Paragraphs
+// ----------------------------------------------------------------------------
+p {
+  margin-bottom: $default-margin-bottom;
+}
+
+.article-body > p:first-child {
+  font-size: $font-scale-intro;
+  line-height: 1.5;
+  margin-bottom: $default-margin-bottom;
+}
+
+// Horizontal rule
+// ----------------------------------------------------------------------------
+hr {
+  border: 0;
+  border-bottom: 1px solid rgba($light-grey, 0.9);
+  height: 0;
+  margin: 2.5em;
+}
+
+// Emphasis
+// ----------------------------------------------------------------------------
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: $bold;
+}
+
+// Strikethrough
+// ----------------------------------------------------------------------------
+s {
+  text-decoration: line-through;
+}
+
+// Definition
+// ----------------------------------------------------------------------------
+dfn {
+  border-bottom: 1px dotted $definition-color;
+  cursor: help;
+}
+
+// Abbrevations
+// ----------------------------------------------------------------------------
+abbr,
+acronym {
+  cursor: help;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+}
+
+abbr[title],
+acronym[title] {
+  border-bottom-width: 0;
+}
+
+abbr.no-caps {
+  font-variant: normal;
+  text-transform: none;
+}
+
+// Pre
+// ----------------------------------------------------------------------------
+code {
+  @extend %mono-font;
+  background: $white;
+  border: 1px solid $light-grey;
+  border-radius: 3px;
+  font-size: $font-scale-small;
+  line-height: 1.5;
+  padding: 0.2em 0.4em;
+}
+
+pre {
+  margin-bottom: $default-margin-bottom;
+
+  code {
+    display: block;
+    line-height: 1.2;
+    overflow-x: auto;
+  }
+}
+
+.highlight {
+  @include grid-span(12);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 0 10px;
+  clear: both;
+  margin-bottom: $default-margin-bottom;
+  position: relative;
+
+  .code-figure & {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint($content-medium) {
+    @include grid-span(10, 1, 8);
+    clear: both;
+    margin-left: -(grid-span(1, 1, 8));
+    margin-right: 0;
+  }
+
+  pre {
+    background: $white;
+    padding: 1.5em 1.5em 0;
+  }
+
+  code {
+    border: 0;
+    padding: 0 20px 6px 0;
+
+    &:after {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, #ffffff 50%, #ffffff);
+      content: " ";
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1.5em * 3;
+    }
+  }
+
+  .lineno {
+    color: rgba($dark-grey, 0.15);
+  }
+}
+
+// Variable
+// ----------------------------------------------------------------------------
+var {
+  font-style: italic;
+}
+
+// Sample output
+// ----------------------------------------------------------------------------
+samp {
+  @extend %mono-font;
+  background: $sample-background;
+  border: 1px solid #dddddd;
+  border-radius: 0.4em;
+  color: $sample-color;
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: -1px 0;
+  padding: 0 0.3em;
+  white-space: no-wrap;
+}
+
+// Keyboard entry
+// ----------------------------------------------------------------------------
+kbd {
+  @extend %sans-font;
+  background-color: $keyboard-background;
+  border: 1px solid $keyboard-border;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba($black, 0.2), 0 0 0 2px $white inset;
+  color: $dark-grey;
+  display: inline-block;
+  font-size: $font-scale-kbd;
+  font-weight: $bold;
+  line-height: 1.4;
+  margin: 0 0.1em;
+  padding: 0.3em 0.6em 0.1em;
+  text-shadow: 0 1px 0 $white;
+  white-space: nowrap;
+}
+
+// Superscript/Subscript
+// ----------------------------------------------------------------------------
+sup,
+sub {
+  position: relative;
+  vertical-align: 0;
+
+  a {
+    border: 0;
+  }
+}
+
+sup {
+  bottom: 1ex;
+}
+
+sub {
+  top: 0.8ex;
+}
+
+// Italic/Bold
+// ----------------------------------------------------------------------------
+i {
+  font-style: italic;
+}
+
+b {
+  font-weight: $bold;
+}
+
+// Mark
+// ----------------------------------------------------------------------------
+mark {
+  background-color: transparent;
+  background-image: url("/assets/images/css/mark-center.png");
+  background-size: 25px 21px;
+  color: rgba($black, 0.75);
+  position: relative;
+
+  &:before,
+  &:after {
+    background-repeat: no-repeat;
+    background-size: 5px 21px;
+    content: '';
+    display: block;
+    height: 21px;
+    position: absolute;
+    width: 5px;
+  }
+
+  &:before {
+    background-image: url("/assets/images/css/mark-left.png");
+    left: -5px;
+    top: 0;
+  }
+
+  &:after {
+    background-image: url("/assets/images/css/mark-right.png");
+    bottom: 0;
+    right: -5px;
+  }
+}
+
+// Editing
+// ----------------------------------------------------------------------------
+ins {
+  text-decoration: underline;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+// Lists
+// ----------------------------------------------------------------------------
+ol {
+  list-style: decimal;
+  margin-bottom: $default-margin-bottom;
+
+  .article-body & {
+    margin-left: $default-margin-left;
+
+    @include breakpoint($content-medium) {
+      margin-left: 0;
+    }
+  }
+}
+
+ol ol {
+  list-style: lower-latin;
+  margin: 0 1.5em;
+
+  .article-body & {
+    margin: 0 1.5em;
+  }
+}
+
+ul {
+  list-style: disc;
+  margin-bottom: $default-margin-bottom;
+
+  .article-body & {
+    margin-left: $default-margin-left;
+
+    @include breakpoint($content-medium) {
+      margin-left: 0;
+    }
+  }
+}
+
+ul ul {
+  list-style: circle;
+  margin: 0 1.5em;
+
+  .article-body & {
+    margin: 0 1.5em;
+  }
+}
+
+dl {
+  margin-bottom: $default-margin-bottom;
+}
+
+dt {
+  font-weight: $bold;
+}
+
+dt + dd {
+  margin-bottom: $default-margin-bottom;
+}
+
+dd {
+  margin-left: 0;
+}
+
+// Quotes
+// ----------------------------------------------------------------------------
+blockquote {
+  font-style: italic;
+  margin: $default-margin;
+}
+
+cite {
+  font-style: italic;
+}
+
+blockquote cite:before {
+  content: '–';
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+// Inline quotes
+q {
+  font-style: italic;
+}
+
+// @include q-quotes(de, '„' '“' '‚' '‘'); // Alternative German quotes
+@include q-quotes(de, '»' '«' '›' '‹');
+@include q-quotes(en, '“' '”' '‘' '’');
+@include q-quotes(fr, '« ' ' »' '“' '”');
+@include q-quotes(ja, '「' '」' '『' '』');
+
+q:before {
+  content: open-quote;
+}
+
+q:after {
+  content: close-quote;
+}
+
+// Images
+// ----------------------------------------------------------------------------
+img,
+a img {
+  border: $image-border-size solid $image-border-color;
+  height: auto !important;
+  max-width: 100%;
+  vertical-align: bottom;
+  width: auto\9; // ie8
+}
+
+// Figures
+// ----------------------------------------------------------------------------
+
+figcaption {
+  font-size: $font-scale-small;
+  line-height: 1.5;
+  text-align: center;
+}
+
+// Video
+// -----------------------------------------------------------------------------
+video {
+  box-sizing: border-box;
+  display: block;
+  height: auto;
+  margin-bottom: $default-margin-bottom;
+  width: 100%;
+}
+
+// Tables
+// ----------------------------------------------------------------------------
+caption,
+th,
+td {
+  font-weight: $normal;
+  text-align: left;
+  vertical-align: middle;
+}

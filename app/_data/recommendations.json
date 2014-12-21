@@ -1,0 +1,107 @@
+[
+  {
+    "category": "Inspiration",
+    "items": [
+      {
+        "text": "TED",
+        "url": "http://www.ted.com/"
+      },
+      {
+        "text": "Brainpickings",
+        "url": "http://www.brainpickings.org/"
+      },
+      {
+        "text": "Explore",
+        "url": "http://explore.noodle.org/"
+      },
+      {
+        "text": "99U",
+        "url": "http://99u.com/"
+      },
+      {
+        "text": "Big Think",
+        "url": "http://bigthink.com/"
+      },
+      {
+        "text": "ChangeThis",
+        "url": "http://changethis.com/"
+      },
+      {
+        "text": "Signal vs. Noise",
+        "url": "http://signalvnoise.com/"
+      },
+      {
+        "text": "Information Architects",
+        "url": "http://ia.net/blog"
+      },
+      {
+        "text": "Media Queries",
+        "url": "http://mediaqueri.es/"
+      }
+    ]
+  },
+  {
+    "category": "Design",
+    "items": [
+      {
+        "text": "The Elements <em>of</em> Typographic Style Applied to the Web",
+        "url": "http://webtypography.net/"
+      },
+      {
+        "text": "Modular Scale",
+        "url": "http://modularscale.com/"
+      },
+      {
+        "text": "Singularity",
+        "url": "http://singularity.gs/"
+      },
+      {
+        "text": "Responsive Resources",
+        "url": "http://bradfrost.github.io/this-is-responsive/resources.html"
+      },
+      {
+        "text": "ColorHexa",
+        "url": "http://www.colorhexa.com/"
+      }
+    ]
+  },
+  {
+    "category": "Code",
+    "items": [
+      {
+        "text": "Jekyll",
+        "url": "http://jekyllrb.com/"
+      },
+      {
+        "text": "Octopress",
+        "url": "http://octopress.org/"
+      },
+      {
+        "text": "Yeoman",
+        "url": "http://yeoman.io/"
+      }
+    ]
+  },
+  {
+    "category": "Automation",
+    "items": [
+      {
+        "text": "Gulp",
+        "url": "http://gulpjs.com/"
+      },
+      {
+        "text": "Grunt",
+        "url": "http://gruntjs.com/"
+      }
+    ]
+  },
+  {
+    "category": "Hosting",
+    "items": [
+      {
+        "text": "Webfaction",
+        "url": "https://www.webfaction.com/?affiliate=kogakure"
+      }
+    ]
+  }
+]

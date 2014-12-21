@@ -1,0 +1,12 @@
+---
+layout: archive
+---
+
+<h1>Category: {{ page.category | capitalize }}</h1>
+{% for post in site.categories[page.category] %}
+<article>
+  {% include archive_post.html %}
+</article>
+{% endfor %}
+
+{% include categories_list.html %}

@@ -1,0 +1,36 @@
+{% unless index %}
+  {% if page.widont == false %}
+  <h1>{% if page.title or post.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</h1>
+  {% else %}
+  <h1>{% if page.title or post.title %}{{ page.title | widont }}{% else %}{{ site.data.settings.title | widont }}{% endif %}</h1>
+  {% endif %}
+
+    {% unless page.header == false %}
+      <header class="article-header">
+        {% if page.date or page.author %}
+          {% unless page.meta == false %}
+            <div class="meta">
+              <span class="author">
+                <i class="icon-quill"></i>
+                {% if page.language == "en" %}
+                  {% if page.author %}<em>by</em> {% include post/author.html %}{% endif %}
+                {% else %}
+                  {% if page.author %}<em>von</em> {% include post/author.html %}{% endif %}
+                {% endif %}
+              </span>
+              <span class="publication">
+              {% include post/date.html %}{% if updated %}{{ time }}{{ updated }}{% else %}{{ time }}{% endif %}
+              </span>
+            </div>
+            <div class="classification">
+              {% if page.categories %}{% include post/categories.html %}{% endif %}
+              {% if page.tags %}{% include post/tags.html %}{% endif %}
+            </div>
+          {% endunless %}
+        {% endif %}
+      </header>
+    {% endunless %}
+
+  <div class="article-body">{{ content | ampersand | nospace }}</div>
+{% endunless %}
+

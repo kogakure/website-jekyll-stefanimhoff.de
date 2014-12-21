@@ -1,0 +1,8 @@
+{% capture tag %}{{ page.tags | size }}{% endcapture %}
+
+{% unless tag == '0' %}
+<div class="tags">
+  <i class="icon-tag"></i>
+  {{ page.tags | tag_links | replace: ',','' }}
+</div>
+{% endunless %}

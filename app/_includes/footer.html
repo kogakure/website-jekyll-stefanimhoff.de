@@ -1,0 +1,26 @@
+<footer class="footer" role="contentinfo">
+  <div class="wrap">
+    <div class="about custom-underline">
+      <h3>About me</h3>
+      <p><em>Stefan Imhoff</em>, Front-End Engineer at <a href="https://www.xing.com/profile/Stefan_Imhoff">XING</a>. Designer, Developer and Martial Artist. Loves <a href="http://kogakure.de/">Ninja &amp; Ninjutsu</a>, Bujinkan, <a href="http://www.imdb.com/user/ur15936207/ratings">Movies</a>, <a href="https://www.goodreads.com/review/list/28460819-stefan">Books</a>, Architecture, Design, Typography, Philosophy, Japan, <a href="http://irezumi-tebori.tumblr.com/">Japanese Tattoos</a>, Thunderstorm &amp; Rain, Sun, the Sea, Forests, Bamboo, Kanji, Apple, Wabi&nbsp;Sabi, <a href="http://de.wikipedia.org/wiki/Hochzeitssuppe">Niedersächsiche Hochzeitssuppe</a>, <a href="/haiku/">Haiku</a> and <a href="https://gist.github.com/kogakure/33992">Vim</a>.</p>
+    </div>
+    <div class="social-networks">
+      <h3>Elsewhere</h3>
+      <ul>
+        {% for link in site.data.social-links %}
+          <li><a href="{{ link.url | replace: '!FEEDBURNER_URL!', site.data.settings.social.feedburner_url }}" class="{{ link.class }}"><span>{{ link.name }}</span></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <small>
+    <div class="wrap">
+      <ul>
+        <li><a href="/impressum/">Impressum</a></li>
+        <li><a href="/styleguide/">Styleguide</a></li>
+        <li><a href="#top" id="top-link">Scroll up</a></li>
+      </ul>
+      <div class="copyright"><b>©</b> <span class="nobr">2006-{{ site.time | date: "%Y" }}</span>, <span class="nobr">Stefan Imhoff</span>. The content of this page is published under a <span class="nobr"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><i class="icon-cc"></i> Creative Commons</a></span> Licence.</div>
+    </div>
+  </small>
+</footer>

@@ -1,0 +1,23 @@
+<div class="blog section custom-underline">
+  <div class="wrap">
+    <h2>Articles</h2>
+    <div class="grid-latest">
+      {% for post in site.posts limit:1 %}
+      {% capture excerpt %}{% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.content | strip_html | truncate: 350 }}{% endif %}{% endcapture %}
+      <h3><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h3>
+      <p>{{ excerpt }}</p>
+      {% endfor %}
+    </div>
+
+    <div class="grid-recently">
+      <h3>Still fresh</h3>
+      <ul>
+        {% for post in site.posts limit:4 offset:1 %}
+        <li>
+          <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

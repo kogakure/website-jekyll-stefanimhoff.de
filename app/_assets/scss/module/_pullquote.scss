@@ -1,0 +1,81 @@
+// ============================================================================
+// Pullquote
+// ============================================================================
+
+%pullquote {
+  font-size: 1.4em;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+blockquote.pullquote {
+  @extend %pullquote;
+  font-size: 2.3em;
+  line-height: 1;
+  text-align: center;
+}
+
+blockquote.pullquote[lang|=de] {
+  @include pullquote-quotes('»' '«' '›' '‹');
+}
+
+blockquote.pullquote[lang|=en] {
+  @include pullquote-quotes('“' '”' '‘' '’');
+}
+
+blockquote.pullquote[lang|=ja] {
+  @include pullquote-quotes('「' '」' '『' '』');
+}
+
+.pullquote-right:before,
+.pullquote-left:before {
+  @extend %pullquote;
+  border: 0;
+  content: attr(data-pullquote);
+  display: inline-block;
+  float: right;
+  margin-bottom: $default-margin-bottom;
+  margin-left: $default-margin-left;
+  margin-right: -(grid-span(1, 1, 8));
+  margin-top: 0;
+  padding: 0;
+  position: relative;
+  top: 15px;
+  width: column-span(4, 1, 8);
+
+  @include breakpoint($content-medium) {
+    margin-right: 0;
+  }
+
+  @include breakpoint($content-pullquote-inline) {
+    clear: both;
+    float: none;
+    margin: 1.5em 0;
+    position: static;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.pullquote-left:before {
+  float: left;
+  margin-bottom: $default-margin-bottom;
+  margin-left: -(grid-span(1, 1, 8));
+  margin-right: $default-margin-right;
+  margin-top: 0;
+  text-align: right;
+
+  @include breakpoint($content-medium) {
+    margin-left: 0;
+  }
+
+  @include breakpoint($content-pullquote-inline) {
+    clear: both;
+    float: none;
+    margin: 1.5em 0;
+    position: static;
+    text-align: center;
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,10 @@
+---
+layout: default
+body_class: page
+---
+
+<main class="main wrap{% if page.page_class %} {{ page.page_class }}{% endif %}" role="main">
+  <article class="article custom-underline" role="article">
+    {% include article.html %}
+  </article>
+</main>

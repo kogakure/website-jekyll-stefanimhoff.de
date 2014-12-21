@@ -1,0 +1,8 @@
+{% capture category %}{{ page.categories | size }}{% endcapture %}
+
+{% unless category == "0" %}
+<div class="categories">
+  <i class="icon-folder"></i>
+  {{ page.categories | category_links | replace: ',','' }}
+</div>
+{% endunless %}

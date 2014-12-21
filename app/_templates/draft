@@ -1,0 +1,8 @@
+---
+layout: {{ layout }}
+language: "de"
+title: {{ title }}
+author: "Stefan Imhoff"
+categories:
+tags:
+---

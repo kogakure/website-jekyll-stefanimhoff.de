@@ -1,0 +1,8 @@
+---
+layout: archive
+title: All Tags
+body_class: archive
+---
+
+<h1>{% if page.title or post.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</h1>
+{% include tags_list.html %}

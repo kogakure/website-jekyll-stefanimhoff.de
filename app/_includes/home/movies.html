@@ -1,0 +1,19 @@
+<div class="movie-lover section custom-underline">
+  <div class="wrap">
+    <h2>Movie Fan</h2>
+    <div class="content">
+      <p>I love movies and TV shows. Most of my space on shelves is occupied by my books, that’s why I don’t own a lot of movies. But I regularly use LoveFilm, Netflix, Watchever and Amazon Prime. I love every genre except horror movies. This is my <a href="http://www.imdb.com/user/ur15936207/">IMDb profile</a> and my <a href="http://www.imdb.com/user/ur15936207/ratings">ratings</a>.</p>
+    </div>
+
+    <div class="grid-links inline-links">
+      {% for topic in site.data.movies %}
+        <h3>{{ topic.name }}</h3>
+        <ul>
+          {% for movie in topic.items %}
+            <li><a href="http://www.imdb.com/title/{{ movie.id }}/">{{ movie.text }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+  </div>
+</div>

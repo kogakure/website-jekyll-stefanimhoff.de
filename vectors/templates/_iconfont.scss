@@ -1,0 +1,31 @@
+// ============================================================================
+// Icon Font (<%= font_name %>)
+// ============================================================================
+//
+// This file get created automatically. Do not edit it! Change the template in
+// `vectors/templates/_iconfont.scss`.
+
+// Variables for usage in content
+// ------------------------------
+<% @glyphs.map do |name, value| %>
+$<%= font_name %>-<%= name %>: "<%= "\\#{value[:codepoint].to_s(16)}" %>";<% end %>
+
+// Font Face
+// ---------
+
+<%= font_face(path: @font_path_alt) %>
+
+// Styling for Icon Fonts
+// ----------------------
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+<%= glyph_selectors %> {
+<%= glyph_properties %>
+}
+
+// Individual Class attributes
+// ---------------------------
+
+<%= glyphs %>

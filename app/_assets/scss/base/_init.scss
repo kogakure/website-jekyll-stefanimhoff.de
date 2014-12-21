@@ -1,0 +1,25 @@
+// ============================================================================
+// Init
+// ============================================================================
+
+@charset "UTF-8";
+
+@include viewport {
+  width: device-width;
+}
+
+html {
+  @include breakpoint($iphone-width) {
+    text-size-adjust: none;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "XING",
+    "url": "https://www.xing.com/profile/Stefan_Imhoff",
+    "class": "icon-xing"
+  },
+  {
+    "name": "GitHub",
+    "url": "https://github.com/kogakure",
+    "class": "icon-github"
+  },
+  {
+    "name": "Atom-Feed",
+    "url": "!FEEDBURNER_URL!",
+    "class": "icon-feed"
+  }
+]

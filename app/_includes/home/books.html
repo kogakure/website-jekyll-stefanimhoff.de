@@ -1,0 +1,21 @@
+<div class="book-lover section custom-underline">
+  <div class="wrap">
+    <h2>Book Lover</h2>
+    <div class="content">
+      <p>I love <a href="https://www.goodreads.com/review/list/28460819">books</a>, to be precice I love <em>paper</em> books. I can not imagine a living room without shelves of books.</p>
+      <p>Most likly I inherited this passion from my grandfather, who owned over <strong>4000</strong> books. My books count roughly a  <strong>1000</strong>. I buy books ahead and my desks are always stuffed with unread books. I like classics, books about philosophy, martial arts, art &amp; desgin, architecture, typography and novels.</p>
+      <p>Work-related books I read mostly digital, because they get old too fast and don’t look nice in most cases.</p>
+    </div>
+
+    <div class="grid-links inline-links">
+      {% for topic in site.data.books %}
+        <h3>{{ topic.name }}</h3>
+        <ul>
+          {% for book in topic.items %}
+            <li><a href="http://www.amazon.de/gp/product/{{ book.asin }}?ie=UTF8&tag=kogakurede-21&linkCode=as2&camp=1638&creative=6742&creativeASIN={{ book.asin }}">{{ book.text }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>{% include head/capture_variables.html %}
+<!--[if lt IE 7]><html lang="{{ language }}" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="{{ language }}" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="{{ language }}" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="{{ language }}" class="no-js"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page_title }}</title>
+
+  <!-- Mobile -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="{{ site.data.settings.title }}">
+
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+
+  <!-- Prefetch -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  {% unless page.homepage %}<link rel="prerender" href="{{ site.url }}">{% endunless %}
+  {% if page.previous.url %}<link rel="prefetch" href="{{ site.url }}{{page.previous.url}}">{% endif %}
+  {% if page.next.url %}<link rel="prefetch" href="{{ site.url }}{{page.next.url}}">{% endif %}
+
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic|Yanone+Kaffeesatz:400,200' rel='stylesheet' type='text/css'>
+  <meta http-equiv="cleartype" content="on">
+
+  <!-- Robots -->
+  {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% else %}<meta name="robots" content="all">{% endif %}
+
+  <!-- Description -->
+  <meta name="description" content="{{ page_description }}">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="{{ site.data.settings.social.twitter }}">
+  <meta name="twitter:url" content="{{ page_url }}">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ page_description }}">
+  <meta name="twitter:image" content="{{ site.url }}/assets/images/og/rakkan.png">
+
+  <!-- OpenGraph-->
+  <meta property="og:url" content="{{ page_url }}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_description }}">
+  <meta property="og:image" content="{{ site.url }}/assets/images/og/rakkan.png">
+
+  <!-- Google Authorship -->
+  <link href="https://plus.google.com/{{ site.data.settings.social.googleplus }}" rel="publisher">
+
+  <!-- Language -->
+  <meta name="content-language" content="{{ language }}">
+
+  <!-- Author -->
+  <meta name="author" content="{{ author | strip_html | condense_spaces | truncate:100 }}">
+  <link type="text/plain" rel="author" href="{{ site.url }}/humans.txt">
+
+  <!-- Geo -->
+  <meta name="icbm" content="{{ site.data.settings.geo.latitude }},{{ site.data.settings.geo.longitude }}">
+  <meta name="geo.position" content="{{ site.data.settings.geo.latitude }};{{ site.data.settings.geo.longitude }}">
+
+  <!-- Keywords -->
+  <meta name="keywords" content="{{ keywords | strip_html | condense_spaces | truncate:2000 }}">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/assets/images/apple/touch-icon-iphone.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.url }}/assets/images/apple/touch-icon-ipad.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.url }}/assets/images/apple/touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.url }}/assets/images/apple/touch-icon-ipad-retina.png">
+
+  <meta name="msapplication-TileImage" content="{{ site.url }}/assets/images/ms/metro-tile.png">
+  <meta name="msapplication-TileColor" content="#b42b2c">
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="apple-touch-startup-image" href="{{ site.url }}/assets/images/apple/startup-ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+  <link rel="apple-touch-startup-image" href="{{ site.url }}/assets/images/apple/startup-ipad-landscape-retina.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="{{ site.url }}/assets/images/apple/startup-ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+  <link rel="apple-touch-startup-image" href="{{ site.url }}/assets/images/apple/startup-ipad-portrait-retina.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="{{ site.url }}/assets/images/apple/startup-iphone-retina.png" media="screen and (max-device-width: 320px) and (max-device-height: 1136px) and (-webkit-min-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="{{ site.url }}/assets/images/apple/startup-iphone-old.png" media="screen and (max-device-width: 320px) and (max-device-height: 460px)">
+  <link rel="apple-touch-startup-image" href="{{ site.url }}/assets/images/apple/startup-iphone-old-retina.png" media="screen and (max-device-width: 320px) and (max-device-height: 460px) and (-webkit-min-device-pixel-ratio: 2)">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ page_url }}">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ root_url }}/assets/css/application.css">
+  {% if page.homepage %}<link rel="stylesheet" type="text/css" href="{{ root_url }}/assets/css/homepage.css">{% endif %}
+  {% if page.custom_css %}{<link rel="stylesheet" type="text/css" href="{{ root_url }}/assets/css/{{ page.custom_css }}.css">{% endif %}
+
+  <!--[if lt IE 9]>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <style>header#top {background-image:none;}</style>
+  <![endif]-->
+
+  <!-- Modernizr -->
+  <script src="/assets/js/head.js"></script>
+
+  <!-- Feeds -->
+  <link href="{{ site.data.settings.social.feedburner_url }}" rel="alternate" title="{{ site.data.settings.title }}" type="application/atom+xml">
+
+  <!-- Switch off Microsoft junk -->
+  <meta name="MSSmartTagsPreventParsing" content="true">
+  <meta http-equiv="imagetoolbar" content="no">
+
+  <!-- Statistics -->
+  {% include head/mint.html %}
+  {% include head/google_analytics.html %}
+</head>

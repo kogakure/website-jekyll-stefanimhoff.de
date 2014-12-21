@@ -1,0 +1,22 @@
+---
+layout: null
+permalink: humans.txt
+---
+
+/* The Humans Responsible & Colophon */
+/* humanstxt.org */
+
+/* TEAM */
+Designer:    {{ site.author }}
+Developer:   {{ site.author }}
+Site:        stefan [at] imhoff.name
+Twitter:     {{ site.data.settings.social.twitter }}
+Location:    Hamburg, Germany
+
+/* SITE */
+Last update: {{ site.time | date: "%Y/%m/%d" }}
+Language:    German
+Doctype:     HTML5
+Standards:   HTML5, CSS3
+Components:  Jekyll, Octopress 3.x, Sass, Singularity.gs, Modular Scale, Breakpoint, Font Custom, JavaScript, Modernizr, Bower, Browserify, Gulp.js, UglifyJS, Markdown, Ruby ...
+Software:    Vim, Photoshop, Illustrator, iTerm 2, Git, Chrome Developer Tools

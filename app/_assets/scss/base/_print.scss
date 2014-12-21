@@ -1,0 +1,148 @@
+// ============================================================================
+// Print
+// ============================================================================
+@media print {
+  @page {
+    margin: 0.5cm;
+  }
+
+  body {
+    font-family: 'Gentium Basic', "Times New Roman", Times, Georgia, serif;
+    line-height: 1.3;
+  }
+
+  // Hide stuff
+  // --------------------------------------------------------------------------
+  #nav,
+  .nav-btn,
+  .line-numbers,
+  .article-related,
+  .pagination,
+  .article-header .categories,
+  .article-header .tags,
+  footer.footer,
+  .attribution-main-text {
+    display: none;
+  }
+
+  #top {
+    border: 0;
+  }
+
+  // Base typography
+  // --------------------------------------------------------------------------
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Yanone Kaffeesatz', Arial, Helvetica, sans-serif;
+    margin-bottom: 5pt;
+  }
+
+  h1 {
+    font-size: 29pt;
+  }
+
+  h2 {
+    font-size: 25pt;
+    margin-top: 15pt;
+  }
+
+  h3 {
+    font-size: 18pt;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 16pt;
+  }
+
+  .article-title h1 {
+    margin: 0 0 10pt;
+  }
+
+  .home .article-title h1 {
+    margin: 0;
+  }
+
+  .home .article-title h1 + h2 {
+    color: #808080;
+    font-size: 18pt;
+    margin-top: 0;
+  }
+
+  // Header, Footer
+  // --------------------------------------------------------------------------
+  .article-title {
+    border-bottom: 2px solid #bbbbbb;
+  }
+
+  .article-header {
+    border-top: 2px solid #bbbbbb;
+    padding-top: 5pt;
+  }
+
+  // Code, Quotes
+  // --------------------------------------------------------------------------
+  code,
+  pre {
+    font-family: Menlo, Monaco, 'Andale Mono', 'Lucida console', 'Courier New', monospace;
+  }
+
+  blockquote,
+  ul,
+  ol {
+    margin: 0;
+  }
+
+  .publication .published {
+    display: block;
+  }
+
+  // Images
+  // --------------------------------------------------------------------------
+  img {
+    border: 0;
+    max-width: 500px;
+  }
+
+  // Links
+  // --------------------------------------------------------------------------
+  a {
+    color: #000000;
+  }
+
+  p a {
+    word-wrap: break-word;
+  }
+
+  p a:after {
+    font-size: 90%;
+  }
+
+  p a[href^="http://"]:after,
+  a[href^="https://"]:after {
+    content: " (" attr(href) ")";
+  }
+
+  p a:after {
+    content: " (http://stefanimhoff.de/" attr(href) ")";
+  }
+
+  p a[href^="#"]:after {
+    display: none;
+  }
+
+  // Aside
+  // --------------------------------------------------------------------------
+  aside {
+    border-bottom: 1px solid #bbbbbb;
+    border-top: 1px solid #bbbbbb;
+    display: block;
+    margin-top: 30px;
+    page-break-before: always;
+  }
+}

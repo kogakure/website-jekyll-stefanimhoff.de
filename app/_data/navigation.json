@@ -1,0 +1,39 @@
+[
+  {
+    "type": "main",
+    "items": [
+      {
+        "text": "Home",
+        "url": "/"
+      },
+      {
+        "text": "Articles",
+        "url": "/articles/"
+      },
+      {
+        "text": "Categories",
+        "url": "/category/"
+      },
+      {
+        "text": "Tags",
+        "url": "/tag/"
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "text": "Styleguide",
+        "url": "/styleguide/"
+      },
+      {
+        "text": "Haiku",
+        "url": "/haiku/"
+      },
+      {
+        "text": "Impressum",
+        "url": "/impressum/"
+      }
+    ]
+  }
+]

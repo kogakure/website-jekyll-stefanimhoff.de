@@ -1,0 +1,30 @@
+<div class="introvert section custom-underline">
+  <div class="wrap">
+
+    <div class="grid">
+      <h2>Introvert</h2>
+      <p>I am an introvert. Only ¼ of all people around the globe are introverted, that’s why we are usually outnumbered. Introverts think differently, their brain processes information in a different way than other brains. While extraverts get energy by social interaction with other people, introverts loose their energy and need time to refill.</p>
+    </div>
+
+    <div class="grid-quote">
+      <blockquote>
+        <p class="japanese">
+          <ruby>能<rp>（</rp><rt>のう</rt><rp>）</rp></ruby>ある<ruby>鷹<rp>（</rp><rt>たか</rt><rp>）</rp></ruby>は<ruby>爪<rp>（</rp><rt>つめ</rt><rp>）</rp></ruby>を<ruby>隠<rp>（</rp><rt>かく</rt><rp>）</rp></ruby>す。
+        </p>
+      </blockquote>
+      <p>The wise hawk hides its talons.</p>
+    </div>
+
+    <div class="grid-links inline-links">
+      {% for topic in site.data.introvert %}
+        <h3>{{ topic.name }}</h3>
+        <ul>
+          {% for item in topic.items %}
+            <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>

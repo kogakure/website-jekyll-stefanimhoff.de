@@ -1,0 +1,23 @@
+<header id="top" class="header attribution-main" role="banner">
+
+  {% include attribution_header.html %}
+
+  <div class="article-title wrap">
+    <div class="logo">
+      {% if page.homepage %}
+        <i class="icon-logo"></i>
+      {% else %}
+        <a href="{{ site.root }}" class="icon-logo"></a>
+      {% endif %}
+    </div>
+    <div class="site-info">
+      {% if page.homepage %}
+        <h1>{{ site.data.settings.title }}</h1>
+        <h2>{{ site.data.settings.seo.description | widont }}</h2>
+      {% else %}
+        <a href="{{ site.root }}">{{ site.data.settings.title }}</a>
+      {% endif %}
+    </div>
+  </div>
+  <a href="#nav" class="nav-btn js-nav-btn"><span>Navigation</span> <i class="icon-menu"></i></a>
+</header>

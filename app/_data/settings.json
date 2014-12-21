@@ -1,0 +1,18 @@
+{
+  "title": "Stefan Imhoff",
+  "email": "stefan@imhoff.name",
+  "author": "Stefan Imhoff",
+  "seo": {
+    "keywords": "Stefan Imhoff, Hamburg, Frontend, Engineer",
+    "description": "Front-End Engineer @ XING, Developer, Designer and Martial Artist."
+  },
+  "social": {
+    "feedburner_url": "http://feeds.feedburner.com/stefanimhoff",
+    "twitter": "@kogakure",
+    "googleplus": "104687479698350625994"
+  },
+  "geo": {
+    "latitude": "53.596835",
+    "longitude": "10.102015"
+  }
+}

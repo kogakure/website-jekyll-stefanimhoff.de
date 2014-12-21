@@ -1,0 +1,146 @@
+// ============================================================================
+// Attribution
+// ============================================================================
+
+// Attribution Mixins
+// ------------------
+
+%attribution {
+  overflow: hidden;
+  position: relative;
+}
+
+%attribution-text {
+  @extend %sans-font;
+  background: rgba($black, 0.75);
+  bottom: -30%;
+  color: $white;
+  font-size: 15px;
+  font-weight: 200;
+  left: 0 + $image-border-size;
+  margin: 0;
+  opacity: 0;
+  padding: 5px 10px;
+  position: absolute;
+  transition: all 0.6s ease;
+
+  a {
+    @include link-colors($link-color, $link-color, $link-active-color, $link-visited-color, $link-focus-color);
+  }
+
+  // Copyright
+  b {
+    @extend %mono-font;
+    font-weight: normal;
+  }
+}
+
+%attribution-before {
+  @extend %mono-font;
+  background: rgba($white, 0.7);
+  border-radius: 10px;
+  color: $black;
+  content: "?";
+  font-size: 14px;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  transition: all 0.6s ease;
+  width: 20px;
+}
+
+%attribution-before-fontface {
+  @extend %icon-font;
+  content: "#{$iconfont-question}";
+  font-size: 10px;
+  font-weight: 200;
+}
+
+// Attribution
+// -----------
+
+.attribution {
+  @extend %attribution;
+}
+
+.attribution-text {
+  @extend %attribution-text;
+}
+
+.custom-underline .attribution-text a {
+  text-shadow: none;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.attribution:hover .attribution-text {
+  bottom: 0 + $image-border-size;
+  opacity: 1;
+}
+
+.attribution .figure-content:before {
+  @extend %attribution-before;
+  bottom: 10px;
+  left: 10px;
+  opacity: 0.75;
+  z-index: 5;
+
+  .fontface & {
+    @extend %attribution-before-fontface;
+  }
+}
+
+.attribution .figure-content:hover:before {
+  opacity: 0;
+}
+
+// Attribution header image
+// ---------------------------
+
+.attribution-main {
+  @extend %attribution;
+}
+
+.attribution-main-text {
+  @extend %attribution-text;
+  bottom: -30px;
+  height: 30px;
+  left: 0;
+  line-height: 30px;
+  opacity: 0.9;
+  padding: 0 10px;
+}
+
+.attribution-main-text:hover {
+  bottom: 0;
+  opacity: 1;
+
+  .attribution-main-anchor {
+    opacity: 0;
+  }
+}
+
+.attribution-main-anchor {
+  height: 34px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: -34px;
+  transition: all 0.6s ease;
+  width: 34px;
+
+  &:before {
+    @extend %attribution-before;
+    bottom: 7px;
+    left: 7px;
+
+    // Modernizr: fontface
+    .fontface & {
+      @extend %attribution-before-fontface;
+    }
+  }
+}

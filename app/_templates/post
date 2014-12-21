@@ -1,0 +1,10 @@
+---
+layout: {{ layout }}
+title: {{ title }}
+date: {{ date }}
+author: "Stefan Imhoff"
+published: true
+excerpt: ""
+categories:
+tags:
+---

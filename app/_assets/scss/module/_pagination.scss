@@ -1,0 +1,64 @@
+// ============================================================================
+// Pagination
+// ============================================================================
+
+.pagination {
+  overflow: hidden;
+
+  a {
+    @extend %sans-font;
+    background: $dark-grey;
+    border: 0;
+    border-radius: 5px;
+    color: $white;
+    display: inline-block;
+    font-size: $font-scale-small;
+    letter-spacing: 0.1em;
+    margin-bottom: 5px;
+    max-width: 49%;
+    overflow: hidden;
+    padding: 0 5px;
+    position: relative;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    &:hover {
+      background: $link-color;
+    }
+
+    i {
+      position: absolute;
+      top: 1px;
+    }
+  }
+
+  a.left {
+    float: left;
+    padding-left: 20px;
+
+    i {
+      left: 3px;
+    }
+  }
+
+  a.right {
+    float: right;
+    padding-right: 20px;
+
+    i {
+      right: 3px;
+    }
+  }
+}
+
+.custom-underline .pagination a {
+  background: $dark-grey;
+  color: $white;
+  text-shadow: none;
+
+  &:hover {
+    background: $link-color;
+    color: $white;
+  }
+}

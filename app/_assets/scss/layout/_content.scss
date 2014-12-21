@@ -1,0 +1,60 @@
+// ============================================================================
+// Content
+// ============================================================================
+
+// Content Background
+// ----------------------------------------------------------------------------
+.container {
+  @extend %pattern-light-grey;
+}
+
+// Active/Inactive Selection
+// ----------------------------------------------------------------------------
+.article * {
+  @include selection($selection-background, $selection-color);
+}
+
+// Meta footer
+// ----------------------------------------------------------------------------
+.meta {
+  color: rgba($dark-grey, 0.3);
+  font-size: modular-scale(0);
+  text-align: center;
+
+  .author {
+    margin-right: 15px;
+  }
+
+  .updated {
+    margin-left: 15px;
+  }
+}
+
+// Tags & Categories
+// ----------------------------------------------------------------------------
+.classification {
+  margin-bottom: $default-margin-bottom;
+  text-align: center;
+
+  .categories {
+    margin-right: 15px;
+  }
+}
+
+// Related Links
+// ----------------------------------------------------------------------------
+.article-related {
+  .related {
+    list-style: disc;
+
+    &:only-child {
+      list-style: none;
+    }
+  }
+}
+
+// Comments
+// ----------------------------------------------------------------------------
+.comments {
+  margin-top: $default-margin-top;
+}

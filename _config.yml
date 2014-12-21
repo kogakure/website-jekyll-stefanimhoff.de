@@ -1,0 +1,106 @@
+# =============== #
+# Jekyll Settings #
+# =============== #
+
+# URLs/Paths
+baseurl:   ""
+url:       "http://0.0.0.0:9999"
+root:      /
+permalink: /:year/:title/
+
+# Jekyll
+source:      ./app
+destination: ./build
+
+# Publishing
+encoding:    "utf-8"
+future:      true
+show_drafts: true
+limit_posts: 5
+
+# Server
+date_format: "%d.%m.%Y"
+titlecase:   false
+port:        8888
+timezone:    local
+markdown:    kramdown
+lsi:         true
+language:    "en"
+
+# Feeds
+excerpt_link: "Read more &arr;"
+excerpt_in_feed: false
+permalink_label: "Permalink"
+permalink_label_feed: "★ Permalink"
+linklog_marker: "→"
+linklog_marker_position: after
+linklog_marker_position_feed: after
+standard_post_marker:
+
+# Categories
+category_feeds: true
+category_dir: category
+category_title_prefix: "Category: "
+
+# Tags
+tag_feeds: true
+tag_dir: tag
+tag_title_prefix: "Tags: "
+
+# Pagination
+paginate:       1000       # Posts per page on the blog index
+paginate_path:  :num       # default path for pagination, eg. page/2/
+
+# Kramdown
+kramdown:
+  auto_ids:                  false
+  auto_id_prefix:            ""
+  auto_id_stripping:         true
+  transliterated_header_ids: true
+  footnote_nr:               1
+  entitiy_output:            as_char
+  toc_levels:                1..6
+  input:                     GFM # GitHub Flavored Markdown
+  smart_quotes:              sbquo,lsquo,bdquo,ldquo, # ‚‘ „“
+
+# Exclude files, Gulp.js handles the assets
+exclude: [
+  "vendor", "Gemfile", "Gemfile.lock", "README.markdown", "fonts",
+  "**.png", "**.jpg", "**.jpeg", "**.gif", "**.webp", "**.svg", "**.ico"
+]
+
+include: [".htaccess", ".htpasswd", "favicon.ico"]
+
+# Sitemap.xml generator
+sitemap:
+  file: "/sitemap.xml"
+  exclude:
+    - "/atom.xml"
+    - "/feed.xml"
+    - "/htaccess"
+    - "/htpasswd"
+    - "/error/404/index.markdown"
+    - "/error/410/index.markdown"
+    - "/error/500/index.markdown"
+  include_posts:
+    - "/index.html"
+  change_frequency_name: "change_frequency"
+  priority_name: "priority"
+
+# Lunr search
+lunr_search:
+  excludes:
+    - rss.xml
+    - sitemap.xml
+    - /error/
+    - /impressum/
+    - /index.html
+  min_length: 3
+  stopwords: "stopwords.txt"
+
+
+# Attribution
+attribution_name: "「大宮盆栽×タムロン」大宮盆栽美術館で盆栽撮影にチャレンジ！ブロガーイベント"
+attribution_url: "https://www.flickr.com/photos/norio-nakayama/9156103138"
+attribution_author: "Norio NAKAYAMA"
+attribution_creative_commons: true

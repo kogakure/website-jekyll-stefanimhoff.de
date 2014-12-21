@@ -1,0 +1,13 @@
+{
+  "name": "stefanimhoff",
+  "private": true,
+  "dependencies": {
+    "fastclick": "~1.0.3",
+    "loadcss": "~0.1.1",
+    "singularity": "~1.4.0",
+    "modular-scale": "~2.0.5",
+    "color-schemer": "~0.2.8",
+    "scss-blend-modes": "~0.0.2",
+    "sass-toolkit": "~2.6.0"
+  }
+}

@@ -1,0 +1,10 @@
+{% if post.author %}
+  {% assign author = post.author %}
+{% elsif page.author %}
+  {% assign author = page.author %}
+{% else %}
+  {% assign author = site.data.settings.author %}
+{% endif %}
+{% if author %}
+  {{ author }}
+{% endif %}

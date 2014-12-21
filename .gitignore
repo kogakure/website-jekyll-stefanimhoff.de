@@ -1,0 +1,14 @@
+# .gitignore für stefanimhoff.de
+
+# Ignoriere verstecke Ordner
+.*/
+
+# Projekt
+build/assets/
+build/development/
+build/production/
+vendor/bundle/
+node_modules/
+app/_bower_components
+app/_assets/images/sprites/*.png
+.fontcustom-manifest.json

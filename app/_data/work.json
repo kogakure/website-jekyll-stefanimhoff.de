@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Code",
+    "skills": [
+      "HTML",
+      "CSS",
+      "SASS",
+      "Compass",
+      "RWD",
+      "JavaScript",
+      "jQuery",
+      "Ajax",
+      "Git",
+      "Ruby on Rails",
+      "Ruby",
+      "Grunt.js",
+      "Gulp.js"
+    ]
+  },
+  {
+    "name": "Design",
+    "skills": [
+      "Photoshop",
+      "Illustrator",
+      "Graphic Design",
+      "Usability",
+      "Information Architecture"
+    ]
+  },
+  {
+    "name": "Agile Methods",
+    "skills": [
+      "Scrum",
+      "Kanban"
+    ]
+  },
+  {
+    "name": "Misc",
+    "skills": [
+      "Vim",
+      "Zsh",
+      "Bash",
+      "tmux",
+      "SEO",
+      "Apache",
+      "SQL"
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+# =============== #
+# Jekyll Settings #
+# =============== #
+#   PRODUCTION    #
+# =============== #
+
+# URLs/Paths
+url:         "http://stefanimhoff.de"
+server_path: /path/to/my/website/
+
+# Publishing
+future:      false
+show_drafts: false
+limit_posts: 0

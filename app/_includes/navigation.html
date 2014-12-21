@@ -1,0 +1,10 @@
+<nav id="nav" role="navigation">
+  {% for navigation in site.data.navigation %}
+  <ul class="{% if navigation.type == "main" %}nav--main{% else %}nav{% endif %}">
+      {% for item in navigation.items %}
+        <li{% if item.external == true %} class="nav-item-external"{% endif %}><a href="{{ item.url }}">{{ item.text }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+  <a href="#top" class="nav-close-btn js-nav-close-btn"><i class="icon-close"></i> <span>Back to Content</span></a>
+</nav>

@@ -1,0 +1,103 @@
+// ============================================================================
+// Icon Font (iconfont)
+// ============================================================================
+//
+// This file get created automatically. Do not edit it! Change the template in
+// `vectors/templates/_iconfont.scss`.
+
+// Variables for usage in content
+// ------------------------------
+
+$iconfont-arrow-left: "\f117";
+$iconfont-arrow-right: "\f101";
+$iconfont-calendar: "\f102";
+$iconfont-cc: "\f103";
+$iconfont-close: "\f104";
+$iconfont-download: "\f105";
+$iconfont-external: "\f118";
+$iconfont-feed: "\f108";
+$iconfont-folder: "\f10a";
+$iconfont-github: "\f10b";
+$iconfont-logo: "\f10e";
+$iconfont-menu: "\f10f";
+$iconfont-question: "\f111";
+$iconfont-quill: "\f112";
+$iconfont-tag: "\f113";
+$iconfont-xing: "\f116";
+
+// Font Face
+// ---------
+
+@font-face {
+  font-family: "iconfont";
+  src: url("/assets/fonts/iconfont_aec96082ae659fe0160e31f3955a5e19.eot");
+  src: url("/assets/fonts/iconfont_aec96082ae659fe0160e31f3955a5e19.eot?#iefix") format("embedded-opentype"),
+       url("/assets/fonts/iconfont_aec96082ae659fe0160e31f3955a5e19.woff") format("woff"),
+       url("/assets/fonts/iconfont_aec96082ae659fe0160e31f3955a5e19.ttf") format("truetype"),
+       url("/assets/fonts/iconfont_aec96082ae659fe0160e31f3955a5e19.svg#iconfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "iconfont";
+    src: url("/assets/fonts/iconfont_aec96082ae659fe0160e31f3955a5e19.svg#iconfont") format("svg");
+  }
+}
+
+// Styling for Icon Fonts
+// ----------------------
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-arrow-left:before,
+.icon-arrow-right:before,
+.icon-calendar:before,
+.icon-cc:before,
+.icon-close:before,
+.icon-download:before,
+.icon-external:before,
+.icon-feed:before,
+.icon-folder:before,
+.icon-github:before,
+.icon-logo:before,
+.icon-menu:before,
+.icon-question:before,
+.icon-quill:before,
+.icon-tag:before,
+.icon-xing:before {
+  display: inline-block;
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+// Individual Class attributes
+// ---------------------------
+
+.icon-arrow-left:before { content: "\f117"; }
+.icon-arrow-right:before { content: "\f101"; }
+.icon-calendar:before { content: "\f102"; }
+.icon-cc:before { content: "\f103"; }
+.icon-close:before { content: "\f104"; }
+.icon-download:before { content: "\f105"; }
+.icon-external:before { content: "\f118"; }
+.icon-feed:before { content: "\f108"; }
+.icon-folder:before { content: "\f10a"; }
+.icon-github:before { content: "\f10b"; }
+.icon-logo:before { content: "\f10e"; }
+.icon-menu:before { content: "\f10f"; }
+.icon-question:before { content: "\f111"; }
+.icon-quill:before { content: "\f112"; }
+.icon-tag:before { content: "\f113"; }
+.icon-xing:before { content: "\f116"; }

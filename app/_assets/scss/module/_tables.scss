@@ -1,0 +1,91 @@
+// ============================================================================
+// Tables
+// ============================================================================
+
+%table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: $default-margin-bottom;
+  width: 100%;
+
+  th,
+  td {
+    border-top: 1px solid $table-border-color;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    font-weight: $bold;
+  }
+
+  thead th {
+    vertical-align: bottom;
+  }
+
+  caption + thead tr:first-child th,
+  caption + thead tr:first-child td,
+  colgroup + thead tr:first-child th,
+  colgroup + thead tr:first-child td,
+  thead:first-child tr:first-child th,
+  thead:first-child tr:first-child td {
+    border-top: 0;
+  }
+}
+
+table {
+  @extend %table;
+}
+
+
+// Tables with Zebra
+// ----------------------------------------------------------------------------
+.table-zebra {
+  @extend %table;
+
+  tbody > tr:nth-child(odd) > td,
+  tbody > tr:nth-child(odd) > th {
+    background-color: $table-zebra-background;
+  }
+}
+
+
+// Tables with border
+// ----------------------------------------------------------------------------
+.table-border {
+  @extend %table;
+  border: 1px solid $table-border-color;
+  border-collapse: separate;
+  border-left: 0;
+  border-radius: 4px;
+
+  th,
+  td {
+    border-left: 1px solid $table-border-color;
+  }
+}
+
+
+// Condensed Tables
+// ----------------------------------------------------------------------------
+.table-condense {
+  @extend %table;
+
+  th,
+  td {
+    padding: 4px 5px;
+  }
+}
+
+
+// Tables with hover
+// ----------------------------------------------------------------------------
+.table-hover {
+  @extend %table;
+
+  tbody tr:hover > td,
+  tbody tr:hover > th {
+    background-color: $table-zebra-background;
+  }
+}

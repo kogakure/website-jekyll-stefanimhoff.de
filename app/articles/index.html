@@ -1,0 +1,11 @@
+---
+layout: archive
+title: Articles
+---
+
+<h1>{% if page.title or post.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</h1>
+{% for post in site.posts reverse %}
+<article>
+  {% include archive_post.html %}
+</article>
+{% endfor %}

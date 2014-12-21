@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Movies",
+    "items": [
+      {
+        "text": "Susan Cain: The power of introverts",
+        "url": "http://www.ted.com/talks/susan_cain_the_power_of_introverts"
+      },
+      {
+        "text": "RSA Shorts - The Power of Quiets",
+        "url": "https://www.youtube.com/watch?v=rUaj7rj6MI8"
+      },
+      {
+        "text": "Party Survival Guide for Introverts",
+        "url": "https://www.youtube.com/watch?v=HChusFnyVzE"
+      }
+    ]
+  },
+  {
+    "name": "Comics",
+    "items": [
+      {
+        "text": "How to live with introverts",
+        "url": "http://halfblog.net/2012/12/30/how-to-live-with-introverts/"
+      },
+      {
+        "text": "Luchie’s Sketches & Comics",
+        "url": "http://heyluchie.tumblr.com/post/53461087106/my-comic-introversion-is-finished-please-go-to"
+      }
+    ]
+  },
+  {
+    "name": "Articles",
+    "items": [
+      {
+        "text": "10 Myths About Introverts",
+        "url": "http://www.carlkingdom.com/10-myths-about-introverts"
+      },
+      {
+        "text": "15 Things You Might Have Misunderstood About Introverts",
+        "url": "http://www.lifehack.org/articles/communication/15-things-you-might-have-misunderstood-about-introverts.html"
+      },
+      {
+        "text": "How to piss off an introvert",
+        "url": "http://matadornetwork.com/life/piss-introvert/"
+      }
+    ]
+  },
+  {
+    "name": "Books",
+    "items": [
+      {
+        "text": "Quiet: The Power of Introverts in a World That Can't Stop Talking",
+        "url": "http://www.amazon.de/Quiet-Power-Introverts-World-Talking/dp/0307352145/"
+      },
+      {
+        "text": "The Introvert Advantage: How to Thrive in an Extrovert World",
+        "url": "http://www.amazon.de/Marti-Olsen-Laney/e/B001H6J1JW/"
+      }
+    ]
+  }
+]

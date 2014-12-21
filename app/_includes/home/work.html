@@ -1,0 +1,22 @@
+<div class="work section custom-underline">
+  <div class="wrap">
+    <h2>Designer &amp; Developer</h2>
+    <div class="content">
+      <p>I work as <strong>Front-End Engineer</strong> at <strong>XING</strong> and contributed to <strong>Jobs</strong> (simplified design, new search), <strong>Mobile</strong> (<a href="https://touch.xing.com/">Touch</a> and iPad hybrid app), <strong>Profile</strong> and the new  <strong>Groups</strong>.</p>
+      <p>I am co-creator of the idea for <strong>XING Projects</strong>, a job platform for freelancer. I worked on this innovation project from the beginning and helped bringing it to the XING BetaLabs program.</p>
+      <p>I won the award <em>Best Smart Tools & Services</em> at the <strong>Prototyping Days 2013</strong>.</p>
+    </div>
+
+    <div class="grid-links inline-links">
+      {% for area in site.data.work %}
+        <h3>{{ area.name }}</h3>
+        <ul>
+          {% for skill in area.skills %}
+            <li>{{ skill }}</li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>

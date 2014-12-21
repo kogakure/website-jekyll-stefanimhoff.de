@@ -1,0 +1,77 @@
+// ============================================================================
+// Mixins
+// ============================================================================
+
+// ::selection
+// ----------------------------------------------------------------------------
+@mixin selection($bg, $color: inherit, $text-shadow: none) {
+  * {
+    &::selection { background: $bg; color: $color; text-shadow: $text-shadow; }
+  }
+}
+
+// Quotes for `blockquote` in different languages
+// ----------------------------------------------------------------------------
+@mixin pullquote-quotes($quotes) {
+  quotes: $quotes;
+
+  p:first-child:before {
+    content: open-quote;
+  }
+
+  p:last-child:after {
+    content: close-quote;
+  }
+}
+
+// Quotes for `q` in different languages
+// ----------------------------------------------------------------------------
+@mixin q-quotes($language, $quotes) {
+  :lang(#{$language}) > q,
+  .article-body q[lang|=#{$language}] {
+    quotes: $quotes;
+    @if $language == "ja" {
+      font-style: normal;
+    }
+  }
+}
+
+// WebKit font-smoothing
+// ----------------------------------------------------------------------------
+//
+// References:
+//
+// 1. http://maxvoltar.com/sandbox/fontsmoothing/
+// 2. http://maxvoltar.com/archive/-webkit-font-smoothing
+//
+// Values: none, antialiased (default), subpixel-antialiased
+//
+@mixin font-smoothing($value: antialiased) {
+  -webkit-font-smoothing: $value !important;
+}
+
+// Link Colors (copied from Compass)
+// ----------------------------------------------------------------------------
+@mixin link-colors($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+  color: $normal;
+  @if $visited {
+    &:visited {
+      color: $visited;
+    }
+  }
+  @if $focus {
+    &:focus {
+      color: $focus;
+    }
+  }
+  @if $hover {
+    &:hover {
+      color: $hover;
+    }
+  }
+  @if $active {
+    &:active {
+      color: $active;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{% unless site.related_posts == empty %}
+  <section class="article-related">
+    {% if page.language == "en" %}
+    <h2>Related Articles</h2>
+    {% else %}
+    <h2>Ähnliche Beiträge</h2>
+    {% endif %}
+    <ul class="posts">
+      {% for post in site.related_posts limit:5 %}
+      <li class="related">
+        <a href="{{ root_url }}{{ post.url }}">{{ post.title | ampersand }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endunless %}
