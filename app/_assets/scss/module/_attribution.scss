@@ -103,6 +103,14 @@
 
 .attribution-main {
   @extend %attribution;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: $white;
+    }
+  }
 }
 
 .attribution-main-text {
@@ -113,6 +121,7 @@
   line-height: 30px;
   opacity: 0.9;
   padding: 0 10px;
+  visibility: visible !important;
 }
 
 .attribution-main-text:hover {

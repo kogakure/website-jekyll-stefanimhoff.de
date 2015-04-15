@@ -9,7 +9,7 @@ module.exports = {
         newtab = false;
 
     if (event.currentTarget.host !== window.location.host) {
-      ga('send', 'event', 'External Link', 'click', event.target.text + ': ' + event.target.href);
+      ga('send', 'event', 'Ausgehender Link', 'click', event.target.text + ': ' + event.target.href);
 
       if (event.metaKey || event.ctrlKey || this.target === '_blank') {
         newtab = true;
@@ -21,7 +21,7 @@ module.exports = {
       }
 
     } else {
-      ga('send', 'event', 'Internal Link', 'click', event.target.text + ': ' + event.target.href);
+      ga('send', 'event', 'Interner Link', 'click', event.target.text + ': ' + event.target.href);
     }
   }
 };

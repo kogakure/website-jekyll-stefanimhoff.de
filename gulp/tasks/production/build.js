@@ -13,7 +13,9 @@ gulp.task('build:production', function(callback) {
     'copy:fonts'
   ],
   'base64',
+  'combine:mediaqueries',
   [
+    'optimize:html',
     'optimize:css',
     'optimize:js',
     'optimize:images',
@@ -21,9 +23,6 @@ gulp.task('build:production', function(callback) {
   ],
   'revision',
   'rev:collect',
-  [
-    'webp',
-    'gzip'
-  ],
+  'webp',
   callback);
 });

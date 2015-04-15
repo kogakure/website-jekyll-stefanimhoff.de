@@ -4,7 +4,7 @@ title: "Haiku"
 language: "de"
 author: "Stefan Imhoff"
 date: 2014-02-09 09:01
-updated: 2014-02-09 19:01
+updated: 2015-01-16 19:16
 header: true
 page_class: verse-list
 ---
@@ -16,6 +16,14 @@ Auf dieser Seite sind einige meiner Haiku (<ruby>俳<rp>（</rp><rt>はい</rt><
 {% blockquote Wikipedia http://de.wikipedia.org/wiki/Haiku Haiku %}
 Haiku (jap. 俳句, dt. „lustiger Vers“; Plural: Haiku, auch: Haikus) ist eine traditionelle japanische Gedichtform, die heute weltweit verbreitet ist. Das Haiku gilt als die kürzeste Gedichtform der Welt.
 {% endblockquote %}
+
+-------------------------------------------------------------------------------
+
+{% verse %}
+Kaum Tag, lange Nacht.
+Regenströme vom Himmel.
+Ende doch, Winter!
+{% endverse %}
 
 -------------------------------------------------------------------------------
 

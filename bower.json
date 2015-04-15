@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "fastclick": "~1.0.3",
-    "loadcss": "~0.1.1",
+    "loadcss": "~0.1.2",
     "singularity": "~1.4.0",
     "modular-scale": "~2.0.5",
     "color-schemer": "~0.2.8",

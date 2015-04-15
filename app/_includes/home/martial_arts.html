@@ -1,11 +1,8 @@
 <div class="martial-arts section custom-underline">
   <div class="wrap">
-    <h2>Martial Artist</h2>
+    <h2>{{ site.data.settings.homepage.martialarts.headline }}</h2>
     <div class="content">
-      <p>I love martial arts, especially the Japanese. I practised Shotokan Karate for seven years and then began training <strong>Bujinkan Budo Taijutsu</strong>.</p>
-      <p>In <a href="http://de.wikipedia.org/wiki/Bujinkan">Bujinkan</a> we train <strong>nine different schools</strong>: six <strong>Samurai</strong> and three <strong>Ninja</strong> schools, the oldest of these school is <strong>{% since_year 618 %} years</strong> old and the traditions where given from master to scholar for generations.</p>
-      <p>These martial arts aren’t sports, but highly efficient fighting systems, proven on the battlefields of ancient Japan.</p>
-      <p>I run <a href="http://kogakure.de/">a website</a> on this topic for more than {% since_year 1999 %} years. I collected knowledge about the history, arts, tools, weapons, philosophy and life of the Ninja.</p>
+      {{ site.data.settings.homepage.martialarts.text | markdownify | liquify }}
     </div>
 
     <div class="grid-links inline-links">

@@ -13,9 +13,120 @@ permalink: .htaccess
 # require valid-user
 
 # ------------------------------------------------------------------------------
+# | Block Framing of page to prevent click jacking                             |
+# ------------------------------------------------------------------------------
+Header set X-Frame-Options DENY
+
+# ------------------------------------------------------------------------------
 # | Redirecting/Removing sites                                                 |
 # ------------------------------------------------------------------------------
 
+# Redirects (Gone)
+Redirect Gone /archiv/P0/
+Redirect Gone /information/
+Redirect Gone /main/kategorie/design/
+Redirect Gone /main/kategorie/fundstueck/
+Redirect Gone /main/kategorie/musik/
+Redirect Gone /main/kategorie/screencast/
+Redirect Gone /notiz/abmahnung-kogakure-zitat-karl-valentin
+Redirect Gone /notiz/bash_profile-striptease
+Redirect Gone /notiz/blender-animationsfilm-big-buck-bunny
+Redirect Gone /notiz/chris-jordan-zeigt-unsere-masslosigkeit-in-erschreckenden-bildern
+Redirect Gone /notiz/cms-weblog-systeme-reloaded
+Redirect Gone /notiz/die-schatzinsel-bei-pro7
+Redirect Gone /notiz/django-und-das-framework-ding
+Redirect Gone /notiz/django/
+Redirect Gone /notiz/einfach-die-welt-veraendern
+Redirect Gone /notiz/expression-engine-2-sneak-preview
+Redirect Gone /notiz/glueckliche-mitarbeiter
+Redirect Gone /notiz/meine-groesste-dummheit-vorerst
+Redirect Gone /notiz/musik-tipp-poets-of-the-fall
+Redirect Gone /notiz/platzsparend-browser-bookmark-unicode
+Redirect Gone /notiz/textmate-snippet-dummy-image-generator
+Redirect Gone /notiz/warum-google-wave-kommunikation-veraendern-wird
+Redirect Gone /notiz/why-we-fight
+Redirect Gone /notiz/wie-marions-kochbuch-google-manipuliert
+Redirect Gone /notizbuch/P0/
+Redirect Gone /projekte/
+Redirect Gone /projekte/bewernick/
+Redirect Gone /projekte/mieterverein-hamburg/
+Redirect Gone /projekte/praxis-elena-kohl/
+Redirect Gone /projekte/sushi-dreams/
+
+# Redirects (Permanent)
+Redirect 301 /+/                                                                 https://plus.google.com/104687479698350625994/
+
+# Redirects mit URL-Änderung
+Redirect 301 /notiz/das-koi-design-inspiration-und-idee                          /2007/koi-design
+Redirect 301 /notiz/django-folder-fuer-mac-os-x                                  /2007/django-folder-mac-osx
+Redirect 301 /notiz/django-folder-mac-osx                                        /2007/django-folder-mac-osx
+Redirect 301 /notiz/blender-folder-fuer-mac-os-x-leopard                         /2008/blender-folder-mac-osx
+Redirect 301 /notiz/theme-kaijin-fuer-das-moinmoin-wiki                          /2008/theme-kaijin-moinmoin-wiki
+Redirect 301 /notiz/theme-kaijin-moinmoin-wiki                                   /2008/theme-kaijin-moinmoin-wiki
+Redirect 301 /notiz/terminal-stoeckchen                                          /2008/terminal-most-used-commands
+Redirect 301 /notiz/django-relaunch-von-kogakure-de                              /2008/django-relaunch-kogakure-de
+Redirect 301 /notiz/django-relaunch-kogakure-de                                  /2008/django-relaunch-kogakure-de
+Redirect 301 /notiz/server-verwaltung-mit-capistrano                             /2008/server-verwaltung-capistrano
+Redirect 301 /notiz/server-verwaltung-capistrano                                 /2008/server-verwaltung-capistrano
+Redirect 301 /notiz/grundlagen-von-python-django-fuer-anfaenger                  /2008/grundlagen-python-django-anfaenger
+Redirect 301 /notiz/grundlagen-python-django-anfaenger                           /2008/grundlagen-python-django-anfaenger
+Redirect 301 /notiz/kostenlose-vektorkarten-mit-openstreetmap                    /2008/kostenlose-vektorkarten-openstreetmap
+Redirect 301 /notiz/kostenlose-vektorkarten-openstreetmap                        /2008/kostenlose-vektorkarten-openstreetmap
+Redirect 301 /notiz/2008-django-git                                              /2008/django-git
+Redirect 301 /notiz/django-fuer-webdesigner                                      /2009/django-webdesigner
+Redirect 301 /notiz/django-webdesigner                                           /2009/django-webdesigner
+Redirect 301 /notiz/2010-jahresrueckblick                                        /2010/jahresrueckblick
+Redirect 301 /notiz/mein-setup-2013                                              /2013/mein-setup
+
+# Redirects der alten Seiten
+Redirect 301 /notiz/volume-reparieren-unter-mac-osx                              /2007/volume-reparieren-unter-mac-osx
+Redirect 301 /notiz/subversion-1-theorie-und-funktionsweise                      /2007/subversion-1-theorie-und-funktionsweise
+Redirect 301 /notiz/domains-extern-hosten                                        /2007/domains-extern-hosten
+Redirect 301 /notiz/subversion-2-installation                                    /2007/subversion-2-installation
+Redirect 301 /notiz/j2ee-vs-ruby-python-frameworks                               /2007/j2ee-vs-ruby-python-frameworks
+Redirect 301 /notiz/subversion-3-einrichten-des-repository                       /2007/subversion-3-einrichten-des-repository
+Redirect 301 /notiz/subversion-4-importieren-einer-projektstruktur               /2007/subversion-4-importieren-einer-projektstruktur
+Redirect 301 /notiz/versionskontrolle-mit-git                                    /2007/versionskontrolle-mit-git
+Redirect 301 /versionskontrolle-mit-git                                          /2007/versionskontrolle-mit-git
+Redirect 301 /notiz/lebensmittel-datenbank                                       /2007/lebensmittel-datenbank
+Redirect 301 /notiz/subversion-5-arbeiten-mit-subversion                         /2007/subversion-5-arbeiten-mit-subversion
+Redirect 301 /notiz/wunschliste-computerspiele-als-film                          /2007/wunschliste-computerspiele-als-film
+Redirect 301 /notiz/subversion-6-ein-paar-wichtige-befehle                       /2007/subversion-6-ein-paar-wichtige-befehle
+Redirect 301 /notiz/provoc-vokabeln-lernen-unter-mac-os-x                        /2007/provoc-vokabeln-lernen-unter-mac-os-x
+Redirect 301 /notiz/eineinhalb-jahre-gtd-eine-billanz                            /2007/eineinhalb-jahre-gtd-eine-billanz
+Redirect 301 /notiz/traditionelle-japanische-farben-photoshop-illustrator        /2007/traditionelle-japanische-farben-photoshop-illustrator
+Redirect 301 /notiz/gtd-mit-omnifocus-oder-things                                /2007/gtd-mit-omnifocus-oder-things
+Redirect 301 /notiz/das-war-mein-2007-eine-jahresbilanz                          /2007/das-war-mein-2007-eine-jahresbilanz
+Redirect 301 /notiz/5-gefaehrliche-dinge-die-jedes-kind-gemacht-haben-sollte     /2008/5-gefaehrliche-dinge-die-jedes-kind-gemacht-haben-sollte
+Redirect 301 /notiz/gtd-analog-vs-digital-0-zu-1                                 /2008/gtd-analog-vs-digital-0-zu-1
+Redirect 301 /notiz/lokalisierung-von-projekten-mit-django                       /2008/lokalisierung-von-projekten-mit-django
+Redirect 301 /notiz/weiterleitung-redirect-django                                /2008/weiterleitung-redirect-django
+Redirect 301 /notiz/server-verwaltung-fabric                                     /2008/server-verwaltung-fabric
+Redirect 301 /notiz/einstieg-in-git-als-versionskontrollsystem                   /2009/einstieg-in-git-als-versionskontrollsystem
+Redirect 301 /notiz/gitweb-theme-github-stil                                     /2009/gitweb-theme-github-stil
+Redirect 301 /notiz/things-evernote-gtd-mac-osx                                  /2009/things-evernote-gtd-mac-osx
+Redirect 301 /notiz/home-atemberaubende-erde-dokumentation-yann-arthus-bertrand  /2009/home-atemberaubende-erde-dokumentation-yann-arthus-bertrand
+Redirect 301 /notiz/git-praesentation                                            /2009/git-praesentation
+Redirect 301 /notiz/buchtipp-rework-37signals                                    /2010/buchtipp-rework-37signals
+Redirect 301 /notiz/appletv-leihfilme-itunes                                     /2010/appletv-leihfilme-itunes
+Redirect 301 /notiz/geloeste-django-probleme                                     /2010/geloeste-django-probleme
+Redirect 301 /notiz/webstandards-magazin-django                                  /2010/webstandards-magazin-django
+Redirect 301 /notiz/auto-complete-im-terminal                                    /2010/auto-complete-im-terminal
+Redirect 301 /notiz/vim                                                          /2010/vim
+Redirect 301 /notiz/automatisierung-mit-keyboard-maestro                         /2011/automatisierung-mit-keyboard-maestro
+Redirect 301 /notiz/buchtipp-decodeunicode                                       /2011/buchtipp-decodeunicode
+Redirect 301 /notiz/duplikation-ist-in-ordnung                                   /2013/duplikation-ist-in-ordnung
+Redirect 301 /notiz/wichtig-website-neu                                          /2014/relaunch-responsive-web-design
+Redirect 301 /notiz/automatisierte-installation-mac-os-x                         /2014/automatisierte-installation-mac-os-x
+Redirect 301 /main/kategorie/gtd                                                 /category/produktivitaet
+Redirect 301 /main/kategorie/python                                              /tag/python
+
+Redirect 301 /information/impressum                                             /impressum
+Redirect 301 /main/kategorie/tutorial                                           /tag/tutorial
+Redirect 301 /main/kategorie/download                                           /tag/download
+Redirect 301 /notizbuch                                                         /articles
+Redirect 301 /archiv                                                            /articles
+Redirect 301 /kategorie                                                         /category
 
 # ##############################################################################
 # # ERRORS                                                                     #
@@ -157,6 +268,18 @@ AddDefaultCharset utf-8
   # Options +SymLinksIfOwnerMatch
   RewriteEngine On
   RewriteBase /
+</IfModule>
+
+# Activate support for WebP
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_ACCEPT} image/webp
+  RewriteCond %{DOCUMENT_ROOT}/$1.webp -f
+  RewriteRule (.+)\.(jpe?g|png)$ $1.webp [T=image/webp,E=accept:1]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header append Vary Accept env=REDIRECT_accept
 </IfModule>
 
 # ------------------------------------------------------------------------------

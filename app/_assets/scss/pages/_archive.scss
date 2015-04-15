@@ -14,7 +14,7 @@
     h2 {
       @include grid-span(9, 3, 12);
       font-size: $font-scale-h4;
-      line-height: 1.5;
+      line-height: 1.2;
 
       @include breakpoint($archive-two-lines) {
         @include grid-span(12);

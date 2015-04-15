@@ -1,8 +1,8 @@
-<div class="movie-lover section custom-underline">
+<div class="movies section custom-underline">
   <div class="wrap">
-    <h2>Movie Fan</h2>
+    <h2>{{ site.data.settings.homepage.movies.headline }}</h2>
     <div class="content">
-      <p>I love movies and TV shows. Most of my space on shelves is occupied by my books, that’s why I don’t own a lot of movies. But I regularly use LoveFilm, Netflix, Watchever and Amazon Prime. I love every genre except horror movies. This is my <a href="http://www.imdb.com/user/ur15936207/">IMDb profile</a> and my <a href="http://www.imdb.com/user/ur15936207/ratings">ratings</a>.</p>
+      {{ site.data.settings.homepage.movies.text | markdownify }}
     </div>
 
     <div class="grid-links inline-links">

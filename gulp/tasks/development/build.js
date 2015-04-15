@@ -14,5 +14,6 @@ gulp.task('build', function(callback) {
     'copy:fonts'
   ],
   'base64',
+  'combine:mediaqueries',
   callback);
 });

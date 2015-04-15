@@ -103,5 +103,86 @@
         "url": "https://www.webfaction.com/?affiliate=kogakure"
       }
     ]
+  },
+  {
+    "category": "Social",
+    "items": [
+      {
+        "text": "XING",
+        "url": "https://www.xing.com/profile/Stefan_Imhoff"
+      },
+      {
+        "text": "LinkedIn",
+        "url": "https://www.linkedin.com/in/kogakure"
+      },
+      {
+        "text": "About.me",
+        "url": "http://about.me/kogakure/"
+      },
+      {
+        "text": "Facebook",
+        "url": "https://www.facebook.com/kogakure"
+      },
+      {
+        "text": "Google+",
+        "url": "https://plus.google.com/+stefanimhoff/"
+      },
+      {
+        "text": "Twitter",
+        "url": "https://twitter.com/kogakure"
+      },
+      {
+        "text": "Flipboard",
+        "url": "https://flipboard.com/@kogakure"
+      },
+      {
+        "text": "Pinterest",
+        "url": "https://www.pinterest.com/kogakure/"
+      },
+      {
+        "text": "Tumblr",
+        "url": "http://kogakure.tumblr.com/"
+      },
+      {
+        "text": "Flickr",
+        "url": "https://www.flickr.com/photos/kogakure/"
+      },
+      {
+        "text": "Google Maps Views",
+        "url": "https://www.google.com/maps/views/profile/104687479698350625994"
+      },
+      {
+        "text": "Fitbit",
+        "url": "https://www.fitbit.com/user/234BKN"
+      },
+      {
+        "text": "GitHub",
+        "url": "https://github.com/kogakure"
+      },
+      {
+        "text": "Last.fm",
+        "url": "http://www.lastfm.de/user/kogakure"
+      },
+      {
+        "text": "YouTube",
+        "url": "https://www.youtube.com/channel/UCwzOIyXBFg2jNKMcLOwu8Jw"
+      },
+      {
+        "text": "Vimeo",
+        "url": "https://vimeo.com/kogakure"
+      },
+      {
+        "text": "IMDb",
+        "url": "http://www.imdb.com/user/ur15936207/"
+      },
+      {
+        "text": "Good Reads",
+        "url": "http://goodreads.com/kogakure"
+      },
+      {
+        "text": "Kiva",
+        "url": "http://www.kiva.org/lender/kogakure"
+      }
+    ]
   }
 ]

@@ -1,6 +1,13 @@
 {% capture language %}{% if page.language %}{{ page.language }}{% else %}{{ site.language }}{% endif %}{% endcapture %}
+
 {% capture page_url %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
+
 {% capture page_title %}{% if page.title %}{{ page.title | strip_html }} – {% endif %}{{ site.data.settings.title | strip_html }}{% endcapture %}
+
 {% capture page_description %}{% if page.description %}{{ page.description }}{% else %}{{ site.data.settings.seo.description }}{% endif %}{% endcapture %}
+
 {% capture author %}{% if page.author %}{{ page.author }}{% else %}{{ site.data.settings.author }}{% endif %}{% endcapture %}
+
 {% capture keywords %}{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.data.settings.seo.keywords }}{% endif %}{% endcapture %}
+
+{% capture og_image %}{% if page.og_image %}{{ page.og_image }}{% else %}/assets/images/og/rakkan.png{% endif %}{% endcapture %}

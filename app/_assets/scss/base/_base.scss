@@ -4,7 +4,7 @@
 
 body {
   @extend %base-font;
-  @extend %pattern-dark-stripes;
+  background-color: $body-background;
   color: $dark-grey;
   font-size: modular-scale(1);
   font-smoothing: subpixel-antialiased;
@@ -12,7 +12,13 @@ body {
   font-weight: $normal;
   hyphens: auto;
   line-height: 1.5;
+  text-rendering: optimizeLegibility;
+
+  @include breakpoint($iphone-width) {
+    text-rendering: optimizeSpeed;
+  }
 }
+
 
 :lang(ja) {
   @extend %japanese-font;
@@ -33,6 +39,7 @@ body {
 
 // No break
 // ----------------------------------------------------------------------------
+
 .nobr {
   white-space: nowrap;
 }
@@ -42,7 +49,15 @@ body {
 a {
   // normal, hover, active, visited, focus
   @include link-colors($link-color, $link-hover-color, $link-active-color, $link-visited-color, $link-focus-color);
+  // border-bottom: 1px solid $link-border-color;
+  // text-decoration: none;
   transition: $animation-link-hover;
+
+  &:hover,
+  &:active,
+  &:focus {
+    // border-color: $link-hover-border-color;
+  }
 }
 
 // Headlines
@@ -316,8 +331,6 @@ b {
 // ----------------------------------------------------------------------------
 mark {
   background-color: transparent;
-  background-image: url("/assets/images/css/mark-center.png");
-  background-size: 25px 21px;
   color: rgba($black, 0.75);
   position: relative;
 
@@ -333,13 +346,11 @@ mark {
   }
 
   &:before {
-    background-image: url("/assets/images/css/mark-left.png");
     left: -5px;
     top: 0;
   }
 
   &:after {
-    background-image: url("/assets/images/css/mark-right.png");
     bottom: 0;
     right: -5px;
   }

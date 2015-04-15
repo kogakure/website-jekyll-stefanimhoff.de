@@ -1,0 +1,32 @@
+// ============================================================================
+// Patterns
+// ============================================================================
+
+body,
+.footer small {
+  @extend %pattern-dark-stripes;
+}
+
+.container {
+  @extend %pattern-light-grey;
+}
+
+.footer {
+  @extend %pattern-classy-fabric;
+}
+
+#nav {
+  @extend %pattern-pw-maze-black;
+}
+
+mark {
+  @extend %pattern-mark-center;
+
+  &:before {
+    @extend %pattern-mark-left;
+  }
+
+  &:after {
+    @extend %pattern-mark-right;
+  }
+}

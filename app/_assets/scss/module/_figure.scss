@@ -2,7 +2,8 @@
 // Figures with images
 // ============================================================================
 
-figure.image-figure {
+.image-figure {
+  @include grid-span(8, 1, 8);
   clear: both;
   float: left;
   margin-bottom: $default-margin-bottom;
@@ -14,6 +15,14 @@ figure.image-figure {
   .figure-content {
     overflow: hidden;
     position: relative;
+
+    a {
+      background: transparent;
+
+      &:hover {
+         background: transparent;
+      }
+    }
   }
 
   a {

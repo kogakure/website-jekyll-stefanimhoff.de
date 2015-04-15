@@ -28,16 +28,27 @@
 
 // 204x204, 12 KB (Meta Footer)
 %pattern-classy-fabric {
-  background-color: $footer-meta-background;
   background-image: url("/assets/images/css/patterns/classy_fabric_@2X.png");
   background-size: 102px 102px;
 }
 
 // 100x100, 1 KB (Footer)
 %pattern-dark-stripes {
-  background-color: $body-background;
   background-image: url("/assets/images/css/patterns/dark_stripes_@2X.png");
   background-size: 50px 50px;
+}
+
+// 602x1242, 4 KB (Content)
+%pattern-light-grey {
+  background-image: url('/assets/images/css/patterns/light_grey_@2X.png');
+  background-size: 301px 621px;
+}
+
+// 92x46, < 1 KB (Off-Canvas Navigation)
+%pattern-pw-maze-black {
+  background-color: $nav-background;
+  background-image: url("/assets/images/css/patterns/pw_maze_black_@2X.png");
+  background-size: 46px 23px;
 }
 
 // 824x824, 4 KB (Homepage: Work)
@@ -47,25 +58,11 @@
   background-size: 412px 412px;
 }
 
-// 602x1242, 4 KB (Content background)
-%pattern-light-grey {
-  background-color: $content-background;
-  background-image: url('/assets/images/css/patterns/light_grey_@2X.png');
-  background-size: 301px 621px;
-}
-
 // 32x32, < 1 KB (Homepage: Martial Arts)
 %pattern-nami {
   background-color: #090909;
   background-image: url("/assets/images/css/patterns/nami_@2X.png");
   background-size: 16px 16px;
-}
-
-// 92x46, < 1 KB (Off canvas navigation)
-%pattern-pw-maze-black {
-  background-color: $nav-background;
-  background-image: url("/assets/images/css/patterns/pw_maze_black_@2X.png");
-  background-size: 46px 23px;
 }
 
 // 200x200, < 1 KB (Homepage: Movies)
@@ -82,7 +79,6 @@
   background-size: 200px 200px;
 }
 
-
 // 200x200, 2 KB (Homepage: Introvert, Recommendations)
 %pattern-wavegrid {
   background-color: #eeeeee;
@@ -90,6 +86,18 @@
   background-size: 100px 100px;
 }
 
+%pattern-mark-center {
+  background-image: url("/assets/images/css/mark-center.png");
+  background-size: 25px 21px;
+}
+
+%pattern-mark-left {
+  background-image: url("/assets/images/css/mark-left.png");
+}
+
+%pattern-mark-right {
+  background-image: url("/assets/images/css/mark-right.png");
+}
 
 // Image Replacement (Kellum Method)
 // ---------------------------------

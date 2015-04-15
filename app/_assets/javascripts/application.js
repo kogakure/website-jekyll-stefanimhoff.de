@@ -23,6 +23,9 @@ if ('querySelector' in document && 'addEventListener' in window) {
     FastClick.attach(document.body);
     fitVids('.container');
 
+    // Show navigation handle
+    navigation.showNavigationHandle();
+
     // Navigation menu event listeners
     triggerButton.addEventListener('click', navigation.toggleNavigation);
     closeButton.addEventListener('click', navigation.closeNavigation);

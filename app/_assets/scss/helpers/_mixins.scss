@@ -2,6 +2,24 @@
 // Mixins
 // ============================================================================
 
+// Image masks
+// ----------------------------------------------------------------------------
+@mixin mask-image($img, $repeat: no-repeat) {
+  width: image-width($img);
+  height: image-height($img);
+  @include experimental(mask-image, image-url($img), -webkit, -moz, -o, -ms);
+  @include experimental(mask-repeat, $repeat, -webkit, -moz, -o, -ms);
+}
+
+// Box with shadow
+// ----------------------------------------------------------------------------
+@mixin shadow-box($border: #ffffff .5em solid, $shadow: rgba(#000000, .15) 0 1px 4px, $border-radius: .3em) {
+  border-radius: $border-radius;
+  border: $border;
+  box-shadow: $shadow;
+  box-sizing: border-box;
+}
+
 // ::selection
 // ----------------------------------------------------------------------------
 @mixin selection($bg, $color: inherit, $text-shadow: none) {
@@ -47,7 +65,7 @@
 // Values: none, antialiased (default), subpixel-antialiased
 //
 @mixin font-smoothing($value: antialiased) {
-  -webkit-font-smoothing: $value !important;
+  font-smoothing: $value !important;
 }
 
 // Link Colors (copied from Compass)

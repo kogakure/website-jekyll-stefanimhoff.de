@@ -1,2 +1,1 @@
---ignore-dir=.pygments-cache/
---ignore-dir=public/
+--ignore-dir=build/

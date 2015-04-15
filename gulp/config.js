@@ -15,6 +15,12 @@ module.exports = {
         baseDir: [development, build, src]
       },
       port: 9999,
+      ui: {
+        port: 9997,
+        weinre: {
+          port: 9996
+        }
+      },
       open: false,
       files: [
         developmentAssets + '/css/*.css',
@@ -32,6 +38,9 @@ module.exports = {
       },
       port: 9998,
       open: false,
+      notify: {
+        styles: [ 'display: hidden; padding: 5px 15px; font-family: sans-serif; position: fixed; font-size: 0.9em; z-index: 9999; left: 0px; top: 0px; border-bottom-right-radius: 5px; margin: 0px; color: white; text-align: center; background-color: rgb(27, 32, 50);' ]
+      }
     }
   },
   jekyll: {
@@ -54,7 +63,6 @@ module.exports = {
       compass: false,
       bundleExec: true,
       lineNumbers: true,
-      sourcemap: true,
       sourcemapPath: '../../_assets/scss'
     }
   },
@@ -88,7 +96,9 @@ module.exports = {
     sass:    srcAssets + '/scss/**/*.{sass,scss}',
     scripts: srcAssets + '/javascripts/**/*.js',
     images:  srcAssets + '/images/**/*',
-    svg:     'vectors/*.svg'
+    svg:     'vectors/*.svg',
+    loadcss: src + '/_bower_components/loadcss/loadCSS.js',
+    criticalcss: developmentAssets + '/css/critical.css'
   },
   scripts: {
     src:  srcAssets + '/javascripts/application.js',
@@ -107,6 +117,13 @@ module.exports = {
     src: production + '/**/*.{html,xml,json,css,js}',
     dest: production,
     options: {}
+  },
+  combinemediaqueries: {
+    src: developmentAssets + '/css/*.css',
+    dest: developmentAssets+ '/css/',
+    options: {
+      log: true
+    }
   },
   copyfonts: {
     development: {
@@ -167,6 +184,18 @@ module.exports = {
   delete: {
     src: [developmentAssets]
   },
+  loadcss: {
+    src: src + '/_bower_components/loadcss/loadCSS.js',
+    dest: src + '/_includes/critical/',
+    options: {}
+  },
+  criticalcss: {
+    src: developmentAssets + '/css/critical.css',
+    dest: src + '/_includes/critical/',
+    options: {
+      keepSpecialComments: 0
+    }
+  },
   optimize: {
     css: {
       src:  developmentAssets + '/css/*.css',
@@ -185,7 +214,7 @@ module.exports = {
       dest: productionAssets + '/images/',
       options: {
         optimizationLevel: 3,
-        progessive: true,
+        progressive: true,
         interlaced: true
       }
     },
@@ -193,7 +222,11 @@ module.exports = {
       src: production + '/**/*.html',
       dest: production,
       options: {
-        collapseWhitespace: true
+        collapseWhitespace: true,
+        conservativeCollapse: true,
+        removeComments: true,
+        minifyJS: true,
+        minifyCSS: true
       }
     }
   },
@@ -208,10 +241,6 @@ module.exports = {
       entries:    './' + srcAssets + '/javascripts/application.js',
       dest:       developmentAssets + '/js',
       outputName: 'application.js'
-    }, {
-      entries:    './' + srcAssets + '/javascripts/head.js',
-      dest:       developmentAssets + '/js',
-      outputName: 'head.js'
     }]
   },
   rsync: {

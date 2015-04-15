@@ -87,7 +87,7 @@ $header-background-position: left center; // THEME
 // Media Queries, Breakpoints
 // ----------------------------------------------------------------------------
 
-$iphone-width:               (screen) (max-width 480px);
+$iphone-width:               (screen) (max-device-width 480px);
 
 // Content
 $content-medium:             650px;
@@ -153,19 +153,19 @@ $ms-ratio:                    $golden; // Standard
 $normal:                      400;
 $bold:                        700;
 
-// Font families
-$base-font-family:            'Gentium Basic', Georgia, serif;
-$base-font-sans:              'Yanone Kaffeesatz', Arial, Helvetica, sans-serif;
-$base-font-mono:              Menlo, Monaco, 'Andale Mono', 'Lucida console', 'Courier New', monospace;
+// Typefaces
+$base-font-family:            'Gentium Basic', 'Palatino', 'Georgia', 'Droid Serif', serif;
+$base-font-sans:              'Yanone Kaffeesatz', 'DIN Condensed', 'Roboto Condensed', 'Droid Sans', 'Segoe UI 8', Arial, Helvetica, sans-serif;
+$base-font-mono:              'Menlo', Monaco, 'Droid Sans Mono', 'Andale Mono', 'Lucida Console', 'Courier New', monospace;
 $base-font-japanese:          'Hiragino Maru Gothic Pro', sans-serif;
 
-// Base sizes
+// Base size and line-height
 $font-unit:                   1em;
 $base-font-size:              modular-scale(1); // 18px
 $base-line-height:            1.5;
 $base-font-weight:            $normal;
 
-// Headlines
+// Headline sizes
 $font-scale-h1:               modular-scale(6); // 68px
 $font-scale-h2:               modular-scale(4); // 42px
 $font-scale-h3:               modular-scale(2); // 26px

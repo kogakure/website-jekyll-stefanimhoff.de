@@ -4,7 +4,7 @@
 
 .footer {
   @extend %sans-font;
-  @extend %pattern-classy-fabric;
+  background-color: $footer-meta-background;
   color: rgba($white, 0.25);
   padding-top: 1.5em;
 
@@ -22,7 +22,7 @@
   }
 
   small {
-    @extend %pattern-dark-stripes;
+    background-color: $body-background;
     color: rgba($white, 0.3);
     display: block;
     margin-top: $default-margin-top;

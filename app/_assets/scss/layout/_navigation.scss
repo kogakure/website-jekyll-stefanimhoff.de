@@ -11,118 +11,47 @@
 }
 
 .container {
+  backface-visibility: hidden;
   position: relative;
+  right: 0;
+  transform: translate3d(0, 0, 0);
+  transition: $animation-off-screen-menu;
   width: 100%;
 }
 
-// Navigationsmenü (Basis Version without JavaScript)
+// Navigation (Basis Version without JavaScript)
 // ----------------------------------------------------------------------------
 #nav {
-  @extend %pattern-pw-maze-black;
+  backface-visibility: hidden;
+  background-color: $nav-background;
   overflow: hidden;
   position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 200;
+  right: 0;
+  width: 230px;
 
   .nav-close-btn {
     @extend %sans-font;
     @include link-colors($white, $nav-link-color-hover, $white, $white, $white);
     border: 0;
-    display: none;
-    padding: 15px;
+    display: block;
+    font-size: 12px;
+    line-height: 2.25;
+    padding: 5px 15px;
     position: absolute;
     right: 1em;
+    text-shadow: 0 1px 1px $black;
     top: 15px;
 
     span {
       @extend %visually-hidden;
     }
   }
-
-  // If not the target, menu goes away
-  &:not(:target) {
-    height: 0;
-    z-index: 1;
-  }
-
-  // If target, show close button
-  &:target {
-    .nav-close-btn {
-      display: block;
-    }
-  }
 }
 
-// Navigation menu (JavaScript)
-// ----------------------------------------------------------------------------
-// Modernizr: js
-.js {
-  #nav {
-    box-shadow: inset 5px 5px 10px rgba($black, 0.85);
-    height: 100%;
-    right: -230px;
-    width: 230px;
-
-    .nav-close-btn {
-      @extend %sans-font;
-      @include link-colors($white, $nav-link-color-hover, $white, $white, $white);
-      border: 0;
-      display: block;
-      font-size: 12px;
-      line-height: 2.25;
-      padding: 15px;
-      position: absolute;
-      right: 1em;
-      text-shadow: 0 1px 1px $black;
-      top: 15px;
-
-      span {
-        @extend %visually-hidden;
-      }
-    }
-  }
-
-  .navigation-is-open {
-    #nav {
-      height: 100%;
-      right: 0;
-    }
-
-    .container {
-      right: 230px;
-    }
-  }
-}
-
-// Navigation menu (JavaScript and CSS transform3D and CSS transitons)
-// ----------------------------------------------------------------------------
-// Modernizr: csstransform3d, csstransitions
-.csstransforms3d.csstransitions.js {
-  #nav {
-    backface-visibility: hidden;
-    right: 0;
-    transform: translate3d(230px, 0, 0);
-    transform-origin: 50% 0%;
-    transition: $animation-off-screen-menu;
-  }
-
+// Navigation is open
+.navigation-is-open {
   .container {
-    backface-visibility: hidden;
-    right: 0;
-    transform: translate3d(0, 0, 0);
-    transition: $animation-off-screen-menu;
-  }
-
-  // Navigation is open
-  .navigation-is-open {
-    #nav {
-      transform: translate3d(0, 0, 0);
-    }
-
-    .container {
-      transform: translate3d(-230px, 0, 0);
-    }
+    transform: translate3d(-230px, 0, 0);
   }
 }
 
@@ -134,7 +63,7 @@
   font-weight: 200;
   letter-spacing: 0.1em;
   list-style: none;
-  margin: 30px 40px;
+  margin: 22px 40px;
 
   li {
     margin-bottom: 0.3em;

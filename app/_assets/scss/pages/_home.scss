@@ -55,12 +55,20 @@
     .grid-recently {
       @include grid-span(4, 9, 12);
 
+      ul {
+        line-height: 1.2;
+      }
+
+      li {
+        margin-bottom: 0.5em;
+      }
+
       @include breakpoint($homepage-sections-fullsize) {
         @include grid-span(12);
 
         ul {
+          line-height: 1.2;
           list-style: none;
-          margin-bottom: 0;
         }
       }
     }
@@ -148,43 +156,43 @@
   }
 
   // Books
-  .book-lover {
-    $book-lover-color: #616161;
+  .books {
+    $books-color: #616161;
 
     @extend %pattern-type;
     border-top: 1px solid rgba($dark-grey, 0.2);
     color: $white;
 
     h2 {
-      color: $book-lover-color;
+      color: $books-color;
     }
 
     a {
-      @include link-colors($book-lover-color, $white, $book-lover-color, $book-lover-color, $book-lover-color);
+      @include link-colors($books-color, $white, $books-color, $books-color, $books-color);
 
       &:hover {
-        border-color: $book-lover-color;
+        border-color: $books-color;
       }
     }
   }
 
   // Movies
-  .movie-lover {
-    $movie-lover-color: #e8c53d;
+  .movies {
+    $movies-color: #e8c53d;
 
     @extend %pattern-px;
     border-top: 1px solid rgba($dark-grey, 0.2);
     color: $white;
 
     h2 {
-      color: $movie-lover-color;
+      color: $movies-color;
     }
 
     a {
-      @include link-colors($movie-lover-color, $white, $movie-lover-color, $movie-lover-color, $movie-lover-color);
+      @include link-colors($movies-color, $white, $movies-color, $movies-color, $movies-color);
 
       &:hover {
-        border-color: $movie-lover-color;
+        border-color: $movies-color;
       }
     }
   }
