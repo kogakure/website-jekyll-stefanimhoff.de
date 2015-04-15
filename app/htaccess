@@ -56,7 +56,7 @@ Redirect Gone /projekte/sushi-dreams/
 # Redirects (Permanent)
 Redirect 301 /+/                                                                 https://plus.google.com/104687479698350625994/
 
-# Redirects mit URL-Änderung
+# Redirects with URL changes
 Redirect 301 /notiz/das-koi-design-inspiration-und-idee                          /2007/koi-design
 Redirect 301 /notiz/django-folder-fuer-mac-os-x                                  /2007/django-folder-mac-osx
 Redirect 301 /notiz/django-folder-mac-osx                                        /2007/django-folder-mac-osx
@@ -78,7 +78,7 @@ Redirect 301 /notiz/django-webdesigner                                          
 Redirect 301 /notiz/2010-jahresrueckblick                                        /2010/jahresrueckblick
 Redirect 301 /notiz/mein-setup-2013                                              /2013/mein-setup
 
-# Redirects der alten Seiten
+# Redirects of old pages
 Redirect 301 /notiz/volume-reparieren-unter-mac-osx                              /2007/volume-reparieren-unter-mac-osx
 Redirect 301 /notiz/subversion-1-theorie-und-funktionsweise                      /2007/subversion-1-theorie-und-funktionsweise
 Redirect 301 /notiz/domains-extern-hosten                                        /2007/domains-extern-hosten
