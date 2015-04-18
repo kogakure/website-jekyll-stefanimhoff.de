@@ -2,7 +2,7 @@
 
 {% capture page_url %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
 
-{% capture page_title %}{% if page.title %}{{ page.title | strip_html }} – {% endif %}{{ site.data.settings.title | strip_html }}{% endcapture %}
+{% capture page_title %}{% if page.homepage %}{{ site.data.settings.homepage_title }}{% else %}{% if page.title %}{{ page.title | strip_html | replace: '&nbsp;',' ' }} ❀ {% endif %}{{ site.data.settings.title | strip_html | replace: '&nbsp;',' ' }}{% endif %}{% endcapture %}
 
 {% capture page_description %}{% if page.description %}{{ page.description }}{% else %}{{ site.data.settings.seo.description }}{% endif %}{% endcapture %}
 

@@ -44,8 +44,9 @@ module Jekyll
       title_prefix             = site.config['category_title_prefix'] || 'Category: '
       self.data['title']       = "#{title_prefix}#{title}"
       # Set the meta-description for this page.
-      meta_description_prefix  = site.config['category_meta_description_prefix'] || 'Category: '
+      meta_description_prefix  = site.config['category_meta_description_prefix'] || 'An overview of all articles in the category: '
       self.data['description'] = "#{meta_description_prefix}#{title}"
+      self.data['robots'] = "noindex,follow"
     end
 
   end

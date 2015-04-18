@@ -1,10 +1,12 @@
 ---
 layout: {{ layout }}
+language: "en"
 title: {{ title }}
-date: {{ date }}
-author: "Stefan Imhoff"
-published: true
 excerpt: ""
+description: ""
+og_image: ""
+author: "Stefan Imhoff"
+date: {{ date }}
 categories:
 tags:
 ---

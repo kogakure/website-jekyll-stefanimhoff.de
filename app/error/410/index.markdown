@@ -2,6 +2,7 @@
 layout: error
 title: Page missing!
 error_page_410: true
+robots: "noindex,follow"
 ---
 
 ## Doh! This stuff is missing!

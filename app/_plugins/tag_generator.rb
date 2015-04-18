@@ -44,6 +44,7 @@ module Jekyll
       # Set the meta-description for this page.
       meta_description_prefix  = site.config['tag_meta_description_prefix'] || 'Tag: '
       self.data['description'] = "#{meta_description_prefix}#{tag}"
+      self.data['robots'] = "noindex,follow"
     end
 
   end

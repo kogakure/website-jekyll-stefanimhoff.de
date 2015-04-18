@@ -1,7 +1,10 @@
 ---
 layout: {{ layout }}
-language: "de"
+language: "en"
 title: {{ title }}
+excerpt: ""
+description: ""
+og_image: ""
 author: "Stefan Imhoff"
 categories:
 tags:
