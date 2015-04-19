@@ -154,8 +154,10 @@ $normal:                      400;
 $bold:                        700;
 
 // Typefaces
-$base-font-family:            'Gentium Basic', 'Palatino', 'Georgia', 'Droid Serif', serif;
-$base-font-sans:              'Yanone Kaffeesatz', 'DIN Condensed', 'Roboto Condensed', 'Droid Sans', 'Segoe UI 8', Arial, Helvetica, sans-serif;
+$base-font-serif:             'Palatino', 'Georgia', 'Droid Serif', serif;
+$base-font-serif-wf:          'Gentium Basic', 'Palatino', 'Georgia', 'Droid Serif', serif;
+$base-font-sans:              'DIN Condensed', 'Roboto Condensed', 'Droid Sans', 'Segoe UI 8', Arial, Helvetica, sans-serif;
+$base-font-sans-wf:           'Yanone Kaffeesatz', 'DIN Condensed', 'Roboto Condensed', 'Droid Sans', 'Segoe UI 8', Arial, Helvetica, sans-serif;
 $base-font-mono:              'Menlo', Monaco, 'Droid Sans Mono', 'Andale Mono', 'Lucida Console', 'Courier New', monospace;
 $base-font-japanese:          'Hiragino Maru Gothic Pro', sans-serif;
 

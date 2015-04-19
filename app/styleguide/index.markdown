@@ -416,8 +416,8 @@ Das Eis zu betreten ist **verboten**!
 
 Das Element `s` wird verwendet um Inhalte auszuzeichnen, die nicht länger akturat oder relevant sind. Um in Dokumenten zu markieren, dass ein Text entfernt wurde, ist das Element `del` zu verwenden.
 
-<s>Empfohlene Preisempfehlung: 3,99 € pro Flasche</s><br>
-<strong>Jetzt für nur noch 2,99 € pro Flasche! </strong>
+<p><s>Empfohlene Preisempfehlung: 3,99 € pro Flasche</s><br>
+<strong>Jetzt für nur noch 2,99 € pro Flasche! </strong></p>
 
 {% highlight html %}
 <s>Empfohlene Preisempfehlung: 3,99 € pro Flasche</s>
@@ -497,7 +497,7 @@ Drücke <kbd>⌘ Cmd</kbd> + <kbd>⇧ Shift</kbd> + <kbd>3</kbd>
 
 Das Element `sup` kennzeichnet Superskript und das Element `sub` Subskript.
 
-Die Koordinate des <var>i</var>ten Punktes ist (<var>x<sub><var>i</var></sub></var>, <var>y<sub><var>i<var></sub></var>). Der zehnte Punkt hat die Coordinate (<var>x<sub>10</sub></var>, <var>y<sub>10</sub></var>). Dies ist nur etwas weiterer Text der nur dafür da ist zu prüfen, ob die Zeilenhöhe stimmt.
+Die Koordinate des <var>i</var>ten Punktes ist (<var>x<sub><var>i</var></sub></var>, <var>y<sub><var>i</var></sub></var>). Der zehnte Punkt hat die Coordinate (<var>x<sub>10</sub></var>, <var>y<sub>10</sub></var>). Dies ist nur etwas weiterer Text der nur dafür da ist zu prüfen, ob die Zeilenhöhe stimmt.
 
 Mathe ist eine nette Sache, manchmal möchte man mitten im Text eine Formel haben. Und sogar Berechnungen wie diese f(<var>x</var>, <var>n</var>) = log<sub>4</sub><var>x</var><sup><var>n</var></sup> sollte funktionieren und nicht die Zeilenhöhe verändern oder den Textfluß verändern.
 

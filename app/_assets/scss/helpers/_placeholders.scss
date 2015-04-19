@@ -3,8 +3,16 @@
 // ============================================================================
 
 // Font
-%base-font {
-  font-family: $base-font-family;
+%serif-font-wf {
+  font-family: $base-font-serif-wf;
+}
+
+%serif-font {
+  font-family: $base-font-serif;
+}
+
+%sans-font-wf {
+  font-family: $base-font-sans-wf;
 }
 
 %sans-font {
@@ -16,7 +24,7 @@
 }
 
 %japanese-font {
-  font-family: $base-font-japanese;
+  font-family: $base-font-japanese !important;
 }
 
 %icon-font {

@@ -8,7 +8,6 @@
 // [^1]: Description
 
 sup a.footnote {
-  @extend %sans-font;
   @include link-colors($dark-grey, $dark-grey, $dark-grey, $dark-grey, $dark-grey);
   background: transparent;
   cursor: help;
@@ -22,7 +21,6 @@ sup a.footnote {
 }
 
 .footnotes {
-  @extend %sans-font;
   clear: both;
   color: lighten($dark-grey, 40);
   font-size: modular-scale(0);

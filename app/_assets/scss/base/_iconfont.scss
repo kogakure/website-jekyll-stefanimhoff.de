@@ -23,6 +23,7 @@ $iconfont-menu: "\f10b";
 $iconfont-question: "\f10c";
 $iconfont-quill: "\f10d";
 $iconfont-tag: "\f10e";
+$iconfont-twitter: "\f110";
 $iconfont-xing: "\f10f";
 
 // Font Face
@@ -30,11 +31,11 @@ $iconfont-xing: "\f10f";
 
 @font-face {
   font-family: "iconfont";
-  src: url("/assets/fonts/iconfont_aec96082ae659fe0160e31f3955a5e19.eot");
-  src: url("/assets/fonts/iconfont_aec96082ae659fe0160e31f3955a5e19.eot?#iefix") format("embedded-opentype"),
-       url("/assets/fonts/iconfont_aec96082ae659fe0160e31f3955a5e19.woff") format("woff"),
-       url("/assets/fonts/iconfont_aec96082ae659fe0160e31f3955a5e19.ttf") format("truetype"),
-       url("/assets/fonts/iconfont_aec96082ae659fe0160e31f3955a5e19.svg#iconfont") format("svg");
+  src: url("/assets/fonts/iconfont_2975f52b05f6e53b672a88c394a7ba86.eot");
+  src: url("/assets/fonts/iconfont_2975f52b05f6e53b672a88c394a7ba86.eot?#iefix") format("embedded-opentype"),
+       url("/assets/fonts/iconfont_2975f52b05f6e53b672a88c394a7ba86.woff") format("woff"),
+       url("/assets/fonts/iconfont_2975f52b05f6e53b672a88c394a7ba86.ttf") format("truetype"),
+       url("/assets/fonts/iconfont_2975f52b05f6e53b672a88c394a7ba86.svg#iconfont") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -42,7 +43,7 @@ $iconfont-xing: "\f10f";
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "iconfont";
-    src: url("/assets/fonts/iconfont_aec96082ae659fe0160e31f3955a5e19.svg#iconfont") format("svg");
+    src: url("/assets/fonts/iconfont_2975f52b05f6e53b672a88c394a7ba86.svg#iconfont") format("svg");
   }
 }
 
@@ -67,6 +68,7 @@ $iconfont-xing: "\f10f";
 .icon-question:before,
 .icon-quill:before,
 .icon-tag:before,
+.icon-twitter:before,
 .icon-xing:before {
   display: inline-block;
   font-family: "iconfont";
@@ -100,4 +102,5 @@ $iconfont-xing: "\f10f";
 .icon-question:before { content: "\f10c"; }
 .icon-quill:before { content: "\f10d"; }
 .icon-tag:before { content: "\f10e"; }
+.icon-twitter:before { content: "\f110"; }
 .icon-xing:before { content: "\f10f"; }

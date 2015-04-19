@@ -24,7 +24,6 @@
   }
 
   .nav-btn {
-    @extend %sans-font;
     @include link-colors($white, $nav-link-color-hover, $white, $white, $white);
     border: 0;
     font-size: 18px;
@@ -115,7 +114,6 @@
   }
 
   .site-info {
-    @extend %sans-font;
     @include enable-ligatures;
     @include grid-span(8, 3);
     color: $header-headline;

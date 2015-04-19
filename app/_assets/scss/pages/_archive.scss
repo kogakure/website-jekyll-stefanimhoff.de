@@ -28,7 +28,6 @@
     }
 
     time {
-      @extend %sans-font;
       @include grid-span(2, 1, 12);
       color: rgba($dark-grey, 0.3);
       line-height: 2.2;
