@@ -1,0 +1,67 @@
+/* ==================================== */
+/*  List                                */
+/* ==================================== */
+
+ol {
+  list-style: decimal;
+  margin-bottom: $default-spacing-bottom;
+
+  .article-body & {
+    margin-left: 0;
+
+    @media screen and (width <= $content-medium) {
+      margin-left: $default-spacing-left;
+    }
+  }
+}
+
+ol ol {
+  list-style: lower-latin;
+  margin-bottom: 0;
+  margin-left: $default-spacing-left;
+
+  .article-body & {
+    margin-bottom: 0;
+    margin-left: $default-spacing-left;
+  }
+}
+
+ul {
+  list-style: disc;
+  margin-bottom: $default-spacing-bottom;
+
+  .article-body & {
+    margin-left: 0;
+
+    @media screen and (width <= $content-medium) {
+      margin-left: $default-spacing-left;
+    }
+  }
+}
+
+ul ul {
+  list-style: circle;
+  margin-bottom: 0;
+  margin-left: $default-spacing-left;
+
+  .article-body & {
+    margin-bottom: 0;
+    margin-left: $default-spacing-left;
+  }
+}
+
+dl {
+  margin-bottom: $default-spacing-bottom;
+}
+
+dt {
+  font-weight: $bold;
+}
+
+dt + dd {
+  margin-bottom: $default-spacing-bottom;
+}
+
+dd {
+  margin-left: 0;
+}

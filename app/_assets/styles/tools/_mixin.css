@@ -1,0 +1,35 @@
+/* ==================================== */
+/*  Mixins                              */
+/* ==================================== */
+
+/* ::selection */
+@define-mixin selection $bg, $color: inherit, $text-shadow: none {
+  * {
+    &::selection {
+      background: $bg;
+      color: $color;
+      text-shadow: $text-shadow;
+    }
+  }
+}
+
+/* Link Colors */
+@define-mixin link-colors $normal, $hover, $active, $visited, $focus {
+  color: $normal;
+  
+  &:visited {
+    color: $visited;
+  }
+  
+  &:focus {
+    color: $focus;
+  }
+  
+  &:hover {
+    color: $hover;
+  }
+  
+  &:active {
+    color: $active;
+  }
+}

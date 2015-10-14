@@ -1,0 +1,59 @@
+/* ==================================== */
+/*  Quote                               */
+/* ==================================== */
+
+blockquote {
+  font-style: italic;
+  margin: $default-spacing;
+
+  footer strong:before {
+    content: "❦ ";
+    font-family: $base-font-serif;
+    font-style: normal;
+  }
+}
+
+cite {
+  font-style: italic;
+}
+
+blockquote cite:before {
+  content: "–";
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+/* Inline quotes */
+q {
+  font-style: italic;
+}
+
+/* @include q-quotes(de, "„", "“", "‚", "‘"); Alternative German quotes */
+:lang(de) > q,
+.article-body q[lang|=de] {
+  quotes: "»" "«" "›" "‹";
+}
+
+:lang(en) > q,
+.article-body q[lang|=en] {
+  quotes: "“" "”" "‘" "’";
+}
+
+:lang(fr) > q,
+.article-body q[lang|=fr] {
+  quotes: "« " " »" "“" "”";
+}
+
+:lang(ja) > q,
+.article-body q[lang|=ja] {
+  font-style: normal;
+  quotes: "「" "」," "『" "』";
+}
+
+q:before {
+  content: open-quote;
+}
+
+q:after {
+  content: close-quote;
+}

@@ -4,6 +4,7 @@ title: "Styleguide"
 description: "Der Styleguide dieser Website: Ein umfangreicher Überblick in das Design von Überschriften, Absätze, Sektionen-Trenner, preformatierter Text, Zitate, Randbemerkungen, Listen, Textgestaltung, Tabellen, Bilder und Abbildungen, Codeblöcke und Fußnoten auf dieser Website."
 author: "Stefan Imhoff"
 language: "de"
+widont: false
 header: false
 ---
 
@@ -251,26 +252,6 @@ And       the mome     raths            outgrabe.
 {% endverse %}{% endraw %}
 {% endhighlight %}
 
-## Randbemerkungen
-
-{% aside aside %}
-<h4>Überschrift</h4>
-<p>Dies ist eine Anmerkung in der Seitenleiste im linken Rand</p>
-{% endaside %}
-
-{% aside aside-left %}
-<h4>Überschrift</h4>
-<p>Dies ist eine Anmerkung in der Seitenleiste im rechten Rand</p>
-{% endaside %}
-
-Manchmal möchte man mitten im Text etwas erklären, was nicht direkt zum Text gehört, aber das zum Verständnis des Textes beitragen kann. Diese Randbemerkungen wurden im Print üblicherweise in den Rand der Publikation gedruckt und hatten eine kleinere Schrift. Manchmal kann man diese aber auch im Text selbst stehen sehen, und sie werden durch eine andere Farbe oder einen Rand als Nebenbemerkung gekennzeichnet. Auf dieser Website stehen die Randbemerkungen (`aside`) im Rand und zwar wahlweise im linken oder rechten Rand. Als Überschrift (wenn nötig) sollte minimal eine `h4` verwendet werden.
-
-{% highlight html linenos %}
-{% raw %}{% aside aside-left %}
-<h4>Überschrift</h4>
-<p>Dies ist eine Anmerkung in der Seitenleiste im rechten Rand</p>
-{% endaside %}{% endraw %}
-{% endhighlight %}
 
 ## Hinweis
 
@@ -384,7 +365,7 @@ Es gibt eine Vielzahl von Inline-HTML-Elementen, die überall in anderen Element
 
 Das Element `a` wird verwendet um Text zu verlinken, ob auf eine andere Seite, ein benanntes Fragment der aktuellen Seite oder auf einen anderen Ort im Internet:
 
-[Gehe zur Startseite zurück](/),  [Springe zum Anfang der Seite](#top) oder besuche eine [fantastische Website im Internet](http://kogakure.de).
+[Gehe zur Startseite zurück]({{ site.url }}/),  [Springe zum Anfang der Seite](#top) oder besuche eine [fantastische Website im Internet](http://kogakure.de).
 
 Dies ist ein Link mit einem <a href="http://www.google.de/" data-tooltip="Dies ist der Text des Tooltips">Tooltip</a>.
 
@@ -1021,9 +1002,12 @@ article > div {
 }
 {% endhighlight %}
 
+### Download-Block
+
+{% download https://github.com/kogakure/stefanimhoff.de-jekyll/ "View Source on GitHub" %}
 
 [^1]: Ein Styleguide (oder deutsch Gestaltungsrichtlinie) beschreibt, wie bestimmte Elemente eines Druckerzeugnisses oder einer Website zu gestalten sind. Diese Richtlinien sollen ein einheitliches Erscheinungsbild verschiedener Kommunikationsmittel einer Institution oder Firma, z. B. Werbe- und Informationsmaterial, Geschäftsbriefe oder Internetauftritte, gewährleisten und so die Bildung einer Corporate Identity ermöglichen. Daneben werden Styleguides auch für die Software-Erstellung oder Produkte allgemein eingesetzt; auch hier ist das Ziel: Produkte sollen als zusammengehörig wahrgenommen werden und ggf. auch mit der verbundenen Marke assoziiert werden.
-[^2]: Der American Standard Code for Information Interchange (ASCII, alternativ US-ASCII, oft [ˈæski] ausgesprochen) ist eine 7-Bit-Zeichenkodierung; sie entspricht der US-Variante von ISO 646 und dient als Grundlage für spätere, auf mehr Bits basierende Kodierungen für Zeichensätze. Die ASCII-Kodierung wurde am 17. Juni 1963 von der American Standards Association (ASA) als Standard ASA X3.4-1963 veröffentlicht und 1967 sowie zuletzt im Jahr 1968 (ANSI X3.4-1968) aktualisiert. Die Zeichenkodierung definiert 128 Zeichen, bestehend aus 33 nicht druckbaren sowie 95 druckbaren.
-[^3]: Maki-Sushi (巻き寿司, Maki-Zushi, dt. „Rollen-Sushi“) sind mit einer Bambusmatte (Makisu) gerollte Stücke. Es wird für gewöhnlich in Nori eingepackt.
-[^4]: Die Schlacht von Sekigahara (jap. 関ヶ原の戦い, Sekigahara no tatakai) am 21. Oktober 1600 stellte einen Wendepunkt in der japanischen Geschichte dar. Durch den Sieg in dieser Schlacht gelang es dem Haus Tokugawa, seine Vormachtstellung in Japan zu festigen. Im Laufe der nächsten fünfzig Jahre gab es zwar noch einige kleinere Aufstände, aber das Land wurde letztlich befriedet. Viele Historiker setzen den Übergang von der Sengoku-Zeit zur Edo-Zeit auf das Datum dieser Schlacht.
+[^2]: Der American Standard Code for Information Interchange ist eine 7-Bit-Zeichenkodierung; sie entspricht der US-Variante von ISO 646 und dient als Grundlage für spätere, auf mehr Bits basierende Kodierungen für Zeichensätze. Die ASCII-Kodierung wurde am 17. Juni 1963 von der American Standards Association (ASA) als Standard ASA X3.4-1963 veröffentlicht und 1967 sowie zuletzt im Jahr 1968 (ANSI X3.4-1968) aktualisiert. Die Zeichenkodierung definiert 128 Zeichen, bestehend aus 33 nicht druckbaren sowie 95 druckbaren.
+[^3]: Maki-Sushi (<span lang="ja">巻き寿司</span>, Maki-Zushi, dt. „Rollen-Sushi“) sind mit einer Bambusmatte (Makisu) gerollte Stücke. Es wird für gewöhnlich in Nori eingepackt.
+[^4]: Die Schlacht von Sekigahara (jap. <span lang="ja">関ヶ原の戦い</span>, Sekigahara no tatakai) am 21. Oktober 1600 stellte einen Wendepunkt in der japanischen Geschichte dar. Durch den Sieg in dieser Schlacht gelang es dem Haus Tokugawa, seine Vormachtstellung in Japan zu festigen. Im Laufe der nächsten fünfzig Jahre gab es zwar noch einige kleinere Aufstände, aber das Land wurde letztlich befriedet. Viele Historiker setzen den Übergang von der Sengoku-Zeit zur Edo-Zeit auf das Datum dieser Schlacht.
 

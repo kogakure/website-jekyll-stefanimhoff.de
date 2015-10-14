@@ -5,10 +5,15 @@
   "author": "Stefan Imhoff",
   "seo": {
     "keywords": "Stefan Imhoff, Hamburg, Frontend, Engineer",
-    "description": "Front-End Engineer @ XING, Developer, Designer and Martial Artist."
+    "description": "Front-End Engineer @ XING, Developer, Designer and Martial&nbsp;Artist.",
+    "description_de": "Frontend Engineer @ XING, Entwickler, Designer und Kampfkünstler."
   },
   "social": {
     "feedburner_url": "http://feeds.feedburner.com/stefanimhoff",
+    "feed_title_en": "Stefan Imhoff (English Entries)",
+    "feedburner_url_en": "http://feeds.feedburner.com/stefanimhoff/en",
+    "feed_title_de": "Stefan Imhoff (Deutsche Beiträge)",
+    "feedburner_url_de": "http://feeds.feedburner.com/stefanimhoff/de",
     "twitter": "@kogakure",
     "googleplus": "104687479698350625994"
   },
@@ -23,7 +28,7 @@
   },
   "about": {
     "headline": "About me",
-    "text": "*Stefan Imhoff*, Front-End Engineer at [XING](https://www.xing.com/profile/Stefan_Imhoff). Designer, Developer and Martial Artist. Loves [Ninja &amp; Ninjutsu](http://kogakure.de/), Bujinkan, [Calisthenics](https://flipboard.com/@kogakure/fitness-calisthenics-ceo3hg8by), [Movies](http://www.imdb.com/user/ur15936207/ratings), [Books](https://www.goodreads.com/review/list/28460819-stefan), [Architecture](https://flipboard.com/@kogakure/architecture-interior-gkccts4cy), [Art & Design](https://flipboard.com/@kogakure/art-design-5djq9118y), Typography, Philosophy, Japan, [Japanese Tattoos](https://flipboard.com/@kogakure/irezumi-japanese-tattoo-t3anr4uby), Thunderstorm &amp; Rain, Sun, the Sea, Forests, Bamboo, [Time Lapse & Slow Motion](https://flipboard.com/@kogakure/time-lapse-slow-motion-e3hoo13ay), Kanji, Apple, Wabi&nbsp;Sabi, [Niedersächsiche Hochzeitssuppe](http://de.wikipedia.org/wiki/Hochzeitssuppe), [Haiku](/haiku/) and [Vim](https://gist.github.com/kogakure/33992)."
+    "text": "*Stefan Imhoff*, Front-End Engineer at [XING](https://www.xing.com/profile/Stefan_Imhoff). Designer, Developer and Martial Artist. Loves [Ninja&nbsp;&amp;&nbsp;Ninjutsu](http://kogakure.de/), Bujinkan, [Calisthenics](https://flipboard.com/@kogakure/fitness-calisthenics-ceo3hg8by), [Movies](http://www.imdb.com/user/ur15936207/ratings), [Books](https://www.goodreads.com/review/list/28460819-stefan), [Architecture](https://flipboard.com/@kogakure/architecture-interior-gkccts4cy), [Art&nbsp;&amp;&nbsp;Design](https://flipboard.com/@kogakure/art-design-5djq9118y), Typography, Philosophy, Japan, [Japanese Tattoos](https://flipboard.com/@kogakure/irezumi-japanese-tattoo-t3anr4uby), Thunderstorm&nbsp;&amp;&nbsp;Rain, Sun, the Sea, Forests, Bamboo, [Time Lapse&nbsp;&amp;&nbsp;Slow Motion](https://flipboard.com/@kogakure/time-lapse-slow-motion-e3hoo13ay), Kanji, Apple, Wabi&nbsp;Sabi, [Niedersächsiche Hochzeitssuppe](https://de.wikipedia.org/wiki/Hochzeitssuppe), [Haiku](/haiku/) and [Vim](https://gist.github.com/kogakure/33992)."
   },
   "socialnetworks": {
     "headline": "Elsewhere"
@@ -39,7 +44,7 @@
     },
     "books": {
       "headline": "Bookworm",
-      "text": "I love [books](https://www.goodreads.com/review/list/28460819), to be precice I love *paper* books. I can not imagine a living room without shelves of books.\n\nMost likly I inherited this passion from my grandfather, who owned over **4000** books. My books count roughly a  **1000**. I buy books ahead and my desks are always stuffed with unread books. I like classics, books about philosophy, martial arts, art &amp; desgin, architecture, typography and novels.\n\nWork-related books I read mostly digital, because they get old too fast and don’t look nice in most cases."
+      "text": "I love [books](https://www.goodreads.com/review/list/28460819-stefan), to be precise I love *paper* books. I can not imagine a living room without shelves of books.\n\nMost likly I inherited this passion from my grandfather, who owned over **4000** books. My books count roughly a  **1000**. I buy books ahead and my desks are always stuffed with unread books. I like classics, books about philosophy, martial arts, art &amp; desgin, architecture, typography and novels.\n\nWork-related books I read mostly digital, because they get old too fast and don’t look nice in most cases."
     },
     "introvert": {
       "headline": "Introvert" ,
@@ -51,7 +56,7 @@
     },
     "martialarts": {
       "headline": "Martial Artist",
-      "text": "I love martial arts, especially the Japanese. I practised Shotokan Karate for seven years and then began training **Bujinkan Budo Taijutsu**.\n\nIn [Bujinkan](http://wikipedia.org/wiki/Bujinkan) we train **nine different schools**: six **Samurai** and three **Ninja** schools, the oldest of these school is **{% since_year 618 %} years** old and the traditions where given from master to scholar for generations.\n\nThese martial arts aren’t sports, but highly efficient fighting systems, proven on the battlefields of ancient Japan.\n\nI run [a website](http://kogakure.de/) on this topic for more than {% since_year 1999 %} years. I collected knowledge about the history, arts, tools, weapons, philosophy and life of the Ninja."
+      "text": "I love martial arts, especially the Japanese. I practised Shotokan Karate for seven years and then began training **Bujinkan Budo Taijutsu**.\n\nIn [Bujinkan](http://www.wikipedia.org/wiki/Bujinkan) we train **nine different schools**: six **Samurai** and three **Ninja** schools, the oldest of these school is **{% since_year 618 %} years** old and the traditions where given from master to scholar for generations.\n\nThese martial arts aren’t sports, but highly efficient fighting systems, proven on the battlefields of ancient Japan.\n\nI run [a website](http://kogakure.de/) on this topic for more than {% since_year 1999 %} years. I collected knowledge about the history, arts, tools, weapons, philosophy and life of the Ninja."
     },
     "movies": {
       "headline": "Movie Fan",
@@ -62,7 +67,7 @@
     },
     "work": {
       "headline": "Designer &amp; Developer",
-      "text": "I work as **Front-End Engineer** at **XING** and contributed to **Jobs** (simplified design, new search), **Mobile** ([Touch](https://touch.xing.com/) and iPad hybrid app), **Profile** and the new **Groups**.\n\nI am co-creator of the idea for **XING Projects**, a job platform for freelancer. I worked on this innovation project from the beginning and helped bringing it to the XING BetaLabs program. Later it became a product on the XING platform and was build by a <abbr title=\"Dedicated Standing Team\">DST</abbr>.\n\nI won the award *Best Smart Tools & Services* at the **Prototyping Days 2013**."
+      "text": "I work as **Front-End Engineer** at **XING** and contributed to **Jobs** (simplified design, new search), **Mobile** ([Touch](https://touch.xing.com/) and iPad hybrid app), the new **Groups** and the **Adaptive Profile**.\n\nI am co-creator of the idea for **XING Projects**, a job platform for freelancer. I worked on this innovation project from the beginning and helped bringing it to the XING BetaLabs program. Later it became a product on the XING platform and was build by a team.\n\nI won the XING awards *Best Smart Tools & Services* at the **Prototyping Days 2013** and *Matterhorn Award – Growth* at **Prototyping Days 2015**."
     }
   }
 }

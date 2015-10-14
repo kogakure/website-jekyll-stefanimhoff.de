@@ -1,0 +1,149 @@
+/* ==================================== */
+/*  Text                                */
+/* ==================================== */
+
+/* Paragraphs */
+p {
+  margin-bottom: $default-spacing-bottom;
+}
+
+.article-body > p:first-child {
+  font-size: $font-scale-intro;
+  line-height: $base-line-height;
+  margin-bottom: $default-spacing-bottom;
+}
+
+
+/* Horizontale Trenner */
+hr {
+  border-bottom-width: 1px;
+  border-color: rgba($light-grey, 0.9);
+  border-left-width: 0;
+  border-right-width: 0;
+  border-style: solid;
+  border-top-width: 0;
+  height: 0;
+  margin: 2.5em;
+}
+
+
+/* Emphasis */
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: $bold;
+}
+
+
+/* Strikethrough */
+s {
+  text-decoration: line-through;
+}
+
+
+/* Definition */
+dfn {
+  border-bottom: 1px dotted $definition-color;
+  cursor: help;
+}
+
+
+/* Abbrevations */
+abbr,
+acronym {
+  cursor: help;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+}
+
+abbr[title],
+acronym[title] {
+  border-bottom-width: 0;
+}
+
+abbr.no-caps {
+  font-variant: normal;
+  text-transform: none;
+}
+
+
+/* Keyboard entry */
+kbd {
+  @extend sans-font;
+  background-color: $keyboard-background;
+  border-color: $keyboard-border;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 0 rgba($black, 0.2), 0 0 0 2px $white inset;
+  color: $dark-grey;
+  display: inline-block;
+  font-size: $font-scale-kbd;
+  font-weight: $bold;
+  line-height: 1.4;
+  padding-bottom: 0.1em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  padding-top: 0.3em;
+  text-shadow: 0 1px 0 $white;
+  white-space: nowrap;
+}
+
+
+/* Superscript/Subscript */
+sup,
+sub {
+  position: relative;
+  vertical-align: 0;
+
+  a {
+    border: 0;
+  }
+}
+
+sup {
+  bottom: 1ex;
+}
+
+sub {
+  top: 0.8ex;
+}
+
+
+/* Italic/Bold */
+i {
+  font-style: italic;
+}
+
+b {
+  font-weight: $bold;
+}
+
+
+/* Mark */
+mark {
+  background-color: $mark-background;
+  border-radius: 5px;
+  color: rgba($black, 0.75);
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+}
+
+
+/* Editing */
+ins {
+  text-decoration: underline;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* Ruby */
+ruby {
+  font-family: $base-font-japanese;
+}

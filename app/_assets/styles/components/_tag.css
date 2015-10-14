@@ -1,0 +1,71 @@
+/* ==================================== */
+/*  Tag                                 */
+/* ==================================== */
+
+.classification {
+  .tags {
+    @media screen and (width <= $header-centered) {
+      display: block;
+    }
+  }
+}
+
+.tags {
+  display: inline;
+  margin-bottom: 0;
+
+  .archive-posts & {
+    clear: both;
+    display: block;
+    lost-column: 10/12;
+    lost-move: 1/12;
+    margin-bottom: calc($default-spacing-bottom * 2);
+  }
+}
+
+.archive-tags {
+  .archive-headline {
+    @media screen and (width <= $archive-two-lines) {
+      lost-column: 10/12;
+      lost-move: 1/12;
+    }
+  }
+}
+
+.tags-item {
+  display: inline-block;
+}
+
+.tags-link {
+  background: $dark-grey;
+  border: 0;
+  border-radius: 5px;
+  color: $white;
+  font-size: $font-scale-small;
+  hyphens: manual;
+  letter-spacing: 0.1em;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &:hover {
+    background: $link-color;
+    color: $white;
+  }
+
+  .custom-underline & {
+    background-image: none;
+    color: $white;
+    text-shadow: none;
+
+    &:hover {
+      background-image: none;
+      color: $white;
+    }
+  }
+}

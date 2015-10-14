@@ -1,0 +1,130 @@
+/* ==================================== */
+/*  Custom Underline                    */
+/* ==================================== */
+
+.custom-underline {
+  a {
+    /* Underline via gradient background */
+    background-image: linear-gradient(to bottom, transparent 49%, $link-color 50%);
+    background-position: 0 88%;
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+
+    color: $link-color;
+
+    /* For non-retina screens in Safari, gradient background needs 2 pixels of height to show any underline */
+    @include breakpoint(max-resolution 1.49dppx, max-resolution 143dpi) {
+      background-size: 1px 2px;
+    }
+
+    /* Clear descendors from underline */
+    text-decoration: none;
+    text-shadow: 2px 0 $custom-underline-background, 1px 0 $custom-underline-background, -1px 0 $custom-underline-background, -2px 0 $custom-underline-background;
+
+    /* Style selected links (or else text-shadow makes it look crazy ugly) */
+    /* Pseudo selectors must go separately, or they break each other */
+    &,
+    > * {
+      &::selection {
+        background-color: $link-color;
+        color: $white;
+        text-shadow: none;
+      }
+    }
+
+    &:hover {
+      background-image: linear-gradient(to bottom, transparent 50%, color($link-color shade(6%)) 50%);
+      color: color($link-color shade(20%));
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  dt,
+  strong,
+  b {
+    a {
+      background-position: 0 89%;
+      background-size: 1px 2px;
+    }
+  }
+}
+
+.custom-underline.stripe-work a {
+  text-shadow: 2px 0 $custom-underline-work-shadow, 1px 0 $custom-underline-work-shadow, -1px 0 $custom-underline-work-shadow, -2px 0 $custom-underline-work-shadow;
+}
+
+.custom-underline.stripe-martial-arts a {
+  @mixin link-colors
+    $stripe-martial-arts-color,
+    $white,
+    $stripe-martial-arts-color,
+    $stripe-martial-arts-color,
+    $stripe-martial-arts-color;
+  background-image: linear-gradient(to bottom, transparent 49%, $custom-underline-martial-arts-gradient 50%);
+  background-position: 0 88%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  color: $stripe-martial-arts-color;
+  text-shadow: 2px 0 $custom-underline-martial-arts-shadow, 1px 0 $custom-underline-martial-arts-shadow, -1px 0 $custom-underline-martial-arts-shadow, -2px 0 $custom-underline-martial-arts-shadow;
+
+  @media screen and (resolution <= 1.49dppx) and (resolution <= 143dpi) {
+    background-size: 1px 2px;
+  }
+}
+
+.custom-underline.stripe-movies a {
+  @mixin link-colors $stripe-movies-color, $white, $stripe-movies-color, $stripe-movies-color, $stripe-movies-color;
+  background-image: linear-gradient(to bottom, transparent 49%, $custom-underline-movies-arts-gradient 50%);
+  background-position: 0 88%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  color: $stripe-movies-color;
+  text-shadow: 2px 0 $custom-underline-movies-arts-shadow, 1px 0 $custom-underline-movies-arts-shadow, -1px 0 $custom-underline-movies-arts-shadow, -2px 0 $custom-underline-movies-arts-shadow;
+
+  @media screen and (resolution <= 1.49dppx) and (resolution <= 143dpi) {
+    background-size: 1px 2px;
+  }
+}
+
+.custom-underline.stripe-books a {
+  @mixin link-colors
+    $stripe-books-color,
+    $white,
+    $stripe-books-color,
+    $stripe-books-color,
+    $stripe-books-color;
+  background-image: linear-gradient(to bottom, transparent 49%, $custom-underline-books-arts-gradient 50%);
+  background-position: 0 88%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  color: $stripe-books-color;
+  text-shadow: 2px 0 $custom-underline-books-arts-shadow, 1px 0 $custom-underline-books-arts-shadow, -1px 0 $custom-underline-books-arts-shadow, -2px 0 $custom-underline-books-arts-shadow;
+
+  @media screen and (resolution <= 1.49dppx) and (resolution <= 143dpi) {
+    background-size: 1px 2px;
+  }
+}
+
+.custom-underline.footer-about a {
+  text-shadow: 2px 0 $custom-underline-footer-shadow, 1px 0 $custom-underline-footer-shadow, -1px 0 $custom-underline-footer-shadow, -2px 0 $custom-underline-footer-shadow;
+
+  &:hover {
+    color: rgba($white, 0.8);
+  }
+}
+
+.custom-underline .aside-hint a {
+  background-image: linear-gradient(to bottom, transparent 49%, $logo-color 50%);
+  background-position: 0 88%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  color: $logo-color;
+
+  &:hover {
+    color: color($logo-color shade(20%));
+  }
+}

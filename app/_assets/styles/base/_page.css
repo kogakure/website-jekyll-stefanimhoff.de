@@ -1,0 +1,113 @@
+/* ==================================== */
+/*  Page                                */
+/* ==================================== */
+
+@charset "UTF-8";
+
+@include viewport {
+  width: device-width;
+}
+
+html {
+  @media screen and (device-width <= 480px) {
+    text-size-adjust: none;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  @extend sans-font;
+  background-color: $body-background;
+  color: $dark-grey;
+  font-size: $modular-scale-1;
+  font-smoothing: subpixel-antialiased;
+  font-style: normal;
+  font-weight: $normal;
+  hyphens: auto;
+  line-height: $base-line-height;
+  text-rendering: optimizeSpeed;
+
+  .wf-active & {
+    @extend sans-font-wf;
+  }
+}
+
+.article-body p,
+.article-body blockquote,
+.article-body ol,
+.article-body ul,
+.article-body dl,
+.article-body table,
+.article-body figure,
+.article-header .meta {
+  @extend serif-font;
+
+  .wf-active & {
+    @extend serif-font-wf;
+  }
+}
+
+
+/* Alle Elemente so einstellen, dass Padding nicht dazu gerechnet wird */
+* {
+  box-sizing: border-box;
+}
+
+
+:lang(ja) {
+  @extend japanese-font;
+  font-style: normal;
+}
+
+
+/* Homepage (Base Styling for Critical) */
+.home .section {
+  margin-bottom: 0;
+  padding-bottom: $default-spacing-bottom;
+  padding-top: $default-spacing-top;
+}
+
+
+.section {
+  margin-bottom: $default-spacing-bottom;
+}
+
+
+/* SVG sprites */
+.svg-icons {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+/* Prevent text from breaking to the new line */
+.nobr {
+  white-space: nowrap;
+}
+
+/* Content Background */
+.container {
+  background-color: $content-background;
+}
+
+/* Active/Inactive Selection */
+.article * {
+  @mixin selection
+    $selection-background,
+    $selection-color;
+}
+
+/* Global visibility: hidden */
+.invisible {
+  visibility: hidden;
+}
+
+/* Global display: none */
+.hidden {
+  display: none;
+}

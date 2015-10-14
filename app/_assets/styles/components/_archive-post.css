@@ -1,0 +1,44 @@
+/* ==================================== */
+/*  Archive Post                        */
+/* ==================================== */
+
+.archive-post {
+  clear: both;
+  lost-utility: clearfix;
+}
+
+.archive-headline {
+  lost-column: 8/12;
+  lost-move: 2/12;
+
+  @media screen and (width <= $archive-two-lines) {
+    lost-column: 12/12;
+    lost-move: 0;
+  }
+}
+
+.archive-post-item {
+  font-size: $font-scale-h4;
+  line-height: 1.2;
+  lost-column: 9/12;
+
+  @media screen and (width <= $archive-two-lines) {
+    line-height: 1;
+    lost-column: 12/12;
+    lost-move: 0;
+    margin-bottom: 1em;
+  }
+}
+
+.archive-post-time {
+  color: rgba($dark-grey, 0.3);
+  line-height: 2.2;
+  lost-column: 2/12;
+  text-align: right;
+
+  @media screen and (width <= $archive-two-lines) {
+    line-height: 1;
+    lost-column: 12/12;
+    text-align: left;
+  }
+}

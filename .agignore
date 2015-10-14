@@ -1,3 +1,4 @@
 app/_assets/stylesheets/
 app/_bower_components/
+app/_includes/critical/critical.css
 build/

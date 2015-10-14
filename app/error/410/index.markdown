@@ -9,4 +9,4 @@ robots: "noindex,follow"
 
 The content of this page is gone. And it won’t come back. Deal with it.
 
-Go back to the [Homepage](/) **or** look at my [Articles](/articles/) or sit down and cry.
+Go back to the [Homepage]({{ site.url }}/) **or** look at my [Articles]({{ site.url }}/articles/) or sit down and cry.

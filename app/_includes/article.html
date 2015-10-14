@@ -11,7 +11,7 @@
           {% unless page.meta == false %}
             <div class="meta">
               <span class="author">
-                <i class="icon-quill"></i>
+                <svg class="meta-icon"><use xlink:href="#quill"></use></svg>
                 {% if page.language == "en" %}
                   {% if page.author %}<em>by</em> {% include post/author.html %}{% endif %}
                 {% else %}
@@ -33,4 +33,3 @@
 
   <div class="article-body">{{ content | ampersand | abbr | nospace }}</div>
 {% endunless %}
-

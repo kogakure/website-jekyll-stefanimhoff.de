@@ -1,25 +1,15 @@
 {% include head/base.html %}
 <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
-  <!--[if lt IE 7]><div class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Download a better browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> for a optimal browsing experience.</div><![endif]-->
-  <noscript>
-    <nav class="navigation-noscript">
-      {% for navigation in site.data.navigation %}
-      <ul class="{% if navigation.type == "main" %}nav--main{% else %}nav{% endif %}">
-          {% for item in navigation.items %}
-            <li{% if item.external == true %} class="nav-item-external"{% endif %}><a href="{{ item.url }}">{{ item.text }}</a></li>
-          {% endfor %}
-        </ul>
-      {% endfor %}
-    </nav>
-  </noscript>
-<div class="outer-container">
-  {% include navigation.html %}
+
+  <div class="svg-icons">
+    {% include svg/icons.svg %}
+  </div>
+
   <div class="container">
     {% include header.html %}
     {{ content }}
     {% include footer.html %}
   </div>
-</div>
 {% include scripts.html %}
 </body>
 </html>

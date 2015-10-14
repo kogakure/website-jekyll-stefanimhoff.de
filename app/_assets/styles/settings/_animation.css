@@ -1,0 +1,11 @@
+/* ==================================== */
+/*  Animation                           */
+/* ==================================== */
+
+/* Available shortcuts from here:
+ * http://easings.net/
+ */
+
+/* Animationen Timings */
+$animation-link-hover:            all 500ms linear;
+$animation-navigation-link-hover: all 100ms linear;

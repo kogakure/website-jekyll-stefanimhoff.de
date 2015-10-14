@@ -1,0 +1,30 @@
+/* ==================================== */
+/*  Inline Container                    */
+/* ==================================== */
+
+.inline-container {
+  clear: both;
+}
+
+.inline-container-headline,
+.inline-container-list,
+.inline-container-item {
+  display: inline;
+}
+
+.inline-container-list {
+  margin-left: 0;
+}
+
+.inline-container-headline {
+  font-size: 1em;
+  margin-right: 0.25em;
+
+  &:after {
+    content: ":";
+  }
+}
+
+.inline-container-item {
+  margin-right: 0.5em;
+}

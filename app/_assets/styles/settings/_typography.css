@@ -1,0 +1,48 @@
+/* ==================================== */
+/*  Typography                          */
+/* ==================================== */
+
+/* Modular Scale
+ * ----------------------
+ * 18px @ 1:1.618
+ * 16px @ 1:1.618i
+ * ----------------------
+ *
+ * http://www.modularscale.com/?16,18&px&1.618&web&table */
+
+$modular-scale-0: 16px;
+$modular-scale-1: 18px;
+$modular-scale-2: 26px;
+$modular-scale-3: 29px;
+$modular-scale-4: 42px;
+$modular-scale-5: 47px;
+$modular-scale-6: 68px;
+
+/* Font Weights */
+$light:  200;
+$normal: 400;
+$bold:   700;
+
+/* Typefaces */
+$base-font-serif:    "Palatino", "Georgia", "Droid Serif", serif;
+$base-font-serif-wf: "Gentium Basic", "Palatino", "Georgia", "Droid Serif", serif;
+$base-font-sans:     "DIN Condensed", "Roboto Condensed", "Droid Sans", "Segoe UI 8", Arial, Helvetica, sans-serif;
+$base-font-sans-wf:  "Yanone Kaffeesatz", "DIN Condensed", "Roboto Condensed", "Droid Sans", "Segoe UI 8", Arial, Helvetica, sans-serif;
+$base-font-mono:     "Menlo", Monaco, "Droid Sans Mono", "Andale Mono", "Lucida Console", "Courier New", monospace;
+$base-font-japanese: "Hiragino Maru Gothic Pro", sans-serif;
+
+/* Base Sizes and Line-Heights */
+$base-font-size:   $modular-scale-1; /* 18px */
+$base-line-height: 1.5;
+$base-font-weight: $normal;
+
+/* Headline Sizes */
+$font-scale-h1:    $modular-scale-6; /* 68px */
+$font-scale-h2:    $modular-scale-4; /* 42px */
+$font-scale-h3:    $modular-scale-2; /* 26px */
+$font-scale-h4:    $modular-scale-2; /* 26px */
+$font-scale-h5:    $modular-scale-2; /* 26px */
+$font-scale-h6:    $modular-scale-2; /* 26px */
+$font-scale-small: 14px;
+$font-scale-intro: calc($base-font-size * 1.375);
+$font-scale-kbd:   calc($base-font-size * 0.75);

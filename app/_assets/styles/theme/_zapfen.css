@@ -1,0 +1,41 @@
+/* ==================================== */
+/*  Theme: Zapfen                       */
+/* ==================================== */
+
+$highlight-color:            #89b46b;
+
+/* Header */
+$header-background:          #a09278;
+$header-border-top-color:    #a2c097;
+$header-headline:            $white;
+$header-subheadline:         $black;
+
+/* Logo */
+$logo-color:                 #7e5d41;
+
+/* Navigation */
+$nav-link-color-hover:       $highlight-color;
+
+/* Links */
+$link-color:                 $highlight-color;
+$link-hover-color:           #7e5d41;
+$link-active-color:          #7e5d41;
+$link-visited-color:         $highlight-color;
+$link-focus-color:           #7e5d41;
+
+$link-border-color:          rgba($dark-grey, 0.2);
+$link-hover-border-color:    $highlight-color;
+
+/* Scrollbars */
+$scroll-handle-color:        $black;
+$scroll-handle-hover-color:  $white;
+
+/* ::selection */
+$selection-background:       $highlight-color;
+$selection-color:            $white;
+
+/* Paths */
+$header-background-url:      $header-path/$header-zapfen.jpg;
+$header-background-url-m:    $header-path/$header-zapfen-m.jpg;
+$header-background-url-s:    $header-path/$header-zapfen-s.jpg;
+$header-background-position: center left;

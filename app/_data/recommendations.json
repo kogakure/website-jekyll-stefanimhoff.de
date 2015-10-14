@@ -15,6 +15,10 @@
         "url": "http://explore.noodle.org/"
       },
       {
+        "text": "Zen Pencils",
+        "url": "http://zenpencils.com/"
+      },
+      {
         "text": "99U",
         "url": "http://99u.com/"
       },
@@ -28,11 +32,11 @@
       },
       {
         "text": "Signal vs. Noise",
-        "url": "http://signalvnoise.com/"
+        "url": "https://signalvnoise.com/"
       },
       {
         "text": "Information Architects",
-        "url": "http://ia.net/blog"
+        "url": "https://ia.net/know-how"
       },
       {
         "text": "Media Queries",
@@ -49,11 +53,11 @@
       },
       {
         "text": "Modular Scale",
-        "url": "http://modularscale.com/"
+        "url": "http://www.modularscale.com/"
       },
       {
-        "text": "Singularity",
-        "url": "http://singularity.gs/"
+        "text": "LostGrid",
+        "url": "https://github.com/corysimmons/lost"
       },
       {
         "text": "Responsive Resources",
@@ -117,7 +121,7 @@
       },
       {
         "text": "About.me",
-        "url": "http://about.me/kogakure/"
+        "url": "https://about.me/kogakure"
       },
       {
         "text": "Facebook",
@@ -177,7 +181,7 @@
       },
       {
         "text": "Good Reads",
-        "url": "http://goodreads.com/kogakure"
+        "url": "http://www.goodreads.com/kogakure"
       },
       {
         "text": "Kiva",

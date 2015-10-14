@@ -1,0 +1,27 @@
+/* ==================================== */
+/*  Media-Query                         */
+/* ==================================== */
+
+$iphone-width: 480px;
+
+/* Content */
+$content-medium:           650px;
+$content-medium-code:      651px;
+$content-small:            400px;
+$content-aside-inline:     770px;
+$content-pullquote-inline: 580px;
+
+/* Homepage */
+$homepage-sections-fullsize: 650px;
+
+/* Archive */
+$archive-two-lines: 550px;
+
+/* Footer */
+$meta-footer-two-lines:      640px;
+$header-centered:            450px;
+$meta-footer-image-new-line: 450px;
+$footer-two-lines:           850px;
+
+/* Error */
+$error-image-new-line: 450px;

@@ -1,0 +1,52 @@
+/* ==================================== */
+/*  Footnote                            */
+/* ==================================== */
+
+/* Create a footnote[^1]
+ *
+ * Use a footnote
+ * [^1]: Description
+ */
+
+sup a.footnote {
+  @mixin link-colors
+    $dark-grey,
+    $dark-grey,
+    $dark-grey,
+    $dark-grey,
+    $dark-grey;
+  background: transparent;
+  cursor: help;
+  font-size: $modular-scale-0;
+  line-height: $base-line-height;
+  text-decoration: none;
+
+  &:hover {
+    background: transparent;
+  }
+}
+
+.footnotes {
+  clear: both;
+  color: color($dark-grey tint(40%));
+  font-size: $modular-scale-0;
+  line-height: $base-line-height;
+
+  a.reversefootnote {
+    @mixin link-colors
+      $dark-grey,
+      $dark-grey,
+      $dark-grey,
+      $dark-grey,
+      $dark-grey;
+    background: transparent;
+    border: 0;
+    font-family: $base-font-serif;
+    margin-left: 0.25em;
+    text-decoration: none;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}

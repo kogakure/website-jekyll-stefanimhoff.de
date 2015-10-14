@@ -1,10 +1,17 @@
 ---
 layout: archive
 title: "All Tags"
+body_class: "archive archive-tags"
 description: "This site has an overview of all tags available on this website with title and date of publication."
-body_class: archive
 robots: "noindex,follow"
 ---
 
-<h1>{% if page.title or post.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</h1>
+<h1 class="archive-headline">
+  {% if page.title or post.title %}
+    {{ page.title }}
+  {% else %}
+    {{ site.data.settings.title }}
+  {% endif %}
+</h1>
+
 {% include tags_list.html %}

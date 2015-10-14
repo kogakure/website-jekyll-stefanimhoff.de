@@ -1,0 +1,39 @@
+/* ==================================== */
+/*  Verse                               */
+/* ==================================== */
+
+.verse {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.verse pre {
+  display: inline-block;
+  font-family: inherit;
+  margin-bottom: $default-spacing-bottom;
+  text-align: left;
+  zoom: 1;
+
+  .verse-list & {
+    margin-bottom: 0;
+
+    p {
+      font-range: 200px 920px;
+      font-size: responsive 12px 40px;
+      text-align: center;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (width <= $content-medium) {
+    overflow-x: visible;
+  }
+
+  @media screen and (width <= $content-small) {
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,41 @@
+/* ==================================== */
+/*  Stripe: Introvert                   */
+/* ==================================== */
+
+.stripe-introvert {
+  background-color: $pattern-wavegrid-background;
+}
+
+.stripe-introvert-text {
+  lost-column: 6/12 2;
+
+  @media screen and (width <= $homepage-sections-fullsize) {
+    lost-column: 12/12;
+  }
+}
+
+.stripe-introvert-quotation {
+  color: rgba($dark-grey, 0.8);
+  lost-column: 6/12 2;
+  padding: 4em 2em 2em;
+  text-align: left;
+
+  @media screen and (width <= $homepage-sections-fullsize) {
+    lost-column: 12/12;
+    margin-bottom: $default-spacing-bottom;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.stripe-introvert-blockquote {
+  margin: 0;
+}
+
+.stripe-introvert-blockquote-japanese {
+  @extend japanese-font;
+  font-range: 650px 920px;
+  font-size: responsive 22px 35px;
+  font-style: normal;
+  margin-bottom: 0;
+}

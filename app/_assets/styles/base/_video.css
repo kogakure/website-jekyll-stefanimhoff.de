@@ -1,0 +1,11 @@
+/* ==================================== */
+/*  Video                               */
+/* ==================================== */
+
+video {
+  box-sizing: border-box;
+  display: block;
+  height: auto;
+  margin-bottom: $default-spacing-bottom;
+  width: 100%;
+}

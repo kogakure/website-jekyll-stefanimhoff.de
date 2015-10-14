@@ -1,0 +1,144 @@
+/* ==================================== */
+/*  Figure with Image                   */
+/* ==================================== */
+
+.image-figure {
+  clear: both;
+  float: left;
+  lost-column: 8/8;
+  margin-bottom: $default-spacing-bottom;
+
+  figcaption {
+    margin-top: 5px;
+  }
+
+  .figure-content {
+    position: relative;
+
+    a {
+      background: transparent;
+
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+
+  a {
+    border: 0;
+  }
+}
+
+
+/* Figures full width */
+.image-figure-fullsize {
+  lost-column: 12/8;
+  lost-move: -2/8;
+
+  @media screen and (width <= $content-medium) {
+    lost-column: 8/8;
+    lost-move: 0;
+  }
+}
+
+
+/* Figures left */
+.image-figure-left {
+  lost-column: 12/8;
+  lost-move: -2/8;
+
+  @media screen and (width <= $content-medium) {
+    lost-column: 12/12;
+    lost-move: 0;
+  }
+
+  .figure-content {
+    lost-column: 10/12;
+
+    @media screen and (width <= $content-medium) {
+      lost-column: 12/12;
+      lost-move: 0;
+    }
+  }
+
+  figcaption {
+    lost-column: 2/12;
+    text-align: left;
+
+    @media screen and (width <= $content-medium) {
+      lost-column: 12/12;
+      text-align: center;
+    }
+  }
+}
+
+
+/* Figures right */
+.image-figure-right {
+  lost-column: 12/8;
+  lost-move: -2/8;
+
+  @media screen and (width <= $content-medium) {
+    lost-column: 12/12;
+    lost-move: 0;
+  }
+
+  .figure-content {
+    lost-column: 10/12;
+    lost-move: 2/12;
+
+    @media screen and (width <= $content-medium) {
+      lost-column: 12/12;
+      lost-move: 0;
+    }
+  }
+
+  figcaption {
+    lost-column: 2/12;
+    lost-move: -10/12;
+    text-align: right;
+
+    @media screen and (width <= $content-medium) {
+      lost-column: 12/12;
+      lost-move: 0;
+      text-align: center;
+    }
+  }
+}
+
+
+/* Figures centered */
+.image-figure-center {
+  lost-column: 10/8;
+  lost-move: -1/8;
+
+  @media screen and (width <= $content-medium) {
+    lost-column: 12/12;
+    lost-move: 0;
+  }
+}
+
+/* Figures with long captions */
+.image-figure-longcaption {
+  figcaption {
+    text-align: left;
+  }
+}
+
+
+/* Figures with border */
+.image-figure-border img {
+  border: $image-border-size solid $image-border-color;
+}
+
+
+/* Figures without border */
+.image-figure-noborder img {
+  border: 0;
+}
+
+
+/* Figures with a shadow */
+.image-figure-shadow img {
+  box-shadow: 0 1px 3px rgba($black, 0.5);
+}

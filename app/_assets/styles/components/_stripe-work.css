@@ -1,0 +1,12 @@
+/* ==================================== */
+/*  Stripe: Work                        */
+/* ==================================== */
+
+.stripe-work {
+  background-color: $pattern-geometry-background;
+  border-top: 1px solid rgba($dark-grey, 0.2);
+
+  .inline-container-headline {
+    color: $link-color;
+  }
+}

@@ -1,0 +1,40 @@
+/* ==================================== */
+/*  Pattern                             */
+/* ==================================== */
+
+body,
+.footer-legal {
+  @extend pattern-pw-maze-black;
+}
+
+.container {
+  @extend pattern-light-grey;
+}
+
+.footer {
+  @extend pattern-classy-fabric;
+}
+
+.stripe-work {
+  @extend pattern-geometry;
+}
+
+.stripe-martial-arts {
+  @extend pattern-nami;
+}
+
+.stripe-introvert {
+  @extend pattern-wavegrid;
+}
+
+.stripe-movies {
+  @extend pattern-px;
+}
+
+.stripe-books {
+  @extend pattern-type;
+}
+
+.stripe-recommendations {
+  @extend pattern-wavegrid;
+}

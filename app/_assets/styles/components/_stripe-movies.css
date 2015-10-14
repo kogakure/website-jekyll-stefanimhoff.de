@@ -1,0 +1,22 @@
+/* ==================================== */
+/*  Stripe: Movies                      */
+/* ==================================== */
+
+.stripe-movies {
+  background-color: $pattern-px-background;
+  border-top: 1px solid rgba($dark-grey, 0.2);
+  color: $white;
+
+  a {
+    @mixin link-colors
+      $stripe-movies-color,
+      $white,
+      $stripe-movies-color,
+      $stripe-movies-color,
+      $stripe-movies-color;
+  }
+}
+
+.stripe-movies-headline {
+  color: $stripe-movies-color;
+}

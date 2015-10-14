@@ -1,19 +1,25 @@
-<div class="books section custom-underline">
+<section class="stripe stripe-books custom-underline">
   <div class="wrap">
-    <h2>{{ site.data.settings.homepage.books.headline }}</h2>
-    <div class="content">
+    <h2 class="stripe-books-headline">
+      {{ site.data.settings.homepage.books.headline }}
+    </h2>
+    <div class="stripe-content">
       {{ site.data.settings.homepage.books.text | markdownify }}
     </div>
 
-    <div class="grid-links inline-links">
+    <div class="inline-container">
       {% for topic in site.data.books %}
-        <h3>{{ topic.name }}</h3>
-        <ul>
+        <h3 class="inline-container-headline">{{ topic.name }}</h3>
+        <ul class="inline-container-list">
           {% for book in topic.items %}
-            <li><a href="http://www.amazon.de/gp/product/{{ book.asin }}?ie=UTF8&tag=kogakurede-21&linkCode=as2&camp=1638&creative=6742&creativeASIN={{ book.asin }}">{{ book.text }}</a></li>
+            <li class="inline-container-item">
+              <a class="inline-container-link" href="http://www.amazon.de/gp/product/{{ book.asin }}?ie=UTF8&tag=kogakurede-21&linkCode=as2&camp=1638&creative=6742&creativeASIN={{ book.asin }}">
+                {{ book.text }}
+              </a>
+            </li>
           {% endfor %}
         </ul>
       {% endfor %}
     </div>
   </div>
-</div>
+</section>

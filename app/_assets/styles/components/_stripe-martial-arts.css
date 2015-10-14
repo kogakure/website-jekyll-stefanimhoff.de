@@ -1,0 +1,25 @@
+/* ==================================== */
+/*  Stripe: Martial Arts                */
+/* ==================================== */
+
+.stripe-martial-arts {
+  background-color: $pattern-nami-background;
+  color: $white;
+
+  .inline-container-headline {
+    color: $stripe-martial-arts-color;
+  }
+
+  a {
+    @mixin link-colors
+      $stripe-martial-arts-color,
+      $white,
+      $stripe-martial-arts-color,
+      $stripe-martial-arts-color,
+      $stripe-martial-arts-color;
+  }
+}
+
+.stripe-martial-arts-headline {
+  color: $stripe-martial-arts-color;
+}

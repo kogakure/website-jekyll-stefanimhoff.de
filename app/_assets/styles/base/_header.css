@@ -1,0 +1,126 @@
+/* ==================================== */
+/*  Header                              */
+/* ==================================== */
+
+.header {
+  background-color: $header-background;
+  background-image: url($header-background-url);
+  background-position: $header-background-position;
+  background-size: cover;
+  border-top: 3px solid $header-border-top-color;
+  padding-bottom: 60px;
+  padding-top: 40px;
+  z-index: 100;
+
+  @media screen and (width <= 600px) {
+    background-image: url($header-background-url-m);
+  }
+
+  @media screen and (width <= 400px) {
+    background-image: url($header-background-url-s);
+  }
+
+  .home & {
+    padding-bottom: 160px;
+    padding-top: 40px;
+
+    @media screen and (width <= 880px) {
+      padding-bottom: 80px;
+    }
+
+    @media screen and (width <= 700px) {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.header-logo {
+  lost-column: 2/12 0 10px;
+  
+  @media screen and (width > $header-centered) and (width <= 480px) {
+    lost-column: 3/12 0 10px;
+  }
+  
+  @media screen and (width <= $header-centered) {
+    lost-column: 12/12;
+  }
+}
+
+.header-logo-image {
+  border: 0;
+
+  @media screen and (width <= $header-centered) {
+    lost-column: 4/12;
+    lost-move: 4/12;
+    margin-bottom: 10px;
+  }
+}
+
+.header-info {
+  color: $header-headline;
+  font-feature-settings: "liga", "dlig";
+  font-size: $font-scale-h1;
+  line-height: 1;
+  lost-column: 9/12;
+  padding-top: 10px;
+  text-shadow: 0 0 6px $black;
+
+  @media screen and (width <= 700px) {
+    padding-top: 5px;
+  }
+
+  @media screen and (width > $header-centered) and (width <= 480px) {
+    lost-column: 7/12;
+  }
+
+  @media screen and (width <= $header-centered) {
+    font-size: $font-scale-h2;
+    lost-column: 12/12;
+    text-align: center;
+  }
+}
+
+.header-info-title {
+  margin-bottom: 0;
+
+  @media screen and (width <= 800px) {
+    font-size: 60px;
+  }
+
+  @media screen and (width <= 620px) {
+    font-size: 40px;
+  }
+
+  @media screen and (width <= $header-centered) {
+    font-size: 35px;
+  }
+}
+
+.header-info-tagline {
+  color: $header-subheadline;
+  font-size: $font-scale-h3;
+  line-height: 1.2;
+  text-shadow: 0 0 5px $white, 0 0 5px $white, 0 0 5px $white;
+
+  @media screen and (width <= 800px) {
+    font-size: 20px;
+  }
+}
+
+.header-info-title-link {
+  @mixin link-colors
+    $white,
+    $white,
+    $white,
+    $white,
+    $white;
+  text-decoration: none;
+
+  @media screen and (width <= 480px) {
+    font-size: 50px;
+  }
+
+  @media screen and (width <= 380px) {
+    font-size: 40px;
+  }
+}

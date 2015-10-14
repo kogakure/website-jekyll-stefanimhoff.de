@@ -1,20 +1,19 @@
-<div class="work section custom-underline">
+<section class="stripe stripe-work custom-underline">
   <div class="wrap">
     <h2>{{ site.data.settings.homepage.work.headline }}</h2>
-    <div class="content">
+    <div class="stripe-content">
       {{ site.data.settings.homepage.work.text | markdownify }}
     </div>
 
-    <div class="grid-links inline-links">
+    <div class="inline-container">
       {% for area in site.data.work %}
-        <h3>{{ area.name }}</h3>
-        <ul>
+        <h3 class="inline-container-headline">{{ area.name }}</h3>
+        <ul class="inline-container-list">
           {% for skill in area.skills %}
-            <li>{{ skill }}</li>
+            <li class="inline-container-item">{{ skill }}</li>
           {% endfor %}
         </ul>
       {% endfor %}
     </div>
-
   </div>
-</div>
+</section>

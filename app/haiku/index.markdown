@@ -14,9 +14,17 @@ Auf dieser Seite sind einige meiner Haiku (<ruby>俳<rp>（</rp><rt>はい</rt><
 
 -------------------------------------------------------------------------------
 
-{% blockquote Wikipedia http://de.wikipedia.org/wiki/Haiku Haiku %}
-Haiku (jap. 俳句, dt. „lustiger Vers“; Plural: Haiku, auch: Haikus) ist eine traditionelle japanische Gedichtform, die heute weltweit verbreitet ist. Das Haiku gilt als die kürzeste Gedichtform der Welt.
+{% blockquote Wikipedia https://de.wikipedia.org/wiki/Haiku Haiku %}
+Haiku (jap. <span lang="ja">俳句</span>, dt. „lustiger Vers“; Plural: Haiku, auch: Haikus) ist eine traditionelle japanische Gedichtform, die heute weltweit verbreitet ist. Das Haiku gilt als die kürzeste Gedichtform der Welt.
 {% endblockquote %}
+
+-------------------------------------------------------------------------------
+
+{% verse %}
+Wind in den Blättern,
+wie das Rauschen von Regen
+hoch in den Wipfeln.
+{% endverse %}
 
 -------------------------------------------------------------------------------
 

@@ -1,0 +1,40 @@
+/* ==================================== */
+/*  Stripe: Blog                        */
+/* ==================================== */
+
+.stripe-blog-headline {
+  @media screen and (width <= $homepage-sections-fullsize) {
+    line-height: 1.2;
+  }
+}
+
+.stripe-blog-latest {
+  lost-column: 7/12;
+
+  @media screen and (width <= $homepage-sections-fullsize) {
+    lost-column: 12/12;
+  }
+}
+
+.stripe-blog-recently {
+  lost-column: 4/12;
+  lost-offset: -1/12;
+
+  @media screen and (width <= $homepage-sections-fullsize) {
+    lost-column: 12/12;
+    lost-offset: 0;
+  }
+}
+
+.stripe-blog-recently-list {
+  line-height: 1.2;
+
+  @media screen and (width <= $homepage-sections-fullsize) {
+    line-height: 1.2;
+    list-style: none;
+  }
+}
+
+.stripe-blog-recently-item {
+  margin-bottom: 0.5em;
+}

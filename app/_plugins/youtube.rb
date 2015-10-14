@@ -7,7 +7,7 @@ module Jekyll
     end
 
     def render(context)
-      %(<iframe src="http://www.youtube.com/embed/#{@id}"></iframe>)
+      %(<iframe src="https://www.youtube.com/embed/#{@id}"></iframe>)
     end
   end
 end

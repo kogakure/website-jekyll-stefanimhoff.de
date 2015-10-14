@@ -1,7 +1,11 @@
 <div class="attribution-main-text">
   <p>
-    {% if site.attribution_creative_commons %}<i class="icon-cc"></i>{% else %}<b>©</b>{% endif %}
+    {% if site.attribution_creative_commons %}<svg class="attribution-main-icon-cc"><use xlink:href="#cc"></use></svg>{% else %}<b>©</b>{% endif %}
     {{site.attribution_author}}, <a href="{{ site.attribution_url }}">{{ site.attribution_name }}</a>
   </p>
-  <span class="attribution-main-anchor"></span>
+  <div class="attribution-main-anchor">
+    <div class="attribution-circle">
+      <div class="attribution-question">?</div>
+    </div>
+  </div>
 </div>

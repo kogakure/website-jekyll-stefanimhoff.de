@@ -1,0 +1,89 @@
+/* ==================================== */
+/*  Pullquote                           */
+/* ==================================== */
+
+@define-extend pullquote {
+  font-size: 1.4em;
+  font-style: italic;
+  line-height: $base-line-height;
+}
+
+blockquote.pullquote {
+  @extend pullquote;
+  font-size: 2.3em;
+  line-height: 1;
+  text-align: center;
+
+  p:first-child:before {
+    content: open-quote;
+  }
+
+  p:last-child:after {
+    content: close-quote;
+  }
+}
+
+blockquote.pullquote[lang|=de] {
+  quotes: "»" "«" "›" "‹";
+}
+
+blockquote.pullquote[lang|=en] {
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote.pullquote[lang|=ja] {
+  quotes: "「" "」" "『" "』";
+}
+
+.pullquote-right:before,
+.pullquote-left:before {
+  @extend pullquote;
+  border: 0;
+  content: attr(data-pullquote);
+  display: inline-block;
+  float: right;
+  lost-column: 4/8;
+  margin-bottom: $default-spacing-bottom;
+  margin-left: $default-spacing-left;
+  margin-right: -$default-spacing-right;
+  margin-top: 0;
+  padding: 0;
+  position: relative;
+  top: 15px;
+
+  @media screen and (width <= $content-medium) {
+    margin-right: 0;
+  }
+
+  @media screen and (width <= $content-pullquote-inline) {
+    clear: both;
+    float: none;
+    margin: 1.5em 0;
+    position: static;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.pullquote-left:before {
+  float: left;
+  margin-bottom: $default-spacing-bottom;
+  margin-left: -$default-spacing-left;
+  margin-right: $default-spacing-right;
+  margin-top: 0;
+  text-align: right;
+
+  @media screen and (width <= $content-medium) {
+    margin-left: 0;
+    margin-right: $default-spacing-right;
+  }
+
+  @media screen and (width <= $content-pullquote-inline) {
+    clear: both;
+    float: none;
+    margin: 1.5em 0;
+    position: static;
+    text-align: center;
+    width: 100%;
+  }
+}

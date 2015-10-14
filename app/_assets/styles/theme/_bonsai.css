@@ -1,0 +1,44 @@
+/* ==================================== */
+/*  Theme: Bonsai                       */
+/* ==================================== */
+
+$highlight-color:                #89b46b;
+
+/* Header */
+$header-background:              #a09278;
+$header-border-top-color:        #100d09;
+$header-headline:                $white;
+$header-subheadline:             $black;
+
+/* Logo */
+$logo-color:                     #b42b2c;
+
+/* Navigation */
+$nav-link-color-hover:           $highlight-color;
+
+/* Links */
+$link-color:                     $highlight-color;
+$link-hover-color:               $dark-grey;
+$link-active-color:              $dark-grey;
+$link-visited-color:             $highlight-color;
+$link-focus-color:               $dark-grey;
+
+$link-border-color:              rgba($dark-grey, 0.2);
+$link-hover-border-color:        $highlight-color;
+
+/* Scrollbars */
+$scroll-background:              #fafafa;
+$scroll-handle-background:       #eeeeee;
+$scroll-handle-background-hover: #b8b8b8;
+$scroll-handle-color:            $highlight-color;
+$scroll-handle-hover-color:      $white;
+
+/* ::selection */
+$selection-background:           $highlight-color;
+$selection-color:                $white;
+
+/* Paths */
+$header-background-url:          $header-path/bonsai.jpg;
+$header-background-url-m:        $header-path/bonsai-m.jpg;
+$header-background-url-s:        $header-path/bonsai-s.jpg;
+$header-background-position:     center center;

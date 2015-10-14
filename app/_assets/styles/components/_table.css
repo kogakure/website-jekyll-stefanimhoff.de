@@ -1,0 +1,49 @@
+/* ==================================== */
+/*  Table                               */
+/* ==================================== */
+
+/* Tables with Zebra */
+.table-zebra {
+  tbody > tr:nth-child(odd) > td,
+  tbody > tr:nth-child(odd) > th {
+    background-color: $table-zebra-background;
+  }
+}
+
+
+/* Tables with border */
+.table-border {
+  border-collapse: separate;
+  border-color: $table-border-color;
+  border-left: 0;
+  border-left-color: transparent !important;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+
+  th,
+  td {
+    border-left: 1px solid $table-border-color;
+  }
+}
+
+
+/* Condensed Tables */
+.table-condense {
+  th,
+  td {
+    padding-bottom: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 4px;
+  }
+}
+
+
+/* Tables with hover */
+.table-hover {
+  tbody tr:hover > td,
+  tbody tr:hover > th {
+    background-color: $table-zebra-background;
+  }
+}

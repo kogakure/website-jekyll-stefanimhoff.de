@@ -2,9 +2,9 @@
 layout: {{ layout }}
 language: "en"
 title: {{ title }}
-excerpt: ""
-description: ""
-og_image: ""
+excerpt: "@TODO: Remove or write a custom one"
+description: "@TODO: 150-160 characters"
+og_image: "@TODO: /assets/images/artikel/ (Best 900+ pixels)"
 author: "Stefan Imhoff"
 categories:
 tags:

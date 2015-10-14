@@ -1,0 +1,73 @@
+/* ==================================== */
+/*  Navigation                          */
+/* ==================================== */
+
+.nav {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.nav-list {
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  list-style: none;
+  margin-bottom: 0.5em;
+
+  @media screen and (width <= $meta-footer-two-lines) {
+    display: block;
+  }
+}
+
+.nav-list-main {
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  list-style: none;
+  margin-bottom: 0.5em;
+  margin-right: 10px;
+
+  @media screen and (width <= $meta-footer-two-lines) {
+    display: block;
+  }
+
+  @media screen and (width <= $meta-footer-two-lines) {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  &:after {
+    @extend sans-font;
+    color: $white;
+    content: "✿";
+
+    @media screen and (width <= $meta-footer-two-lines) {
+      display: block;
+    }
+  }
+}
+
+.nav-list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav-link {
+  @mixin link-colors
+    $nav-link-color,
+    $nav-link-color-hover,
+    $nav-link-color-active,
+    $nav-link-color,
+    $nav-link-color-active;
+  border: 0;
+  line-height: 1;
+  text-decoration: none;
+  text-shadow: 0 0 5px $black;
+  transition: $animation-navigation-link-hover;
+}
+
+/* Styling for active navigation, set with JavaScript */
+.nav-is-active .nav-link {
+  color: $nav-link-color-active;
+}

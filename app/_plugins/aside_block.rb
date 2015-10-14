@@ -3,14 +3,10 @@
 #
 # Outputs a aside tag
 #
-#   {% aside aside-left %}
+#   {% aside aside-hint %}
 #   ...
 #   {% endaside %}
 #
-#   {% aside aside-right %}
-#   ...
-#   {% endaside %}
-
 module Jekyll
 
   class AsideBlock < Liquid::Block

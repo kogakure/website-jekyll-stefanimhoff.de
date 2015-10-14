@@ -5,6 +5,7 @@ title: "Impressum"
 description: "Das Impressum mit Ansprechpartner, Rechtshinweisen, Datenschutzhinweisen und Quellenangaben zu verwendeten Grafiken und Fotos."
 author: "Stefan Imhoff"
 date: 2013-12-17 09:12
+updated: 2015-10-14 18:00
 robots: "noindex,follow"
 ---
 
@@ -25,11 +26,9 @@ Inhaltlich Verantwortlicher gemäß § 10 Absatz 3 MDStV:<br> Stefan Imhoff (Ans
 
 Diese Seite verwendet ein Foto für den Kopfbereich und einige Hintergrundmuster von [Subtle Patterns](http://subtlepatterns.com/). Ich danke den Fotografen und den Designern.
 
-<div class="inline-links section">
+<div class="inline-container section">
   <h3>Foto</h3>
-  <ul>
-    <li><a href="{{ site.attribution_url }}"><cite>{{ site.attribution_name }}</cite> von {{ site.attribution_author }}</a></li>
-  </ul>
+  <p><a href="{{ site.attribution_url }}"><cite lang="ja">{{ site.attribution_name }}</cite> von {{ site.attribution_author }}</a></p>
 
   <h3>Patterns</h3>
   <ul>

@@ -1,10 +1,17 @@
 ---
 layout: archive
 title: All Categories
-body_class: archive
+body_class: "archive archive-categories"
 description: "This site has an overview of all categories available on this website with title and date of publication."
 robots: "noindex,follow"
 ---
 
-<h1>{% if page.title or post.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</h1>
+<h1 class="archive-headline">
+  {% if page.title or post.title %}
+    {{ page.title }}
+  {% else %}
+    {{ site.data.settings.title }}
+  {% endif %}
+</h1>
+
 {% include categories_list.html %}

@@ -2,7 +2,7 @@
 
 {% unless tag == '0' %}
 <div class="tags">
-  <i class="icon-tag"></i>
+  <svg class="classification-icon"><use xlink:href="#tag"></use></svg>
   {{ page.tags | tag_links | replace: ',','' }}
 </div>
 {% endunless %}

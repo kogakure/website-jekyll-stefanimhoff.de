@@ -1,0 +1,22 @@
+/* ==================================== */
+/*  Hint                                */
+/* ==================================== */
+
+.aside-hint {
+  background: rgba($white, 0.5);
+  border-color: $white;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  color: $logo-color;
+  font-size: $modular-scale-1;
+  margin-bottom: $default-spacing-bottom;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

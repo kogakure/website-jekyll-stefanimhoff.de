@@ -1,0 +1,121 @@
+/* ==================================== */
+/*  Placeholders */
+/* ==================================== */
+
+/* Typefaces */
+@define-extend serif-font-wf {
+  font-family: $base-font-serif-wf;
+}
+
+@define-extend serif-font {
+  font-family: $base-font-serif;
+}
+
+@define-extend sans-font-wf {
+  font-family: $base-font-sans-wf;
+}
+
+@define-extend sans-font {
+  font-family: $base-font-sans;
+}
+
+@define-extend mono-font {
+  font-family: $base-font-mono;
+}
+
+@define-extend japanese-font {
+  font-family: $base-font-japanese;
+}
+
+@define-extend icon-font {
+  font-family: "iconfont";
+}
+
+
+/* Background Patterns */
+
+/* 204x204, 12 KB (Meta Footer) */
+@define-extend pattern-classy-fabric {
+  background-image: url(/assets/images/css/patterns/classy_fabric_@2X.png);
+  background-size: 102px 102px;
+}
+
+/* 100x100, 1 KB (Footer) */
+@define-extend pattern-dark-stripes {
+  background-image: url(/assets/images/css/patterns/dark_stripes_@2X.png);
+  background-size: 50px 50px;
+}
+
+/* 602x1242, 4 KB (Content) */
+@define-extend pattern-light-grey {
+  background-image: url(/assets/images/css/patterns/light_grey_@2X.png);
+  background-size: 301px 621px;
+}
+
+/* 92x46, < 1 KB (Off-Canvas Navigation) */
+@define-extend pattern-pw-maze-black {
+  background-color: $pattern-pw-maze-black-background;
+  background-image: url(/assets/images/css/patterns/pw_maze_black_@2X.png);
+  background-size: 46px 23px;
+}
+
+/* 824x824, 4 KB (Homepage: Work) */
+@define-extend pattern-geometry {
+  background-color: $pattern-geometry-background;
+  background-image: url(/assets/images/css/patterns/geometry_@2X.png);
+  background-size: 412px 412px;
+}
+
+/* 32x32, < 1 KB (Homepage: Martial Arts) */
+@define-extend pattern-nami {
+  background-color: $pattern-nami-background;
+  background-image: url(/assets/images/css/patterns/nami_@2X.png);
+  background-size: 16px 16px;
+}
+
+/* 200x200, < 1 KB (Homepage: Movies) */
+@define-extend pattern-px {
+  background-color: $pattern-px-background;
+  background-image: url(/assets/images/css/patterns/px_@2X.png);
+  background-size: 100px 100px;
+}
+
+/* 400x400, < 15 KB (Homepage: Books) */
+@define-extend pattern-type {
+  background-color: $pattern-type-background;
+  background-image: url(/assets/images/css/patterns/type_@2X.png);
+  background-size: 200px 200px;
+}
+
+/* 200x200, 2 KB (Homepage: Introvert/Recommendations) */
+@define-extend pattern-wavegrid {
+  background-color: $pattern-wavegrid-background;
+  background-image: url(/assets/images/css/patterns/wavegrid_@2X.png);
+  background-size: 100px 100px;
+}
+
+
+/* Image Replacement (Kellum Method) */
+/* http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+@define-extend text-hidden {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.text-hidden {
+  @extend text-hidden;
+}
+
+
+/* Hide text visually */
+@define-extend visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

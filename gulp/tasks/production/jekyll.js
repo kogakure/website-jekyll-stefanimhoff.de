@@ -6,7 +6,7 @@ var config      = require('../../config').jekyll.production;
 /**
  * Build the Jekyll Site
  */
-gulp.task('jekyll:production', function(done) {
+gulp.task('production:jekyll', function(done) {
   browsersync.notify('Compiling Jekyll (Production)');
 
   return cp.spawn('bundle', ['exec', 'jekyll', 'build', '-q', '--source=' + config.src, '--destination=' + config.dest, '--config=' + config.config], { stdio: 'inherit' })

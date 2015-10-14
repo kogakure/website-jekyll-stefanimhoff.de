@@ -1,23 +1,29 @@
-<div class="blog section custom-underline">
+<section class="stripe stripe-blog custom-underline">
   <div class="wrap">
     <h2>{{ site.data.settings.homepage.blog.articles.headline }}</h2>
-    <div class="grid-latest">
+    <div class="stripe-blog-latest">
       {% for post in site.posts limit:1 %}
       {% capture excerpt %}{% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.content | strip_html | truncate: 350 }}{% endif %}{% endcapture %}
-      <h3><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h3>
+        <h3 class="stripe-blog-headline">
+          <a href="{{ root_url }}{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h3>
       <p>{{ excerpt }}</p>
       {% endfor %}
     </div>
 
-    <div class="grid-recently">
+    <div class="stripe-blog-recently">
       <h3>{{ site.data.settings.homepage.blog.recently.headline }}</h3>
-      <ul>
+      <ul class="stripe-blog-recently-list">
         {% for post in site.posts limit:4 offset:1 %}
-        <li>
-          <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+        <li class="stripe-blog-recently-item">
+          <a href="{{ root_url }}{{ post.url }}">
+            {{ post.title }}
+          </a>
         </li>
         {% endfor %}
       </ul>
     </div>
   </div>
-</div>
+</section>

@@ -3,6 +3,8 @@
 
 .fontcustom-manifest.json
 app/_bower_components
+app/_includes/critical/critical.css
+app/_includes/critical/critical_homepage.css
 build/
 node_modules/
 vendor/bundle/

@@ -1,0 +1,43 @@
+/* ==================================== */
+/*  Table                               */
+/* ==================================== */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: $default-spacing-bottom;
+  width: 100%;
+
+  caption,
+  th,
+  td {
+    font-weight: $normal;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  th,
+  td {
+    border-top: 1px solid $table-border-color;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    font-weight: $bold;
+  }
+
+  thead th {
+    vertical-align: bottom;
+  }
+
+  caption + thead tr:first-child th,
+  caption + thead tr:first-child td,
+  colgroup + thead tr:first-child th,
+  colgroup + thead tr:first-child td,
+  thead:first-child tr:first-child th,
+  thead:first-child tr:first-child td {
+    border-top: 0;
+  }
+}

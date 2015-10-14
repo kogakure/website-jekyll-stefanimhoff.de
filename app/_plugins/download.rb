@@ -22,7 +22,7 @@ module Jekyll
     end
 
     def render(context)
-      "<div class=\"download\">\n<p><a href=\"#{@link}\"><i class=\"icon-download\"></i>#{@text}</a></p>\n</div>"
+      "<div class=\"download\">\n<a href=\"#{@link}\" class=\"download-link\"><svg class=\"download-icon\"><use xlink:href=\"#download\"></use></svg><span class=\"download-text\">#{@text}</span></a>\n</div>"
     end
   end
 end

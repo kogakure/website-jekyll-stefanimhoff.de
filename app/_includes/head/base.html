@@ -39,7 +39,11 @@
   <meta name="description" content="{{ page_description }}">
 
   <!-- Twitter Card -->
+  {% if page.homepage %}
   <meta name="twitter:card" content="summary">
+  {% else %}
+  <meta name="twitter:card" content="summary_large_image">
+  {% endif %}
   <meta name="twitter:site" content="{{ site.data.settings.social.twitter }}">
   <meta name="twitter:url" content="{{ page_url }}">
   <meta name="twitter:title" content="{{ page_title }}">
@@ -102,6 +106,8 @@
 
   <!-- Feeds -->
   <link href="{{ site.data.settings.social.feedburner_url }}" rel="alternate" title="{{ site.data.settings.title }}" type="application/atom+xml">
+  <link href="{{ site.data.settings.social.feedburner_url_en }}" rel="alternate" title="{{ site.data.settings.social.feed_title_en }}" type="application/atom+xml">
+  <link href="{{ site.data.settings.social.feedburner_url_de }}" rel="alternate" title="{{ site.data.settings.social.feed_title_de }}" type="application/atom+xml">
 
   <!-- OpenID -->
   <link rel="openid.server" href="{{ site.data.settings.openid.server }}">
@@ -111,6 +117,16 @@
   <!-- Switch off Microsoft junk -->
   <meta name="MSSmartTagsPreventParsing" content="true">
   <meta http-equiv="imagetoolbar" content="no">
+
+  <!-- JSON-LD Site name -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "Stefan Imhoff",
+      "url": "http://stefanimhoff.de"
+    }
+  </script>
 
   <!-- Statistics -->
   {% include head/mint.html %}

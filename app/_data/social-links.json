@@ -2,21 +2,26 @@
   {
     "name": "XING",
     "url": "https://www.xing.com/profile/Stefan_Imhoff",
-    "class": "icon-xing"
+    "class": "xing"
   },
   {
     "name": "Twitter",
     "url": "https://twitter.com/kogakure",
-    "class": "icon-twitter"
+    "class": "twitter"
   },
   {
     "name": "GitHub",
     "url": "https://github.com/kogakure",
-    "class": "icon-github"
+    "class": "github"
+  },
+  {
+    "name": "Pinterest",
+    "url": "https://www.pinterest.com/kogakure/",
+    "class": "pinterest"
   },
   {
     "name": "Atom-Feed",
     "url": "!FEEDBURNER_URL!",
-    "class": "icon-feed"
+    "class": "feed"
   }
 ]

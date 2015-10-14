@@ -1,0 +1,14 @@
+/* ==================================== */
+/*  Image                               */
+/* ==================================== */
+
+img,
+a img {
+  border-color: $image-border-color;
+  border-style: solid;
+  border-width: $image-border-size;
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+  width: auto\9; /* ie8 */
+}

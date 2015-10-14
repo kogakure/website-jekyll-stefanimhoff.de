@@ -1,0 +1,25 @@
+/* ==================================== */
+/*  Meta Footer                         */
+/* ==================================== */
+
+.meta {
+  color: rgba($dark-grey, 0.3);
+  font-size: $modular-scale-0;
+  text-align: center;
+
+  .author {
+    margin-right: 15px;
+  }
+
+  .updated {
+    margin-left: 15px;
+  }
+
+  .meta-icon {
+    fill: rgba($dark-grey, 0.3);
+    height: 19px;
+    position: relative;
+    top: 4px;
+    width: 16px;
+  }
+}

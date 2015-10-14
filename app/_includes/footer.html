@@ -1,26 +1,52 @@
 <footer class="footer" role="contentinfo">
   <div class="wrap">
-    <div class="about custom-underline">
-      <h3>{{ site.data.settings.about.headline }}</h3>
-      {{ site.data.settings.about.text | markdownify }}
+    <div class="footer-about custom-underline">
+      <h3 class="footer-about-headline">
+        {{ site.data.settings.about.headline }}
+      </h3>
+      <div class="footer-about-table">
+        <div class="footer-about-image-table-cell">
+          <div class="footer-about-image-shadow">
+            <img class="footer-about-image" src="/assets/images/css/footer/stefan-imhoff.jpg" alt="Stefan Imhoff">
+          </div>
+        </div>
+      <div class="footer-about-text">
+        {{ site.data.settings.about.text | markdownify }}
+      </div>
+      </div>
     </div>
-    <div class="social-networks">
-      <h3>{{ site.data.settings.socialnetworks.headline }}</h3>
-      <ul>
+    <div class="footer-social">
+      <h3 class="footer-social-headline">
+        {{ site.data.settings.socialnetworks.headline }}
+      </h3>
+      <ul class="footer-social-list">
         {% for link in site.data.social-links %}
-          <li><a href="{{ link.url | replace: '!FEEDBURNER_URL!', site.data.settings.social.feedburner_url }}" class="{{ link.class }}"><span>{{ link.name }}</span></a></li>
+          <li class="footer-social-list-item">
+            <a href="{{ link.url | replace: '!FEEDBURNER_URL!', site.data.settings.social.feedburner_url }}" class="footer-social-link">
+              <svg class="footer-social-icon"><use xlink:href="#{{ link.class }}"></use></svg><span class="footer-social-link-text">{{ link.name }}</span>
+            </a>
+          </li>
         {% endfor %}
       </ul>
     </div>
   </div>
-  <small>
+
+  {% include navigation.html %}
+
+  <small class="footer-legal">
     <div class="wrap">
-      <ul>
-        <li><a href="/impressum/">Impressum</a></li>
-        <li><a href="/styleguide/">Styleguide</a></li>
-        <li><a href="#top" id="top-link">Scroll up</a></li>
-      </ul>
-      <div class="copyright"><b>©</b> <span class="nobr">2006-{{ site.time | date: "%Y" }}</span>, <span class="nobr">Stefan Imhoff</span>. The content of this page is published under a <span class="nobr"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><i class="icon-cc"></i> Creative Commons</a></span> Licence.</div>
+      <div class="footer-legal-copyright">
+        <b class="footer-legal-copyright-sign">©</b>
+        <span class="nobr">2006-{{ site.time | date: "%Y" }}</span>,
+        <span class="nobr">Stefan Imhoff</span>.
+        The content of this page is published under a
+        <span class="nobr">
+          <a class="footer-legal-link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <svg class="footer-legal-icon-cc"><use xlink:href="#cc"></use></svg> Creative Commons
+          </a>
+          Licence.
+        </span>
+      </div>
     </div>
   </small>
 </footer>

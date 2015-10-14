@@ -1,0 +1,41 @@
+/* ==================================== */
+/*  Theme: Halloween                    */
+/* ==================================== */
+
+$highlight-color:            #f77d14;
+
+/* Header */
+$header-background:          #d9a55f;
+$header-border-top-color:    #d04200;
+$header-headline:            $white;
+$header-subheadline:         $black;
+
+/* Logo */
+$logo-color:                 #d04200;
+
+/* Navigation */
+$nav-link-color-hover:       $highlight-color;
+
+/* Links */
+$link-color:                 $highlight-color;
+$link-hover-color:           #d04200;
+$link-active-color:          #d04200;
+$link-visited-color:         $highlight-color;
+$link-focus-color:           #d04200;
+
+$link-border-color:          rgba($dark-grey, 0.2);
+$link-hover-border-color:    $highlight-color;
+
+/* Scrollbars */
+$scroll-handle-color:        $black;
+$scroll-handle-hover-color:  $white;
+
+/* ::selection */
+$selection-background:       $highlight-color;
+$selection-color:            $white;
+
+/* Paths */
+$header-background-url:      $header-path/$header-halloween.jpg;
+$header-background-url-m:    $header-path/$header-halloween-m.jpg;
+$header-background-url-s:    $header-path/$header-halloween-s.jpg;
+$header-background-position: center 15%;

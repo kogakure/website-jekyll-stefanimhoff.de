@@ -23,12 +23,12 @@
   {
     "items": [
       {
-        "text": "Styleguide",
-        "url": "/styleguide/"
-      },
-      {
         "text": "Haiku",
         "url": "/haiku/"
+      },
+      {
+        "text": "Styleguide",
+        "url": "/styleguide/"
       },
       {
         "text": "Impressum",

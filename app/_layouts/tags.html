@@ -2,11 +2,14 @@
 layout: archive
 ---
 
-<h1>Tag: {{ page.tag }}</h1>
+<h1 class="archive-headline">
+  Tag: {{ page.tag }}
+</h1>
+
 {% for post in site.tags[page.tag] %}
-<article>
-  {% include archive_post.html %}
-</article>
+  <article class="archive-post">
+    {% include archive_post.html %}
+  </article>
 {% endfor %}
 
 {% include tags_list.html %}

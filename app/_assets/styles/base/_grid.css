@@ -1,0 +1,52 @@
+/* ==================================== */
+/*  Grids                               */
+/* ==================================== */
+
+/* Grid settings */
+@lost gutter 15px;
+@lost cycle none;
+
+/* Grids */
+.wrap {
+  lost-center: 920px;
+  lost-utility: clearfix;
+
+  @media screen and (width <= 950px) {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.article {
+  lost-column: 8/12;
+  lost-move: 2/12;
+  margin-bottom: calc($default-spacing-bottom * 2);
+  margin-top: $default-spacing-top;
+
+  @media screen and (width <= 700px) {
+    margin-bottom: $default-spacing-bottom;
+  }
+
+  @media screen and (width <= $content-medium) {
+    lost-column: 12/12;
+    lost-move: 0;
+  }
+
+  @media screen and (width <= $content-small) {
+    margin-bottom: $default-spacing-bottom;
+    margin-top: 0.5em;
+  }
+}
+
+.archive-posts {
+  margin-bottom: calc($default-spacing-bottom * 2);
+  margin-top: $default-spacing-top;
+}
+
+header {
+  clear: both;
+}
+
+footer {
+  clear: both;
+}

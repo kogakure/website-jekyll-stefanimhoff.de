@@ -1,0 +1,34 @@
+/* ==================================== */
+/*  Stripe                              */
+/* ==================================== */
+
+.stripe {
+  font-size: 1.1em;
+  font-weight: $normal;
+  line-height: $base-line-height;
+  margin-bottom: 0;
+  padding: 1.5em 0;
+
+  @media screen and (width <= 480px) {
+    padding: 1em 0;
+  }
+
+  p {
+    @media screen and (resolution >= 1.49dppx) and (resolution >= 143dpi) {
+      font-weight: $light;
+    }
+  }
+}
+
+.stripe-content {
+  column-count: 2;
+  column-gap: 30px;
+
+  @media screen and (width <= $homepage-sections-fullsize) {
+    column-count: 1;
+  }
+}
+
+.stripe-content + .inline-container {
+  margin-top: $default-spacing-top;
+}

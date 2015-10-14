@@ -1,0 +1,45 @@
+/* Critical CSS: Homepage
+ ************************/
+
+/* Helpers */
+@import "vendor/meyer-reset";
+@import "settings/color";
+@import "settings/path";
+@import "settings/media-query";
+@import "settings/dimension";
+@import "settings/animation";
+@import "settings/typography";
+
+@import "tools/mixin";
+@import "tools/placeholder";
+
+/* Theme */
+@import "theme/init";
+
+/* Grid */
+@import "base/grid";
+
+/* Base */
+@import "base/footer";
+@import "base/header";
+@import "base/headline";
+@import "base/image";
+@import "base/link";
+@import "base/list";
+@import "base/page";
+@import "base/text";
+
+/* Stripe Sections */
+@import "components/attribution";
+@import "components/custom-underline";
+@import "components/inline-container";
+@import "components/navigation";
+@import "components/scrollbar";
+@import "components/stripe";
+@import "components/stripe-blog";
+@import "components/stripe-books";
+@import "components/stripe-introvert";
+@import "components/stripe-martial-arts";
+@import "components/stripe-movies";
+@import "components/stripe-recommendations";
+@import "components/stripe-work";

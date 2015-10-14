@@ -1,0 +1,185 @@
+/* ==================================== */
+/*  Attribution                         */
+/* ==================================== */
+
+/* Attribution */
+.attribution {
+  overflow: hidden;
+  position: relative;
+}
+
+.attribution-text {
+  background: rgba($black, 0.75);
+  bottom: -30%;
+  color: $white;
+  font-size: 15px;
+  font-weight: $light;
+  left: $image-border-size;
+  margin: 0;
+  opacity: 0;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  position: absolute;
+  transition: all 0.6s ease;
+
+  a {
+    @mixin link-colors
+      $link-color,
+      $link-color,
+      $link-active-color,
+      $link-visited-color,
+      $link-focus-color;
+  }
+
+  /* Copyright */
+  b {
+    @extend mono-font;
+    font-weight: normal;
+  }
+}
+
+.custom-underline .attribution-text a {
+  text-shadow: none;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.attribution:hover .attribution-text {
+  bottom: $image-border-size;
+  opacity: 1;
+}
+
+.attribution .figure-content:before {
+  @extend mono-font;
+  background: rgba($white, 0.7);
+  border-radius: 50%;
+  bottom: 10px;
+  color: $black;
+  content: "?";
+  font-size: 14px;
+  font-weight: $bold;
+  height: 20px;
+  left: 10px;
+  line-height: 20px;
+  opacity: 0.75;
+  position: absolute;
+  text-align: center;
+  transition: all 0.6s ease;
+  width: 20px;
+  z-index: 5;
+}
+
+.attribution .figure-content:hover:before {
+  opacity: 0;
+}
+
+/* Attribution header image */
+.attribution-main {
+  overflow: hidden;
+  position: relative;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.attribution-main-text {
+  background: rgba($black, 0.75);
+  bottom: -30px;
+  color: $white;
+  font-size: 15px;
+  font-weight: $light;
+  height: 30px;
+  left: 0;
+  line-height: 30px;
+  opacity: 0.9;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  transition: all 0.6s ease;
+
+  a {
+    @mixin link-colors $link-color, $link-color, $link-active-color, $link-visited-color, $link-focus-color;
+  }
+
+  /* Copyright */
+  b {
+    @extend mono-font;
+    font-weight: normal;
+  }
+
+}
+
+.attribution-main-text:hover {
+  bottom: 0;
+  opacity: 1;
+
+  .attribution-main-anchor {
+    opacity: 0;
+  }
+}
+
+.attribution-main-anchor {
+  height: 34px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: -34px;
+  transition: all 0.6s ease;
+  width: 34px;
+}
+
+.attribution-circle {
+  background: rgba($white, 0.7);
+  border-radius: 50%;
+  bottom: 5px;
+  height: 20px;
+  left: 5px;
+  position: absolute;
+  text-align: center;
+  width: 20px;
+}
+
+.attribution-question {
+  @extend mono-font;
+  color: $black;
+  font-size: 14px;
+  font-weight: $bold;
+  height: 20px;
+  line-height: 20px;
+  position: relative;
+  top: 1px;
+  width: 20px;
+}
+
+.attribution-main-icon-cc {
+  fill: $white;
+  height: 15px;
+  position: relative;
+  top: 2px;
+  width: 15px;
+}
+
+.attribution-icon-cc {
+  fill: $white;
+  height: 15px;
+  position: relative;
+  top: 4px;
+  width: 15px;
+}
+
+.attribution-main-icon-question {
+  height: 10px;
+  left: 5px;
+  position: absolute;
+  top: 5px;
+  width: 10px;
+}

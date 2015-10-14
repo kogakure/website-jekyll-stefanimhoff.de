@@ -1,12 +1,20 @@
 ---
 layout: archive
 title: Articles
+body_class: "archive"
 description: "An overview of all articles available on this website with title and date of publication."
 ---
 
-<h1>{% if page.title or post.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</h1>
+<h1 class="archive-headline">
+  {% if page.title or post.title %}
+    {{ page.title }}
+  {% else %}
+    {{ site.data.settings.title }}
+  {% endif %}
+</h1>
+
 {% for post in site.posts reverse %}
-<article>
-  {% include archive_post.html %}
-</article>
+  <article class="archive-post">
+    {% include archive_post.html %}
+  </article>
 {% endfor %}

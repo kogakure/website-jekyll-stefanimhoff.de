@@ -1,7 +1,6 @@
 var gulp        = require('gulp');
 var changed     = require('gulp-changed');
 var plumber     = require('gulp-plumber');
-var browsersync = require('browser-sync');
 var config      = require('../../config').images;
 
 /**

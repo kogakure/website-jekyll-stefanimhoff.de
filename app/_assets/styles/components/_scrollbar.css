@@ -1,0 +1,37 @@
+/* ==================================== */
+/*  Scrollbar                           */
+/* ==================================== */
+
+::-webkit-scrollbar {
+  background-color: $scroll-background;
+  height: 5px;
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: $scroll-background;
+  border-radius: 5px;
+
+  &:vertical {
+    background-color: $header-border-top-color;
+  }
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: $scroll-handle-background;
+  border-radius: 5px;
+
+  &:vertical {
+    background-color: $scroll-handle-color;
+  }
+
+  &:hover {
+    background-color: $scroll-handle-background-hover;
+
+    &:vertical {
+      background-color: $scroll-handle-hover-color;
+    }
+  }
+}

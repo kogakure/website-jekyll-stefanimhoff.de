@@ -1,0 +1,16 @@
+/* ==================================== */
+/*  Related Link                        */
+/* ==================================== */
+
+.article-related-item {
+  list-style: disc;
+
+  @media screen and (width <= $content-medium) {
+    margin-left: $default-spacing-left;
+  }
+
+  &:only-child {
+    list-style: none;
+    margin-left: 0;
+  }
+}

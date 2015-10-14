@@ -15,7 +15,7 @@ module Jekyll
 
         url = slug.to_url
         url = "#{dir}/#{url}" unless dir.nil? or dir.empty?
-        html << "<li><a class=\"category\" href=\"/#{url}\">#{title}</a></li>\n"
+        html << "<li class=\"categories-item\"><a class=\"categories-link\" href=\"/#{url}/\">#{title}</a></li>\n"
       end
       html
     end
