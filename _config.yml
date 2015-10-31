@@ -10,13 +10,18 @@ permalink: /:year/:title/
 
 # Jekyll
 source:      ./app
-destination: ./build
+destination: ./build/development
+
+# Gems
+gems:
+  - jekyll-paginate
 
 # Publishing
 encoding:    "utf-8"
+criticalcss: false
 future:      true
 show_drafts: true
-limit_posts: 5
+limit_posts: 20
 
 # Server
 date_format: "%d.%m.%Y"
@@ -41,17 +46,19 @@ standard_post_marker:
 category_feeds: true
 category_dir: category
 category_title_prefix: "Category: "
+category_meta_description_prefix: "This site has an overview of all articles you can find on this website in the category: "
 
 # Tags
 tag_feeds: true
 tag_dir: tag
 tag_title_prefix: "Tags: "
+tag_meta_description_prefix: "This site has an overview of all articles you can find on this website, which are tagged with: "
 
 # Pagination
 paginate:       1000       # Posts per page on the blog index
 paginate_path:  :num       # default path for pagination, eg. page/2/
 
-# Kramdown
+# Markdown
 kramdown:
   auto_ids:                  false
   auto_id_prefix:            ""
@@ -70,22 +77,6 @@ exclude: [
 ]
 
 include: [".htaccess", ".htpasswd", "favicon.ico"]
-
-# Sitemap.xml generator
-sitemap:
-  file: "/sitemap.xml"
-  exclude:
-    - "/atom.xml"
-    - "/feed.xml"
-    - "/htaccess"
-    - "/htpasswd"
-    - "/error/404/index.markdown"
-    - "/error/410/index.markdown"
-    - "/error/500/index.markdown"
-  include_posts:
-    - "/index.html"
-  change_frequency_name: "change_frequency"
-  priority_name: "priority"
 
 
 

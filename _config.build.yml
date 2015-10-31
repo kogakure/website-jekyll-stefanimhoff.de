@@ -8,7 +8,13 @@
 url:         "http://stefanimhoff.de"
 server_path: /path/to/my/website/
 
+# Jekyll
+source:      ./app
+destination: ./build/production
+
 # Publishing
+criticalcss: true
+lsi:         true
 future:      false
 show_drafts: false
 limit_posts: 0
