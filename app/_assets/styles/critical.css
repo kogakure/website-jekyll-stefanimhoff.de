@@ -1,5 +1,5 @@
 /* Critical CSS: Subpages
- ************************/
+ *************************/
 
 /* Helpers */
 @import "vendor/meyer-reset";
@@ -40,7 +40,7 @@
 @import "components/archive-post";
 @import "components/category";
 @import "components/comment";
-@import "components/custom-underline";
+@import "components/hint";
 @import "components/error";
 @import "components/navigation";
 @import "components/related-link";

@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  Stripe: Books                       */
-/* ==================================== */
+/* Stripe: Books
+ ****************/
 
 .stripe-books {
   background-color: $pattern-type-background;
@@ -8,12 +7,7 @@
   color: $white;
 
   a {
-    @mixin link-colors
-      $stripe-books-color,
-      $white,
-      $stripe-books-color,
-      $stripe-books-color,
-      $stripe-books-color;
+    @mixin link-colors $stripe-books-color, $white, $stripe-books-color, $stripe-books-color, $stripe-books-color;
   }
 }
 

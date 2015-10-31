@@ -3,6 +3,8 @@ layout: error
 title: Page missing!
 error_page_410: true
 robots: "noindex,follow"
+sitemap:
+  exclude: true
 ---
 
 ## Doh! This stuff is missing!

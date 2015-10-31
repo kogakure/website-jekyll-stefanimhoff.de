@@ -3,6 +3,8 @@ layout: error
 title: Not found!
 error_page_404: true
 robots: "noindex,follow"
+sitemap:
+  exclude: true
 ---
 
 ## Doh! This page can not be found.

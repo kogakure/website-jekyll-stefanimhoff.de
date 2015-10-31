@@ -3,6 +3,8 @@ layout: error
 title: Server Error!
 error_page_500: true
 robots: "noindex,follow"
+sitemap:
+  exclude: true
 ---
 
 ## Doh! Something broke really badly! Did **you** do this?

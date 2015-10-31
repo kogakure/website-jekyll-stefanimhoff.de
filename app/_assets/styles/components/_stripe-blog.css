@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  Stripe: Blog                        */
-/* ==================================== */
+/* Stripe: Blog
+ ***************/
 
 .stripe-blog-headline {
   @media screen and (width <= $homepage-sections-fullsize) {

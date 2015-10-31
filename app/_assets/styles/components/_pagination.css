@@ -1,12 +1,12 @@
-/* ==================================== */
-/*  Pagination                          */
-/* ==================================== */
+/* Pagination
+ *************/
 
 .pagination {
   overflow: hidden;
 }
 
 .pagination-link {
+  @mixin link-colors $white, $white, $white, $white, $white;
   background: $dark-grey;
   border-radius: 5px;
   border-width: 0;
@@ -20,6 +20,7 @@
   padding-left: 5px;
   padding-right: 5px;
   position: relative;
+  text-decoration: none;
   text-overflow: ellipsis;
   text-transform: uppercase;
   white-space: nowrap;
@@ -52,15 +53,4 @@
   height: 21px;
   position: absolute;
   width: 15px;
-}
-
-.custom-underline .pagination .pagination-link {
-  background: $dark-grey;
-  color: $white;
-  text-shadow: none;
-
-  &:hover {
-    background: $link-color;
-    color: $white;
-  }
 }

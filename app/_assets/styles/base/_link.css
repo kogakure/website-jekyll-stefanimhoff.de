@@ -1,14 +1,8 @@
-/* ==================================== */
-/*  Link                                */
-/* ==================================== */
+/* Link
+ *******/
 
 a {
   /* normal, hover, active, visited, focus */
-  @mixin link-colors
-    $link-color,
-    $link-hover-color,
-    $link-active-color,
-    $link-visited-color,
-    $link-focus-color;
+  @mixin link-colors $link-color, $link-hover-color, $link-active-color, $link-visited-color, $link-focus-color;
   transition: $animation-link-hover;
 }

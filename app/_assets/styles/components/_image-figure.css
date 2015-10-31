@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  Figure with Image                   */
-/* ==================================== */
+/* Figure with Image
+ ********************/
 
 .image-figure {
   clear: both;
@@ -10,22 +9,6 @@
 
   figcaption {
     margin-top: 5px;
-  }
-
-  .figure-content {
-    position: relative;
-
-    a {
-      background: transparent;
-
-      &:hover {
-        background: transparent;
-      }
-    }
-  }
-
-  a {
-    border: 0;
   }
 }
 

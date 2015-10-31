@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  Tag                                 */
-/* ==================================== */
+/* Tag
+ ******/
 
 .classification {
   .tags {
@@ -37,6 +36,7 @@
 }
 
 .tags-link {
+  @mixin link-colors $white, $white, $white, $white, $white;
   background: $dark-grey;
   border: 0;
   border-radius: 5px;
@@ -56,16 +56,5 @@
   &:hover {
     background: $link-color;
     color: $white;
-  }
-
-  .custom-underline & {
-    background-image: none;
-    color: $white;
-    text-shadow: none;
-
-    &:hover {
-      background-image: none;
-      color: $white;
-    }
   }
 }

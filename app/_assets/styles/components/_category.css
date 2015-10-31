@@ -1,11 +1,10 @@
-/* ==================================== */
-/*  Category                            */
-/* ==================================== */
+/* Category
+ ***********/
 
 .classification {
   margin-bottom: $default-spacing-bottom;
   text-align: center;
-  
+
   .categories {
     @media screen and (width <= $header-centered) {
       display: block;
@@ -53,6 +52,7 @@
 }
 
 .categories-link {
+  @mixin link-colors $white, $white, $white, $white, $white;
   background: $dark-grey;
   border-radius: 5px;
   border-width: 0;
@@ -72,16 +72,5 @@
   &:hover {
     background: $link-color;
     color: $white;
-  }
-
-  .custom-underline & {
-    background-image: none;
-    color: $white;
-    text-shadow: none;
-
-    &:hover {
-      background-image: none;
-      color: $white;
-    }
   }
 }

@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  Quote                               */
-/* ==================================== */
+/* Quote
+ ********/
 
 blockquote {
   font-style: italic;
@@ -28,10 +27,10 @@ q {
   font-style: italic;
 }
 
-/* @include q-quotes(de, "„", "“", "‚", "‘"); Alternative German quotes */
 :lang(de) > q,
 .article-body q[lang|=de] {
   quotes: "»" "«" "›" "‹";
+  /* quotes: "„" "“" "‚" "‘"; Alternative German quotes */
 }
 
 :lang(en) > q,

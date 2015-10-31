@@ -1,5 +1,5 @@
 /* Application
- *************/
+ **************/
 
 /* Helpers */
 @import "settings/color";
@@ -22,7 +22,6 @@
 @import "components/code-figure";
 @import "components/download";
 @import "components/footnote";
-@import "components/hint";
 @import "components/image-figure";
 @import "components/pullquote";
 @import "components/table";

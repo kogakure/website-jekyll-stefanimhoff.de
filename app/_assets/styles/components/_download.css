@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  Download                            */
-/* ==================================== */
+/* Download
+ ***********/
 
 .download {
   background-color: rgba($dark-grey, 0.1);
@@ -30,13 +29,4 @@
   height: 62px;
   margin-right: 15px;
   width: 54px;
-}
-
-.custom-underline .download .download-link {
-  background: transparent;
-  text-shadow: none;
-
-  &:hover {
-    background: transparent;
-  }
 }

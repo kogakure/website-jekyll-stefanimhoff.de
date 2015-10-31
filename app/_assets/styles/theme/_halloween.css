@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  Theme: Halloween                    */
-/* ==================================== */
+/* Theme: Halloween
+ *******************/
 
 $highlight-color:            #f77d14;
 
@@ -35,7 +34,7 @@ $selection-background:       $highlight-color;
 $selection-color:            $white;
 
 /* Paths */
-$header-background-url:      $header-path/$header-halloween.jpg;
-$header-background-url-m:    $header-path/$header-halloween-m.jpg;
-$header-background-url-s:    $header-path/$header-halloween-s.jpg;
+$header-background-url:      $header-path/halloween.jpg;
+$header-background-url-m:    $header-path/halloween-m.jpg;
+$header-background-url-s:    $header-path/halloween-s.jpg;
 $header-background-position: center 15%;

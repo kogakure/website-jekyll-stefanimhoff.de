@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  Navigation                          */
-/* ==================================== */
+/* Navigation
+ *************/
 
 .nav {
   padding-bottom: 5px;
@@ -54,12 +53,7 @@
 }
 
 .nav-link {
-  @mixin link-colors
-    $nav-link-color,
-    $nav-link-color-hover,
-    $nav-link-color-active,
-    $nav-link-color,
-    $nav-link-color-active;
+  @mixin link-colors $nav-link-color, $nav-link-color-hover, $nav-link-color-active, $nav-link-color, $nav-link-color-active;
   border: 0;
   line-height: 1;
   text-decoration: none;

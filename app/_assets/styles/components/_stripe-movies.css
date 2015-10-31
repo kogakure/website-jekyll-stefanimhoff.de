@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  Stripe: Movies                      */
-/* ==================================== */
+/* Stripe: Movies
+ *****************/
 
 .stripe-movies {
   background-color: $pattern-px-background;
@@ -8,12 +7,7 @@
   color: $white;
 
   a {
-    @mixin link-colors
-      $stripe-movies-color,
-      $white,
-      $stripe-movies-color,
-      $stripe-movies-color,
-      $stripe-movies-color;
+    @mixin link-colors $stripe-movies-color, $white, $stripe-movies-color, $stripe-movies-color, $stripe-movies-color;
   }
 }
 

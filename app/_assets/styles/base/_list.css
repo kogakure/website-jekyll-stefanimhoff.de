@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  List                                */
-/* ==================================== */
+/* List
+ *******/
 
 ol {
   list-style: decimal;
@@ -55,7 +54,7 @@ dl {
 }
 
 dt {
-  font-weight: $bold;
+  font-weight: $weight-bold;
 }
 
 dt + dd {

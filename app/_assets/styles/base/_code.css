@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  Code                                */
-/* ==================================== */
+/* Code
+ *******/
 
 code {
   @extend mono-font;
@@ -71,6 +70,24 @@ pre {
       top: 0;
       width: calc($default-spacing * 3);
     }
+  }
+
+  table {
+    margin-bottom: 0;
+
+    pre {
+      @extend mono-font;
+      margin-bottom: 0;
+      padding: 0;
+    }
+
+    td {
+      border: 0;
+    }
+  }
+
+  .gutter {
+    width: 2em;
   }
 
   .lineno {

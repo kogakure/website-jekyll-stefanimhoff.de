@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  Attribution                         */
-/* ==================================== */
+/* Attribution
+ **************/
 
 /* Attribution */
 .attribution {
@@ -13,7 +12,7 @@
   bottom: -30%;
   color: $white;
   font-size: 15px;
-  font-weight: $light;
+  font-weight: $weight-light;
   left: $image-border-size;
   margin: 0;
   opacity: 0;
@@ -25,12 +24,7 @@
   transition: all 0.6s ease;
 
   a {
-    @mixin link-colors
-      $link-color,
-      $link-color,
-      $link-active-color,
-      $link-visited-color,
-      $link-focus-color;
+    @mixin link-colors $link-color, $link-color, $link-active-color, $link-visited-color, $link-focus-color;
   }
 
   /* Copyright */
@@ -40,17 +34,13 @@
   }
 }
 
-.custom-underline .attribution-text a {
-  text-shadow: none;
-
-  &:hover {
-    color: $white;
-  }
-}
-
 .attribution:hover .attribution-text {
   bottom: $image-border-size;
   opacity: 1;
+}
+
+.attribution.attribution-caption:hover .attribution-text {
+  bottom: calc($image-border-size + 26);
 }
 
 .attribution .figure-content:before {
@@ -61,7 +51,7 @@
   color: $black;
   content: "?";
   font-size: 14px;
-  font-weight: $bold;
+  font-weight: $weight-bold;
   height: 20px;
   left: 10px;
   line-height: 20px;
@@ -71,6 +61,10 @@
   transition: all 0.6s ease;
   width: 20px;
   z-index: 5;
+}
+
+.attribution.attribution-caption .figure-content:before {
+  bottom: 35px;
 }
 
 .attribution .figure-content:hover:before {
@@ -83,11 +77,8 @@
   position: relative;
 
   a {
+    @mixin link-colors $white, $white, $white, $white, $white;
     text-decoration: none;
-
-    &:hover {
-      color: $white;
-    }
   }
 }
 
@@ -96,7 +87,7 @@
   bottom: -30px;
   color: $white;
   font-size: 15px;
-  font-weight: $light;
+  font-weight: $weight-light;
   height: 30px;
   left: 0;
   line-height: 30px;
@@ -107,7 +98,7 @@
   transition: all 0.6s ease;
 
   a {
-    @mixin link-colors $link-color, $link-color, $link-active-color, $link-visited-color, $link-focus-color;
+    @mixin link-colors $link-color, $white, $link-active-color, $link-visited-color, $link-focus-color;
   }
 
   /* Copyright */
@@ -152,7 +143,7 @@
   @extend mono-font;
   color: $black;
   font-size: 14px;
-  font-weight: $bold;
+  font-weight: $weight-bold;
   height: 20px;
   line-height: 20px;
   position: relative;

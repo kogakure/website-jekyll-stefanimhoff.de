@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  Color                               */
-/* ==================================== */
+/* Color
+ ********/
 
 $black:      #000000;
 $white:      #ffffff;
@@ -42,8 +41,6 @@ $link-focus-color:        $dark-grey; /* THEME */
 
 $link-border-color:       rgba($dark-grey, 0.2); /* THEME */
 $link-hover-border-color: $dark-grey;            /* THEME */
-
-$custom-underline-background: #f2f2f2;
 
 /* Social Icon Links */
 $social-icon-color: rgba($white, 0.5);
@@ -88,16 +85,6 @@ $pattern-pw-maze-black-background: #0c0c0c;
 /* Print */
 $print-border-color:   #bbbbbb;
 $print-headline-color: #808080;
-
-/* Custom Underline */
-$custom-underline-work-shadow:           #fafafa;
-$custom-underline-martial-arts-shadow:   #030303;
-$custom-underline-martial-arts-gradient: #be0202;
-$custom-underline-movies-arts-shadow:    #282828;
-$custom-underline-movies-arts-gradient:  #e8c53d;
-$custom-underline-books-arts-shadow:     #1c1c1c;
-$custom-underline-books-arts-gradient:   #616161;
-$custom-underline-footer-shadow:         #2a2c2d;
 
 /* Stripe Colors */
 $stripe-martial-arts-color: #be0202;

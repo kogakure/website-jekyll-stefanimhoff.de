@@ -9,6 +9,6 @@ var config      = require('../../config').jekyll.production;
 gulp.task('production:jekyll', function(done) {
   browsersync.notify('Compiling Jekyll (Production)');
 
-  return cp.spawn('bundle', ['exec', 'jekyll', 'build', '-q', '--source=' + config.src, '--destination=' + config.dest, '--config=' + config.config], { stdio: 'inherit' })
+  return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--config=' + config.config], { stdio: 'inherit' })
   .on('close', done);
 });

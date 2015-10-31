@@ -37,7 +37,7 @@ var processors = [
   mqpacker(config.styles.options.mqpacker),
 ];
 
-gulp.task('styles', function () {
+gulp.task('styles', function() {
   browsersync.notify('Transforming CSS with PostCSS');
 
   return gulp.src(config.styles.src)

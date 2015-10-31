@@ -1,6 +1,8 @@
 ---
 layout: null
 permalink: .htaccess
+sitemap:
+  exclude: true
 ---
 
 # ------------------------------------------------------------------------------
@@ -28,24 +30,24 @@ Redirect Gone /main/kategorie/design/
 Redirect Gone /main/kategorie/fundstueck/
 Redirect Gone /main/kategorie/musik/
 Redirect Gone /main/kategorie/screencast/
-Redirect Gone /notiz/abmahnung-kogakure-zitat-karl-valentin
-Redirect Gone /notiz/bash_profile-striptease
-Redirect Gone /notiz/blender-animationsfilm-big-buck-bunny
-Redirect Gone /notiz/chris-jordan-zeigt-unsere-masslosigkeit-in-erschreckenden-bildern
-Redirect Gone /notiz/cms-weblog-systeme-reloaded
-Redirect Gone /notiz/die-schatzinsel-bei-pro7
-Redirect Gone /notiz/django-und-das-framework-ding
+Redirect Gone /notiz/abmahnung-kogakure-zitat-karl-valentin/
+Redirect Gone /notiz/bash_profile-striptease/
+Redirect Gone /notiz/blender-animationsfilm-big-buck-bunny/
+Redirect Gone /notiz/chris-jordan-zeigt-unsere-masslosigkeit-in-erschreckenden-bildern/
+Redirect Gone /notiz/cms-weblog-systeme-reloaded/
+Redirect Gone /notiz/die-schatzinsel-bei-pro7/
+Redirect Gone /notiz/django-und-das-framework-ding/
 Redirect Gone /notiz/django/
-Redirect Gone /notiz/einfach-die-welt-veraendern
-Redirect Gone /notiz/expression-engine-2-sneak-preview
-Redirect Gone /notiz/glueckliche-mitarbeiter
-Redirect Gone /notiz/meine-groesste-dummheit-vorerst
-Redirect Gone /notiz/musik-tipp-poets-of-the-fall
-Redirect Gone /notiz/platzsparend-browser-bookmark-unicode
-Redirect Gone /notiz/textmate-snippet-dummy-image-generator
-Redirect Gone /notiz/warum-google-wave-kommunikation-veraendern-wird
-Redirect Gone /notiz/why-we-fight
-Redirect Gone /notiz/wie-marions-kochbuch-google-manipuliert
+Redirect Gone /notiz/einfach-die-welt-veraendern/
+Redirect Gone /notiz/expression-engine-2-sneak-preview/
+Redirect Gone /notiz/glueckliche-mitarbeiter/
+Redirect Gone /notiz/meine-groesste-dummheit-vorerst/
+Redirect Gone /notiz/musik-tipp-poets-of-the-fall/
+Redirect Gone /notiz/platzsparend-browser-bookmark-unicode/
+Redirect Gone /notiz/textmate-snippet-dummy-image-generator/
+Redirect Gone /notiz/warum-google-wave-kommunikation-veraendern-wird/
+Redirect Gone /notiz/why-we-fight/
+Redirect Gone /notiz/wie-marions-kochbuch-google-manipuliert/
 Redirect Gone /notizbuch/P0/
 Redirect Gone /projekte/
 Redirect Gone /projekte/bewernick/

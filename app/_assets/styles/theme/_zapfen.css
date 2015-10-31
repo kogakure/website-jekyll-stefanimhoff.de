@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  Theme: Zapfen                       */
-/* ==================================== */
+/* Theme: Zapfen
+ ****************/
 
 $highlight-color:            #89b46b;
 
@@ -35,7 +34,7 @@ $selection-background:       $highlight-color;
 $selection-color:            $white;
 
 /* Paths */
-$header-background-url:      $header-path/$header-zapfen.jpg;
-$header-background-url-m:    $header-path/$header-zapfen-m.jpg;
-$header-background-url-s:    $header-path/$header-zapfen-s.jpg;
+$header-background-url:      $header-path/zapfen.jpg;
+$header-background-url-m:    $header-path/zapfen-m.jpg;
+$header-background-url-s:    $header-path/zapfen-s.jpg;
 $header-background-position: center left;

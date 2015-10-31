@@ -1,5 +1,5 @@
 /* Critical CSS: Homepage
- ************************/
+ *************************/
 
 /* Helpers */
 @import "vendor/meyer-reset";
@@ -31,7 +31,6 @@
 
 /* Stripe Sections */
 @import "components/attribution";
-@import "components/custom-underline";
 @import "components/inline-container";
 @import "components/navigation";
 @import "components/scrollbar";

@@ -1,10 +1,10 @@
 # Ignore hidden folders
 .*/
 
-.fontcustom-manifest.json
 app/_bower_components
 app/_includes/critical/critical.css
 app/_includes/critical/critical_homepage.css
+app/.jekyll-metadata
 build/
 node_modules/
 vendor/bundle/

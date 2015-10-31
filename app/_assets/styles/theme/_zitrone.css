@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  Theme: Zitrone                      */
-/* ==================================== */
+/* Theme: Zitrone
+ *****************/
 
 $highlight-color:           #d87c03;
 
@@ -35,7 +34,7 @@ $selection-background:      $highlight-color;
 $selection-color:           $white;
 
 /* Paths */
-$header-background-url:      $header-path/$header-zitrone.jpg;
-$header-background-url-m:    $header-path/$header-zitrone-m.jpg;
-$header-background-url-s:    $header-path/$header-zitrone-s.jpg;
+$header-background-url:      $header-path/zitrone.jpg;
+$header-background-url-m:    $header-path/zitrone-m.jpg;
+$header-background-url-s:    $header-path/zitrone-s.jpg;
 $header-background-position: center left;

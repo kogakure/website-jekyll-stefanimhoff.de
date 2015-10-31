@@ -1,6 +1,5 @@
-/* ==================================== */
-/*  Scrollbar                           */
-/* ==================================== */
+/* Scrollbar
+ ************/
 
 ::-webkit-scrollbar {
   background-color: $scroll-background;

@@ -1,10 +1,9 @@
-/* ==================================== */
-/*  Stripe                              */
-/* ==================================== */
+/* Stripe
+ *********/
 
 .stripe {
   font-size: 1.1em;
-  font-weight: $normal;
+  font-weight: $weight-normal;
   line-height: $base-line-height;
   margin-bottom: 0;
   padding: 1.5em 0;
@@ -15,7 +14,7 @@
 
   p {
     @media screen and (resolution >= 1.49dppx) and (resolution >= 143dpi) {
-      font-weight: $light;
+      font-weight: $weight-light;
     }
   }
 }
