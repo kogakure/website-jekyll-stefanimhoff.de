@@ -51,15 +51,11 @@ These are just some of the tools, packages, languages and stuff I used to build 
 - [Node.js](http://nodejs.org/) to run Gulp.js, Bower and other tools
 - [Bundler](http://bundler.io/) to have all Gems in an consistent enviroment.
 - [Ruby](https://www.ruby-lang.org/) to write plugins for Jekyll.
-- [Font Custom](http://fontcustom.com/) to create Vector Fonts.
 - [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript)
 - [Browserify](http://browserify.org/) to use CommonJS modules.
 - [BrowserSync](http://www.browsersync.io/) to have live reload and syning of actions.
-- [Modernizr](http://modernizr.com/) to detect features.
-- [Sass](http://sass-lang.com/) (SCSS) to write better CSS.
-- [Singularity](http://singularity.gs/) to build the awesome Grid of my website.
-- [Breakpoint](https://github.com/at-import/breakpoint) to get really simple media quries in Sass.
-- [Modular Scale](https://github.com/at-import/modular-scale) to create a typographic scale for my website.
+- [PostCSS](https://github.com/postcss/postcss)
+- [LostGrid](https://github.com/corysimmons/lost) to build the awesome Grid of my website.
 
 ## Licence
 All content is copyrighted by [Stefan Imhoff](http://stefanimhoff.de) unless otherwise stated. Feel free to learn from the source code and reuse code for your projects. The only thing which is not allowed is the usage of my design (the unique combination of layout, fonts, images), private photos and logo.
