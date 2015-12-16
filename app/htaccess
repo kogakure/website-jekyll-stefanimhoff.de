@@ -37,7 +37,6 @@ Redirect Gone /notiz/chris-jordan-zeigt-unsere-masslosigkeit-in-erschreckenden-b
 Redirect Gone /notiz/cms-weblog-systeme-reloaded/
 Redirect Gone /notiz/die-schatzinsel-bei-pro7/
 Redirect Gone /notiz/django-und-das-framework-ding/
-Redirect Gone /notiz/django/
 Redirect Gone /notiz/einfach-die-welt-veraendern/
 Redirect Gone /notiz/expression-engine-2-sneak-preview/
 Redirect Gone /notiz/glueckliche-mitarbeiter/
@@ -123,6 +122,7 @@ Redirect 301 /notiz/automatisierte-installation-mac-os-x                        
 Redirect 301 /main/kategorie/gtd                                                 /category/produktivitaet
 Redirect 301 /main/kategorie/python                                              /tag/python
 Redirect 301 /main/kategorie/django                                              /tag/django
+Redirect 301 /notiz/django                                                       /tag/django
 
 Redirect 301 /information/impressum                                             /impressum
 Redirect 301 /main/kategorie/tutorial                                           /tag/tutorial

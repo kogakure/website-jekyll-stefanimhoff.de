@@ -12,13 +12,6 @@ $ npm install -g gulp
 $ npm install -g bower
 ```
 
-[Font Custom](http://fontcustom.com/) needs additional packages, which can be installed with [Homebrew](http://brew.sh/) on a Mac or as documented on the website of Font Custom:
-
-```sh
-$ brew install fontforge --with-python
-$ brew install eot-utils
-```
-
 After cloning the repository run:
 
 ```sh

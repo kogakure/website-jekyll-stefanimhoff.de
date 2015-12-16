@@ -9,7 +9,7 @@ var config      = require('../../config').jekyll.development;
 gulp.task('jekyll', function(done) {
   browsersync.notify('Compiling Jekyll');
 
-  return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--incremental', '--config=' + config.config], { stdio: 'inherit' })
+  return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--config=' + config.config], { stdio: 'inherit' })
   .on('close', done);
 });
 

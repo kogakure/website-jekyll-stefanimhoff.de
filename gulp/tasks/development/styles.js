@@ -11,6 +11,7 @@ var easings        = require('postcss-easings');
 var responsiveType = require('postcss-responsive-type');
 var lost           = require('lost');
 var hexRGBA        = require('postcss-hexrgba');
+var pxtorem        = require('postcss-pxtorem');
 var autoprefixer   = require('autoprefixer');
 var mqpacker       = require('css-mqpacker');
 
@@ -33,6 +34,7 @@ var processors = [
   responsiveType(config.styles.options.responsiveType),
   lost(config.styles.options.lost),
   hexRGBA(config.styles.options.hexRGBA),
+  pxtorem(config.styles.options.pxtorem),
   autoprefixer(config.styles.options.autoprefixer),
   mqpacker(config.styles.options.mqpacker),
 ];

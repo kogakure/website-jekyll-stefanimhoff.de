@@ -7,6 +7,8 @@ author: "Stefan Imhoff"
 date: 2013-12-17 09:12
 updated: 2015-10-14 18:00
 robots: "noindex,follow"
+sitemap:
+  exclude: true
 ---
 
 ### Ansprechpartner

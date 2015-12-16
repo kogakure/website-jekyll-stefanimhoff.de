@@ -3,7 +3,7 @@
 
 @charset "UTF-8";
 
-@include viewport {
+@viewport {
   width: device-width;
 }
 
@@ -23,7 +23,7 @@ body {
   @extend sans-font;
   background-color: $body-background;
   color: $dark-grey;
-  font-size: $modular-scale-1;
+  font-size: $base-font-size;
   font-smoothing: subpixel-antialiased;
   font-style: normal;
   font-weight: $weight-normal;

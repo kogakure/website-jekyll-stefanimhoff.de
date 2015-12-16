@@ -31,7 +31,7 @@ $base-font-mono:     "Menlo", Monaco, "Droid Sans Mono", "Andale Mono", "Lucida 
 $base-font-japanese: "Hiragino Maru Gothic Pro", sans-serif;
 
 /* Base Sizes and Line-Heights */
-$base-font-size:   $modular-scale-1; /* 18px */
+$base-font-size:   112.5%; /* 18px */
 $base-line-height: 1.5;
 $base-font-weight: $weight-normal;
 

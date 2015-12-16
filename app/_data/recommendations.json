@@ -12,7 +12,19 @@
       },
       {
         "text": "Explore",
-        "url": "http://explore.noodle.org/"
+        "url": "http://explore.brainpickings.org/"
+      },
+      {
+        "text": "The School of Life",
+        "url": "https://www.youtube.com/user/schooloflifechannel"
+      },
+      {
+        "text": "AsapSCIENCE",
+        "url": "https://www.youtube.com/user/AsapSCIENCE"
+      },
+      {
+        "text": "Kurzgesagt",
+        "url": "https://www.youtube.com/user/Kurzgesagt"
       },
       {
         "text": "Zen Pencils",
@@ -37,10 +49,6 @@
       {
         "text": "Information Architects",
         "url": "https://ia.net/know-how"
-      },
-      {
-        "text": "Media Queries",
-        "url": "http://mediaqueri.es/"
       }
     ]
   },
@@ -64,6 +72,10 @@
         "url": "http://bradfrost.github.io/this-is-responsive/resources.html"
       },
       {
+        "text": "Media Queries",
+        "url": "http://mediaqueri.es/"
+      },
+      {
         "text": "ColorHexa",
         "url": "http://www.colorhexa.com/"
       }
@@ -79,10 +91,6 @@
       {
         "text": "Octopress",
         "url": "http://octopress.org/"
-      },
-      {
-        "text": "Yeoman",
-        "url": "http://yeoman.io/"
       }
     ]
   },
@@ -92,10 +100,6 @@
       {
         "text": "Gulp",
         "url": "http://gulpjs.com/"
-      },
-      {
-        "text": "Grunt",
-        "url": "http://gruntjs.com/"
       }
     ]
   },
