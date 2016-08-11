@@ -31,6 +31,10 @@
         "id": "tt0080979"
       },
       {
+        "text": "Le salaire de la peur",
+        "id": "tt0046268"
+      },
+      {
         "text": "Love Actually",
         "id": "tt0314331"
       },
@@ -39,8 +43,16 @@
         "id": "tt0078788"
       },
       {
+        "text": "300",
+        "id": "tt0416449"
+      },
+      {
         "text": "Hotaru no haka",
         "id": "tt0095327"
+      },
+      {
+        "text": "Sen to Chihiro no kamikakushi",
+        "id": "tt0245429"
       },
       {
         "text": "Matrix",
@@ -59,32 +71,44 @@
         "id": "tt0167260"
       },
       {
-        "text": "Hero",
+        "text": "Ying xiong",
         "id": "tt0299977"
       },
       {
-        "text": "Last Samurai",
+        "text": "The Last Samurai",
         "id": "tt0325710"
       },
       {
-        "text": "Oldboy",
+        "text": "Oldeuboi",
         "id": "tt0364569"
+      },
+      {
+        "text": "Forrest Gump",
+        "id": "tt0109830"
       },
       {
         "text": "Watchmen",
         "id": "tt0409459"
       },
       {
-        "text": "Departures",
+        "text": "Okuribito",
         "id": "tt1069238"
       },
       {
-        "text": "Ip Man",
+        "text": "The Secret of Kells",
+        "id": "tt0485601"
+      },
+      {
+        "text": "Yip Man",
         "id": "tt1220719"
       },
       {
         "text": "Inception",
         "id": "tt1375666"
+      },
+      {
+        "text": "City Lights",
+        "id": "tt0021749"
       },
       {
         "text": "Moonrise Kingdom",
@@ -99,6 +123,10 @@
   {
     "name": "Favorite TV Shows",
     "items": [
+      {
+        "text": "Underwear",
+        "id": "tt4790548"
+      },
       {
         "text": "Pushing Daisies",
         "id": "tt0925266"
@@ -118,6 +146,18 @@
       {
         "text": "The Walking Dead",
         "id": "tt1520211"
+      },
+      {
+        "text": "Person of Interest",
+        "id": "tt1839578"
+      },
+      {
+        "text": "Mr. Robot",
+        "id": "tt4158110"
+      },
+      {
+        "text": "Black Mirror",
+        "id": "tt2085059"
       },
       {
         "text": "Californication",
@@ -140,6 +180,10 @@
         "id": "tt1235099"
       },
       {
+        "text": "Chef’s Table",
+        "id": "tt4295140"
+      },
+      {
         "text": "Orange is the New Black",
         "id": "tt2372162"
       },
@@ -150,10 +194,6 @@
       {
         "text": "The Sopranos",
         "id": "tt0141842"
-      },
-      {
-        "text": "Person of Interest",
-        "id": "tt1839578"
       },
       {
         "text": "Six Feet Under",
@@ -176,12 +216,12 @@
         "id": "tt1196946"
       },
       {
-        "text": "Dexter",
-        "id": "tt0773262"
+        "text": "Der Tatortreiniger",
+        "id": "tt2147995"
       },
       {
-        "text": "24",
-        "id": "tt0285331"
+        "text": "Dexter",
+        "id": "tt0773262"
       },
       {
         "text": "Battlestar Galactica",

@@ -1,4 +1,4 @@
-var gulp   = require('gulp');
+var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var config = require('../../config').loadcss;
 

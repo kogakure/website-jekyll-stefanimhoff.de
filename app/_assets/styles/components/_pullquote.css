@@ -13,11 +13,11 @@ blockquote.pullquote {
   line-height: 1;
   text-align: center;
 
-  p:first-child:before {
+  p:first-child::before {
     content: open-quote;
   }
 
-  p:last-child:after {
+  p:last-child::after {
     content: close-quote;
   }
 }
@@ -34,8 +34,8 @@ blockquote.pullquote[lang|=ja] {
   quotes: "「" "」" "『" "』";
 }
 
-.pullquote-right:before,
-.pullquote-left:before {
+.pullquote-right::before,
+.pullquote-left::before {
   @extend pullquote;
   border: 0;
   content: attr(data-pullquote);
@@ -64,7 +64,7 @@ blockquote.pullquote[lang|=ja] {
   }
 }
 
-.pullquote-left:before {
+.pullquote-left::before {
   float: left;
   margin-bottom: $default-spacing-bottom;
   margin-left: -$default-spacing-left;

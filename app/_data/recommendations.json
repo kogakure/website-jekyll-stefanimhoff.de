@@ -23,6 +23,10 @@
         "url": "https://www.youtube.com/user/AsapSCIENCE"
       },
       {
+        "text": "WellCast",
+        "url": "https://www.youtube.com/user/watchwellcast"
+      },
+      {
         "text": "Kurzgesagt",
         "url": "https://www.youtube.com/user/Kurzgesagt"
       },
@@ -65,7 +69,7 @@
       },
       {
         "text": "LostGrid",
-        "url": "https://github.com/corysimmons/lost"
+        "url": "https://github.com/peterramsing/lost"
       },
       {
         "text": "Responsive Resources",
@@ -113,7 +117,7 @@
     ]
   },
   {
-    "category": "Social",
+    "category": "Social Media",
     "items": [
       {
         "text": "XING",
@@ -185,7 +189,7 @@
       },
       {
         "text": "Kiva",
-        "url": "http://www.kiva.org/lender/kogakure"
+        "url": "https://www.kiva.org/lender/kogakure"
       }
     ]
   }

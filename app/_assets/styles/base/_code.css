@@ -8,7 +8,7 @@ code {
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
-  font-size: $font-scale-small;
+  font-size: $modular-scale-0;
   padding-bottom: 0.2em;
   padding-left: 0.4em;
   padding-right: 0.4em;
@@ -16,8 +16,6 @@ code {
 }
 
 pre {
-  margin-bottom: $default-spacing-bottom;
-
   code {
     display: block;
     line-height: 1.2;
@@ -48,20 +46,16 @@ pre {
 
   pre {
     background: $white;
-    padding-bottom: 0;
-    padding-left: $default-spacing-left;
-    padding-right: $default-spacing-right;
-    padding-top: $default-spacing-top;
   }
 
   code {
     border: 0;
-    padding-bottom: 6px;
-    padding-left: 0;
+    padding-bottom: 25px;
+    padding-left: 20px;
     padding-right: 20px;
-    padding-top: 0;
+    padding-top: 25px;
 
-    &:after {
+    &::after {
       background-image: linear-gradient(to right, rgba($white, 0) 20%, $white 50%, $white);
       content: " ";
       height: 100%;

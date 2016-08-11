@@ -1,13 +1,13 @@
-var gulp   = require('gulp');
+var gulp = require('gulp');
 var config = require('../../config').watch;
 
 /**
  * Start browsersync task and then watch files for changes
  */
 gulp.task('watch', ['browsersync'], function() {
-  gulp.watch(config.jekyll,      ['jekyll-rebuild']);
-  gulp.watch(config.styles,      ['styles', 'lint-styles']);
-  gulp.watch(config.scripts,     ['scripts', 'jshint']);
-  gulp.watch(config.images,      ['images']);
-  gulp.watch(config.svg,         ['svg']);
+  gulp.watch(config.jekyll, ['jekyll:rebuild']);
+  gulp.watch(config.styles, ['styles', 'lint:styles']);
+  gulp.watch(config.scripts, ['scripts', 'lint:scripts']);
+  gulp.watch(config.images, ['images']);
+  gulp.watch(config.svg, ['svg']);
 });

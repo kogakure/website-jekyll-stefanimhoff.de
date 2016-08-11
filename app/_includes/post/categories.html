@@ -3,6 +3,8 @@
 {% unless category == "0" %}
 <div class="categories">
   <svg class="classification-icon"><use xlink:href="#folder"></use></svg>
-  {{ page.categories | category_links | replace: ',','' }}
+  {% for category in page.categories %}
+    <a class="categories-link" href="/{{ site.category_dir }}/{{ category }}">{{ category }}</a>
+  {% endfor %}
 </div>
 {% endunless %}

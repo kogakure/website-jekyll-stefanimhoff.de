@@ -1,5 +1,5 @@
-var gulp   = require('gulp');
-var gzip   = require('gulp-gzip');
+var gulp = require('gulp');
+var gzip = require('gulp-gzip');
 var config = require('../../config').gzip;
 
 /**

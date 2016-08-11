@@ -1,5 +1,5 @@
-var gulp      = require('gulp');
-var config    = require('../../config').criticalcss;
+var gulp = require('gulp');
+var config = require('../../config').criticalcss;
 
 /**
  * Copy loadCSS to _includes

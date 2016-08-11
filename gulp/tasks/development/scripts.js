@@ -1,11 +1,11 @@
-var gulp         = require('gulp');
-var browsersync  = require('browser-sync');
-var browserify   = require('browserify');
-var source       = require('vinyl-source-stream');
-var watchify     = require('watchify');
+var gulp = require('gulp');
+var browsersync = require('browser-sync');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
+var watchify = require('watchify');
 var bundleLogger = require('../../util/bundleLogger');
 var handleErrors = require('../../util/handleErrors');
-var config       = require('../../config').browserify;
+var config = require('../../config').browserify;
 
 /**
  * Run JavaScript through Browserify
@@ -28,6 +28,20 @@ gulp.task('scripts', function(callback) {
       // Enable source maps!
       debug: config.debug
     });
+
+    var reportFinished = function() {
+      // Log when bundling completes
+      bundleLogger.end(bundleConfig.outputName);
+
+      if(bundleQueue) {
+        bundleQueue--;
+        if(bundleQueue === 0) {
+          // If queue is empty, tell gulp the task is complete.
+          // https://github.com/gulpjs/gulp/blob/master/docs/API.md#accept-a-callback
+          callback();
+        }
+      }
+    };
 
     var bundle = function() {
       // Log when bundling starts
@@ -52,20 +66,6 @@ gulp.task('scripts', function(callback) {
       // Rebundle on update
       bundler.on('update', bundle);
     }
-
-    var reportFinished = function() {
-      // Log when bundling completes
-      bundleLogger.end(bundleConfig.outputName)
-
-      if(bundleQueue) {
-        bundleQueue--;
-        if(bundleQueue === 0) {
-          // If queue is empty, tell gulp the task is complete.
-          // https://github.com/gulpjs/gulp/blob/master/docs/API.md#accept-a-callback
-          callback();
-        }
-      }
-    };
 
     return bundle();
   };

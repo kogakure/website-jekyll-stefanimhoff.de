@@ -5,7 +5,7 @@ blockquote {
   font-style: italic;
   margin: $default-spacing;
 
-  footer strong:before {
+  footer strong::before {
     content: "❦ ";
     font-family: $base-font-serif;
     font-style: normal;
@@ -16,7 +16,7 @@ cite {
   font-style: italic;
 }
 
-blockquote cite:before {
+blockquote cite::before {
   content: "–";
   padding-left: 0.3em;
   padding-right: 0.3em;
@@ -49,10 +49,10 @@ q {
   quotes: "「" "」," "『" "』";
 }
 
-q:before {
+q::before {
   content: open-quote;
 }
 
-q:after {
+q::after {
   content: close-quote;
 }

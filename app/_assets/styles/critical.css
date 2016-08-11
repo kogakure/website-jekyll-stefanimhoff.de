@@ -48,3 +48,6 @@
 @import "components/table";
 @import "components/tag";
 @import "components/pagination";
+
+/* Print */
+@import "base/print";

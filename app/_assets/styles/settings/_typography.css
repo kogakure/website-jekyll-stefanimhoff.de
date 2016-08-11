@@ -43,5 +43,5 @@ $font-scale-h4:    $modular-scale-2; /* 26px */
 $font-scale-h5:    $modular-scale-2; /* 26px */
 $font-scale-h6:    $modular-scale-2; /* 26px */
 $font-scale-small: 14px;
-$font-scale-intro: calc($base-font-size * 1.375);
+$font-scale-intro: calc($base-font-size * 1.2);
 $font-scale-kbd:   calc($base-font-size * 0.75);

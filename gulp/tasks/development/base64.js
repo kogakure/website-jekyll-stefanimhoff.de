@@ -1,4 +1,4 @@
-var gulp   = require('gulp');
+var gulp = require('gulp');
 var base64 = require('gulp-base64');
 var config = require('../../config').base64;
 

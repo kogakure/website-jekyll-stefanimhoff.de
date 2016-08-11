@@ -36,6 +36,3 @@
 
 /* Fast fixes and tests */
 @import "tools/shame";
-
-/* Print */
-@import "base/print";

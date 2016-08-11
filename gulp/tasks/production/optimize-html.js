@@ -1,6 +1,6 @@
-var gulp    = require('gulp');
+var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
-var config  = require('../../config').optimize.html;
+var config = require('../../config').optimize.html;
 
 /**
  * Minimize HTML

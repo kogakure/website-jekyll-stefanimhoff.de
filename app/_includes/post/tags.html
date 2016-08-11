@@ -3,6 +3,8 @@
 {% unless tag == '0' %}
 <div class="tags">
   <svg class="classification-icon"><use xlink:href="#tag"></use></svg>
-  {{ page.tags | tag_links | replace: ',','' }}
+  {% for tag in page.tags %}
+    <a class="tags-link" href="/{{ site.tag_dir }}/{{ tag }}">{{ tag }}</a>
+  {% endfor %}
 </div>
 {% endunless %}

@@ -28,7 +28,7 @@
   },
   "about": {
     "headline": "About me",
-    "text": "*Stefan Imhoff*, Front-End Engineer at [XING](https://www.xing.com/profile/Stefan_Imhoff). Designer, Developer and Martial Artist. Loves [Ninja&nbsp;&amp;&nbsp;Ninjutsu](http://kogakure.de/), Bujinkan, [Calisthenics](https://flipboard.com/@kogakure/fitness-calisthenics-ceo3hg8by), [Movies](http://www.imdb.com/user/ur15936207/ratings), [Books](https://www.goodreads.com/user/show/28460819-stefan), [Architecture](https://flipboard.com/@kogakure/architecture-interior-gkccts4cy), [Art&nbsp;&amp;&nbsp;Design](https://flipboard.com/@kogakure/art-design-5djq9118y), Typography, Philosophy, Japan, [Japanese Tattoos](https://flipboard.com/@kogakure/irezumi-japanese-tattoo-t3anr4uby), Thunderstorm&nbsp;&amp;&nbsp;Rain, Sun, the Sea, Forests, Bamboo, [Time Lapse&nbsp;&amp;&nbsp;Slow Motion](https://flipboard.com/@kogakure/time-lapse-slow-motion-e3hoo13ay), Kanji, Apple, Wabi&nbsp;Sabi, [Niedersächsiche Hochzeitssuppe](https://de.wikipedia.org/wiki/Hochzeitssuppe), [Haiku](/haiku/) and [Vim](https://gist.github.com/kogakure/33992)."
+    "text": "*Stefan Imhoff*, Front-End Engineer at [XING](https://www.xing.com/profile/Stefan_Imhoff). Designer, Developer and Martial Artist. Lives in [Hamburg](https://www.pinterest.com/kogakure/hamburg/). Loves [Ninja&nbsp;&amp;&nbsp;Ninjutsu](https://www.pinterest.com/kogakure/ninja-ninjutsu/), [Calisthenics](https://www.pinterest.com/kogakure/fitness-calisthenics/), [Movies](http://www.imdb.com/user/ur15936207/ratings), [Books](https://www.goodreads.com/user/show/28460819-stefan), [Architecture](https://www.pinterest.com/kogakure/architecture/), [Interior Design](https://www.pinterest.com/kogakure/interior-design/), [Art&nbsp;&amp;&nbsp;Design](https://www.pinterest.com/kogakure/art-design/), [Sketchnotes](https://www.pinterest.com/kogakure/sketchnotes/), [Lettering](https://www.pinterest.com/kogakure/lettering/), [Typography](https://www.pinterest.com/kogakure/typography/), Philosophy, Japan, [Japanese Tattoos](https://www.pinterest.com/kogakure/irezumi-tebori/), [Thunderstorm&nbsp;&amp;&nbsp;Rain](https://www.pinterest.com/kogakure/thunderstorm-lightning-rain/), [Sun](https://www.pinterest.com/kogakure/sun/), [the Sea](https://www.pinterest.com/kogakure/ocean-sea/), [Beaches](https://www.pinterest.com/kogakure/beach-coast/), [Trees](https://www.pinterest.com/kogakure/trees-roots/), [Bamboo](https://www.pinterest.com/kogakure/bamboo/), [Time Lapse&nbsp;&amp;&nbsp;Slow Motion](https://flipboard.com/@kogakure/time-lapse-slow-motion-e3hoo13ay), [Kanji](https://www.pinterest.com/kogakure/kanji/), [Wabi&nbsp;Sabi](https://www.pinterest.com/kogakure/wabi-sabi/), [Niedersächsiche Hochzeitssuppe](https://de.wikipedia.org/wiki/Hochzeitssuppe), [Haiku](/haiku/) and [Vim](https://github.com/kogakure/dotfiles/blob/master/vim/vimrc.symlink)."
   },
   "socialnetworks": {
     "headline": "Elsewhere"
@@ -48,7 +48,7 @@
     },
     "introvert": {
       "headline": "Introvert" ,
-      "text": "I am an introvert. Only ¼ of all people around the globe are introverted, that’s why we are usually outnumbered. Introverts think differently, their brain processes information in a different way than other brains. While extraverts get energy by social interaction with other people, introverts loose their energy and need time to refill.",
+      "text": "I am an Introvert (Meyer-Briggs personality type: [INTJ – The Architect](https://www.16personalities.com/intj-personality)). Introverts think differently, our brain processes information in a different way than Extraverts, who get energy by social interaction with other people. Introverts loose their energy and need time to refill.",
       "quote": {
         "japanese": "<ruby>能<rp>（</rp><rt>のう</rt><rp>）</rp></ruby>ある<ruby>鷹<rp>（</rp><rt>たか</rt><rp>）</rp></ruby>は<ruby>爪<rp>（</rp><rt>つめ</rt><rp>）</rp></ruby>を<ruby>隠<rp>（</rp><rt>かく</rt><rp>）</rp></ruby>す。",
         "translation": "The wise hawk hides its talons."
@@ -67,7 +67,7 @@
     },
     "work": {
       "headline": "Designer &amp; Developer",
-      "text": "I work as **Front-End Engineer** at **XING** and contributed to **Jobs** (simplified design, new search), **Mobile** ([Touch](https://touch.xing.com/) and iPad hybrid app), the new **Groups** and the **Adaptive Profile**.\n\nI am co-creator of the idea for **XING Projects**, a job platform for freelancer. I worked on this innovation project from the beginning and helped bringing it to the XING BetaLabs program. Later it became a product on the XING platform and was build by a team.\n\nI won the XING awards *Best Smart Tools & Services* at the **Prototyping Days 2013** and *Matterhorn Award – Growth* at **Prototyping Days 2015**."
+      "text": "I work as **Front-End Engineer** at **XING** and contributed to a variety of products like **Jobs**, **Mobile**, **Groups**, **Profile** and **SEO**.\n\nI am co-creator of the idea for **XING Projects**, a job platform for freelancer. I worked on this Innovation Project from the beginning and helped bringing it to the XING Beta program.\n\nI won the XING awards **Best Smart Tools & Services** at the *Prototyping Days 2013* and **Matterhorn Award – Growth** at *Prototyping Days 2015*. Furthermore the **SEMY Award** – *Deutscher Suchmarketingpreis 2015*."
     }
   }
 }

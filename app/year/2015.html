@@ -1,8 +1,12 @@
 ---
 layout: archive
-title: Articles
+title: Articles 2015
+permalink: /2015/
 body_class: "archive"
-description: "An overview of all articles available on this website with title and date of publication."
+description: "An overview of all articles available on this website with title and date of publication of 2015."
+robots: "noindex,follow"
+sitemap:
+  exclude: true
 ---
 
 <h1 class="archive-headline">
@@ -15,7 +19,10 @@ description: "An overview of all articles available on this website with title a
 
 {% assign sorted = site.posts | sort:"date" | reverse %}
 {% for post in sorted %}
+  {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
+  {% if year == "2015" %}
   <article class="archive-post">
     {% include archive_post.html %}
   </article>
+  {% endif %}
 {% endfor %}

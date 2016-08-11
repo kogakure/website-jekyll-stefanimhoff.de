@@ -4,8 +4,8 @@ language: "de"
 title: "Impressum"
 description: "Das Impressum mit Ansprechpartner, Rechtshinweisen, Datenschutzhinweisen und Quellenangaben zu verwendeten Grafiken und Fotos."
 author: "Stefan Imhoff"
-date: 2013-12-17 09:12
-updated: 2015-10-14 18:00
+date: 2013-12-17T09:12:00+02:00
+updated: 2015-10-14T18:00:00+02:00
 robots: "noindex,follow"
 sitemap:
   exclude: true
@@ -36,7 +36,7 @@ Diese Seite verwendet ein Foto für den Kopfbereich und einige Hintergrundmuster
   <ul>
     <li><a href="http://purtypixels.com/"><cite>Classy Fabric</cite> von Richard Tabor</a></li>
     <li><a href="https://www.facebook.com/stefanaleksic88"><cite>Dark stripes</cite> von Stefan Aleksić</a></li>
-    <li><a href="http://www.pdmb.org/work"><cite>Inspiration Geometry</cite> von Welsley</a></li>
+    <li><cite>Inspiration Geometry</cite> von Welsley</li>
     <li><a href="http://poisones.tumblr.com/"><cite>Light gray</cite> von Brenda Lay</a></li>
     <li><a href="https://www.30.nl/"><cite>Nami</cite> von Dertig Media</a></li>
     <li><a href="http://www.peax-webdesign.com/"><cite>Maze black</cite> von Peax</a></li>

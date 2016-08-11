@@ -1,5 +1,5 @@
-var gulp   = require('gulp');
-var rev    = require('gulp-rev');
+var gulp = require('gulp');
+var rev = require('gulp-rev');
 var config = require('../../config').revision;
 
 /**

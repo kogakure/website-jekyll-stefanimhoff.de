@@ -5,11 +5,10 @@ require('fitvids');
 require('classie');
 require('./vendor/ios-rotate-scaling-fix');
 
-var navigation     = require('./libs/navigation');
-var tracking       = require('./libs/tracking');
+var navigation = require('./libs/navigation');
+var tracking = require('./libs/tracking');
 
-var container     = document.querySelector('.container'),
-    trackingLinks = document.querySelectorAll('a');
+var trackingLinks = document.querySelectorAll('a');
 
 if ('querySelector' in document && 'addEventListener' in window) {
   document.addEventListener('DOMContentLoaded', function() {

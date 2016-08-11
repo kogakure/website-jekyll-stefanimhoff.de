@@ -5,6 +5,22 @@
   margin-bottom: $default-spacing-bottom;
 
   .highlight {
+    lost-utility: clearfix;
     margin-bottom: 5px;
+
+    pre {
+      margin-bottom: $default-spacing-bottom;
+    }
+
+    code {
+      padding-bottom: 0;
+    }
   }
+}
+
+.code-meta {
+  font-size: $font-scale-small;
+  position: relative;
+  text-align: center;
+  top: -$default-spacing-bottom;
 }

@@ -1,5 +1,5 @@
-var gulp   = require('gulp');
-var webp   = require('gulp-webp');
+var gulp = require('gulp');
+var webp = require('gulp-webp');
 var config = require('../../config').webp;
 
 /**

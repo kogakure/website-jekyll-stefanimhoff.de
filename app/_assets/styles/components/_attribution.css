@@ -43,7 +43,7 @@
   bottom: calc($image-border-size + 26);
 }
 
-.attribution .figure-content:before {
+.attribution .figure-content::before {
   @extend mono-font;
   background: rgba($white, 0.7);
   border-radius: 50%;
@@ -63,11 +63,11 @@
   z-index: 5;
 }
 
-.attribution.attribution-caption .figure-content:before {
+.attribution.attribution-caption .figure-content::before {
   bottom: 35px;
 }
 
-.attribution .figure-content:hover:before {
+.attribution .figure-content:hover::before {
   opacity: 0;
 }
 

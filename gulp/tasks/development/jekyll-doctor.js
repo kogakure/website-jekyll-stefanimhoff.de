@@ -1,5 +1,5 @@
-var gulp        = require('gulp');
-var cp          = require('child_process');
+var gulp = require('gulp');
+var cp = require('child_process');
 var browsersync = require('browser-sync');
 
 /**

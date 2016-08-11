@@ -1,21 +1,21 @@
-var gulp           = require('gulp');
-var postcss        = require('gulp-postcss');
-var precss         = require('precss');
-var nano           = require('gulp-cssnano');
-var plumber        = require('gulp-plumber');
-var sourcemaps     = require('gulp-sourcemaps');
-var gutil          = require('gulp-util');
-var browsersync    = require('browser-sync');
+var gulp = require('gulp');
+var postcss = require('gulp-postcss');
+var precss = require('precss');
+var nano = require('gulp-cssnano');
+var plumber = require('gulp-plumber');
+var sourcemaps = require('gulp-sourcemaps');
+var gutil = require('gulp-util');
+var browsersync = require('browser-sync');
 
-var easings        = require('postcss-easings');
+var easings = require('postcss-easings');
 var responsiveType = require('postcss-responsive-type');
-var lost           = require('lost');
-var hexRGBA        = require('postcss-hexrgba');
-var pxtorem        = require('postcss-pxtorem');
-var autoprefixer   = require('autoprefixer');
-var mqpacker       = require('css-mqpacker');
+var lost = require('lost');
+var hexRGBA = require('postcss-hexrgba');
+var pxtorem = require('postcss-pxtorem');
+var autoprefixer = require('autoprefixer');
+var mqpacker = require('css-mqpacker');
 
-var config         = require('../../config');
+var config = require('../../config');
 
 
 function onError (err) {

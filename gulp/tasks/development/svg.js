@@ -1,7 +1,7 @@
-var gulp      = require('gulp');
-var plumber   = require('gulp-plumber');
+var gulp = require('gulp');
+var plumber = require('gulp-plumber');
 var svgSprite = require('gulp-svg-sprite');
-var config    = require('../../config').svg;
+var config = require('../../config').svg;
 
 /**
  * Create SVG sprites from individual SVGs

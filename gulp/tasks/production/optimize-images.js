@@ -1,7 +1,7 @@
-var gulp     = require('gulp');
+var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
-var size     = require('gulp-size');
-var config   = require('../../config').optimize.images;
+var size = require('gulp-size');
+var config = require('../../config').optimize.images;
 
 /**
  * Copy and minimize image files

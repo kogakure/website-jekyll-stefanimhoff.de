@@ -1,10 +1,12 @@
-var gulp      = require('gulp');
-var config    = require('../../config').optimize.css;
+var gulp = require('gulp');
+var csso = require('gulp-csso');
+var config = require('../../config').optimize.css;
 
 /**
  * Copy CSS files
  */
 gulp.task('optimize:css', function() {
   return gulp.src(config.src)
-    .pipe(gulp.dest(config.dest))
+    .pipe(csso())
+    .pipe(gulp.dest(config.dest));
 });

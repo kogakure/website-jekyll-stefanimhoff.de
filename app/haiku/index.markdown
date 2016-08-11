@@ -3,8 +3,8 @@ layout: page
 title: "Haiku"
 language: "de"
 author: "Stefan Imhoff"
-date: 2014-02-09 09:01
-updated: 2015-11-01 21:32
+date: 2014-02-09T09:01:00+02:00
+updated: 2015-11-01T21:32:00+02:00
 description: "Haiku ist eine traditionelle japanische Gedichtsform. Diese Seite bietet eine Sammlung meiner eigenen Haiku."
 header: true
 page_class: verse-list

@@ -1,16 +1,15 @@
-var gulp        = require('gulp');
+var gulp = require('gulp');
 var runSequence = require('run-sequence');
 
 /**
  * Run all tasks needed for a build in defined order
  */
 gulp.task('build', function(callback) {
-  runSequence('delete', 'styles', 'criticalcss',
-  [
+  runSequence('delete', 'styles', 'criticalcss', [
     'jekyll',
     'scripts',
     'images'
   ],
-  'base64',
-  callback);
+    'base64',
+    callback);
 });

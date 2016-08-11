@@ -1,7 +1,7 @@
-var gulp        = require('gulp');
-var changed     = require('gulp-changed');
-var plumber     = require('gulp-plumber');
-var config      = require('../../config').images;
+var gulp = require('gulp');
+var changed = require('gulp-changed');
+var plumber = require('gulp-plumber');
+var config = require('../../config').images;
 
 /**
  * Copy images to build folder
