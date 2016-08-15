@@ -23,7 +23,7 @@ if ('querySelector' in document && 'addEventListener' in window) {
       classie.add(navigation.currentNavigationItem().parentElement, 'nav-is-active');
     }
 
-    // Tracking aller Links
+    // Tracking of all links
     for (var i = 0, len = trackingLinks.length; i < len; i++) {
       var trackingLink = trackingLinks[i];
 
