@@ -1,8 +1,0 @@
-{
-  "name": "stefanimhoff",
-  "private": true,
-  "dependencies": {
-    "fastclick": "~1.0.3",
-    "loadcss": "~0.1.2"
-  }
-}

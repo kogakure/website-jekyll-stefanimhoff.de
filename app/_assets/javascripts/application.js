@@ -1,10 +1,10 @@
-/* global FastClick:false, fitVids:false, classie:false */
+/* global classie:false */
 
-require('fastclick');
-require('fitvids');
 require('classie');
 require('./vendor/ios-rotate-scaling-fix');
 
+var fitvids = require('fitvids');
+var attachFastClick = require('fastclick');
 var navigation = require('./libs/navigation');
 var tracking = require('./libs/tracking');
 
@@ -12,8 +12,11 @@ var trackingLinks = document.querySelectorAll('a');
 
 if ('querySelector' in document && 'addEventListener' in window) {
   document.addEventListener('DOMContentLoaded', function() {
-    FastClick.attach(document.body);
-    fitVids('.container');
+    // FastClick
+    attachFastClick(document.body);
+
+    // Fitvids
+    fitvids('.container');
 
     // Hightlighting of navigation item
     if (navigation.currentNavigationItem()) {
