@@ -1,3 +1,5 @@
+![Maintenance](https://img.shields.io/maintenance/no/2016.svg)
+
 # stefanimhoff.de
 
 This is the source of my [personal website and blog](http://stefanimhoff.de/) build with [Jekyll](http://jekyllrb.com/) and [Gulp.js](http://gulpjs.com/).
